@@ -3,7 +3,7 @@
 
 import sys,os
 import warnings
-os.chdir('C:/Users/Administrador/Documents/GitHub/TFG')
+os.chdir('C:/Users/Administrador/Documents/GitHub/TFG/MILpy')
 sys.path.append(os.path.realpath('..'))
 from sklearn.utils import shuffle
 import random as rand
@@ -23,8 +23,8 @@ from MILpy.Algorithms.BOW import BOW
 
 folds = 5
 runs = 1
-DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
-#DataSet = ['birds_WIWR_scaled','birds_BRCR_scaled']
+#DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
+DataSet = ['birds_WIWR_scaled','birds_BRCR_scaled']
 for j in DataSet:
     print '\n========= DATASET: ',j,' ========='
     bags,labels,X = load_data(j)
