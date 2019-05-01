@@ -31,8 +31,8 @@ def Porcentaje(X,Y):
 
 folds = 5
 runs = 1
-#DataSet = ['Fox_scaled']
-DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
+DataSet = ['Fox_scaled']#pruebas
+#DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
 carpeta = '../dataNoisy/'
 filename1 = 'X_train_bags.csv'
 filename2 = 'Y_train_labels.csv'
@@ -63,9 +63,8 @@ for j in DataSet:
                 carpetaSub = carpeta+j+'/fold_'+str(fold)+'/Original/'
             else:
                 carpetaSub = carpeta+j+'/fold_'+str(fold)+'/Noisy_'+str(k)+'/'
-#            print(train_index)
+
             LabelToChange = Porcentaje(len(train_index),k)
-#            aleatorios = rand.sample(train_index,LabelToChange)
             aleatorios = rand.sample(range(0,len(train_index)-1),LabelToChange)
 #            print(aleatorios)
 #            print(Y_train)
@@ -74,7 +73,7 @@ for j in DataSet:
                     Y_train[al] = Y_train[al]+1
                 else:
                     Y_train[al] = Y_train[al]-1
-#            print(Y_train)    
+   
             try:
                 os.stat(carpetaSub)
             except:
@@ -86,8 +85,6 @@ for j in DataSet:
             with open(carpetaSub+filename2, 'wb') as csvfile:
                 writer = csv.writer(csvfile)
                 writer.writerows(Y_train)
-#                for i in Y_train:
-#                    print(i)
             with open(carpetaSub+filename3, 'wb') as csvfile:
                 writer = csv.writer(csvfile)
                 for i in test_index:
