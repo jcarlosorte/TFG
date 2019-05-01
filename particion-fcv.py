@@ -11,6 +11,7 @@ os.chdir('C:/Users/Administrador/Documents/GitHub/TFG/MILpy')
 sys.path.append(os.path.realpath('..'))
 from sklearn.utils import shuffle
 from sklearn.cross_validation import StratifiedKFold
+from sklearn.metrics import roc_auc_score
 import random as rand
 import numpy as np
 from data import load_data
@@ -32,6 +33,8 @@ def Porcentaje(X,Y):
 folds = 5
 runs = 1
 DataSet = ['Fox_scaled']#pruebas
+Clasificadores = [simpleMIL(),simpleMIL()]
+Parametros = [{'type': 'max'},{'type': 'min'}]
 #DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
 carpeta = '../dataNoisy/'
 filename1 = 'X_train_bags.csv'
@@ -43,9 +46,12 @@ NoisyPercent = [0,5,10,15,20,25,30]
 
 for j in DataSet:
     fold = 1
+    results_accuracie = []
+    results_auc = []
     print '\n========= DATASET: ',j,' ========='
     bags,labels,X = load_data(j)
     bags,labels = shuffle(bags, labels, random_state=rand.randint(0, 100))
+    
     try:
         shutil.rmtree(carpeta+j)
     except:
@@ -66,14 +72,29 @@ for j in DataSet:
 
             LabelToChange = Porcentaje(len(train_index),k)
             aleatorios = rand.sample(range(0,len(train_index)-1),LabelToChange)
-#            print(aleatorios)
-#            print(Y_train)
             for al in aleatorios:
                 if Y_train[al] == 0:
                     Y_train[al] = Y_train[al]+1
                 else:
                     Y_train[al] = Y_train[al]-1
-   
+            print('Fold : '+str(fold)+' -> Noisy :'+str(k))
+            #============================================
+#            tp = 0
+#            for cl in Clasificadores:
+#                if len(Parametros[tp]) > 0:
+#                    cl[tp].fit(X_train, Y_train, **Parametros[tp])
+#                else:
+#                    cl[tp].fit(bags, labels)
+#                predictions = cl[tp].predict(X_test) 
+#                if (isinstance(predictions, tuple)):
+#                    predictions = predictions[0]
+#                accuracie = np.average(Y_test.T == np.sign(predictions))
+#                results_accuracie.append(100 * accuracie)
+#                auc_score = roc_auc_score(Y_test,predictions)  
+#                results_auc.append(100 * auc_score)
+##                print '\n MEAN AUC: '+ str(np.mean(AUC)) + '\n MEAN ACCURACIE: '+ str(np.mean(ACCURACIE))
+#                tp = tp+1
+            #============================================
             try:
                 os.stat(carpetaSub)
             except:
