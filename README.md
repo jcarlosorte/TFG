@@ -6,7 +6,7 @@ by Juan Carlos Orte (<jcarlosorte@ugr.es>)
 
 Overview
 --------
-The TGF uses the toolbox MILpy, the toolbox contains algorithms to train and evaluate multiple instance learning classifiers.
+The TFG proyect uses the toolbox MILpy, the toolbox contains algorithms to train and evaluate multiple instance learning classifiers.
 
 Stage of Development:
 ---------------------
