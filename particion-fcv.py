@@ -31,9 +31,9 @@ def Porcentaje(X,Y):
 
 folds = 5
 runs = 1
-DataSet = ['Fox_scaled']
-#DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
-carpeta = 'dataNoisy/'
+#DataSet = ['Fox_scaled']
+DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
+carpeta = '../dataNoisy/'
 filename1 = 'X_train_bags.csv'
 filename2 = 'Y_train_labels.csv'
 filename3 = 'X_test_bags.csv'
@@ -53,14 +53,11 @@ for j in DataSet:
     
     skf = StratifiedKFold(labels.reshape(len(labels)), n_folds=folds)
     for train_index, test_index in skf:
-        print('===================================')
+#        print('===================================')
         X_train = [bags[i] for i in train_index]        
         Y_train = labels[train_index]
         X_test  = [bags[i] for i in test_index]
         Y_test  = labels[test_index]
-#        print(train_index)#bag de training
-#        print(Y_train)
-        
         for k in NoisyPercent:
             if k == 0:
                 carpetaSub = carpeta+j+'/fold_'+str(fold)+'/Original/'
@@ -71,13 +68,13 @@ for j in DataSet:
 #            aleatorios = rand.sample(train_index,LabelToChange)
             aleatorios = rand.sample(range(0,len(train_index)-1),LabelToChange)
 #            print(aleatorios)
-            print(Y_train)
+#            print(Y_train)
             for al in aleatorios:
                 if Y_train[al] == 0:
                     Y_train[al] = Y_train[al]+1
                 else:
                     Y_train[al] = Y_train[al]-1
-            print(Y_train)    
+#            print(Y_train)    
             try:
                 os.stat(carpetaSub)
             except:

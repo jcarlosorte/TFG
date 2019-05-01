@@ -24,11 +24,10 @@ folds = 5
 runs = 1
 #DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
 #DataSet = ['birds_WIWR_scaled','birds_BRCR_scaled']
-DataSet = ['Fox_scaled']
+DataSet = ['birds_BRCR_scaled']
 for j in DataSet:
     print '\n========= DATASET: ',j,' ========='
     bags,labels,X = load_data(j)
-    print(labels)
     SMILa = simpleMIL()
     parameters_smil = {'type': 'max'}
     print '\n========= SIMPLE MIL RESULT [MAX] ========='
