@@ -33,7 +33,9 @@ def Porcentaje(X,Y):
 folds = 5
 runs = 1
 DataSet = ['Fox_scaled']#pruebas
-Clasificadores = [simpleMIL(),simpleMIL()]
+SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max']
+SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min']
+Clasificadores = [SMILaMax,SMILaMin]
 Parametros = [{'type': 'max'},{'type': 'min'}]
 #DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
 carpeta = '../dataNoisy/'
@@ -48,16 +50,15 @@ for j in DataSet:
     fold = 1
     results_accuracie = []
     results_auc = []
-    print '\n========= DATASET: ',j,' ========='
+    print '\n========= DATASET: ',j,' =========\n'
     bags,labels,X = load_data(j)
     bags,labels = shuffle(bags, labels, random_state=rand.randint(0, 100))
-    
     try:
         shutil.rmtree(carpeta+j)
     except:
         print('Se creará la carpeta para el dataset')
-    
     skf = StratifiedKFold(labels.reshape(len(labels)), n_folds=folds)
+      
     for train_index, test_index in skf:
 #        print('===================================')
         X_train = [bags[i] for i in train_index]        
@@ -79,21 +80,22 @@ for j in DataSet:
                     Y_train[al] = Y_train[al]-1
             print('Fold : '+str(fold)+' -> Noisy :'+str(k))
             #============================================
-#            tp = 0
-#            for cl in Clasificadores:
-#                if len(Parametros[tp]) > 0:
-#                    cl[tp].fit(X_train, Y_train, **Parametros[tp])
-#                else:
-#                    cl[tp].fit(bags, labels)
-#                predictions = cl[tp].predict(X_test) 
-#                if (isinstance(predictions, tuple)):
-#                    predictions = predictions[0]
-#                accuracie = np.average(Y_test.T == np.sign(predictions))
-#                results_accuracie.append(100 * accuracie)
-#                auc_score = roc_auc_score(Y_test,predictions)  
-#                results_auc.append(100 * auc_score)
-##                print '\n MEAN AUC: '+ str(np.mean(AUC)) + '\n MEAN ACCURACIE: '+ str(np.mean(ACCURACIE))
-#                tp = tp+1
+            tp = 0
+            for cl in Clasificadores:
+                print '\n========= CLASIFICADOR: ',str(cl[2]),' ========='
+                if len(cl[1]) > 0:
+                    cl[0].fit(X_train, Y_train, **cl[1])
+                else:
+                    cl[0].fit(bags, labels)
+                predictions = cl[0].predict(X_test) 
+                if (isinstance(predictions, tuple)):
+                    predictions = predictions[0]
+                accuracie = (100 * np.average(Y_test.T == np.sign(predictions)))
+                
+                auc_score = (100 * roc_auc_score(Y_test,predictions))  
+                
+                print '\n AUC: '+ str(auc_score) + '\n ACCURACIE: '+ str(accuracie)
+                tp = tp+1
             #============================================
             try:
                 os.stat(carpetaSub)
