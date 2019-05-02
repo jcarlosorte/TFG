@@ -33,10 +33,13 @@ def Porcentaje(X,Y):
 folds = 5
 runs = 1
 DataSet = ['Fox_scaled']#pruebas
+
 results_accuracie = []
 results_auc = []
 Noisy = ['Ruido 0%','Ruido 5%','Ruido 10%','Ruido 15%','Ruido 20%','Ruido 25%','Ruido 30%']
-resultados = [Noisy,results_accuracie,results_auc]
+
+trunk = [results_accuracie,results_auc]
+resultados = [Noisy,trunk]
 SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resultados]
 SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resultados]
 Clasificadores = [SMILaMax,SMILaMin]
@@ -99,7 +102,7 @@ for j in DataSet:
                 auc_score = (100 * roc_auc_score(Y_test,predictions))  
                 
 #                print '\n Precisión: '+ str(auc_score)
-               
+#                cl[3][1][1].append(accuracie)
                 print('Clasificador :'+str(cl[2])+'\n\t '+str(cl[3][0][ny])+'\n\t Precisión: '+ str(auc_score))
                 tp = tp+1
             #============================================
@@ -121,5 +124,6 @@ for j in DataSet:
             with open(carpetaSub+filename4, 'wb') as csvfile:
                 writer = csv.writer(csvfile)
                 writer.writerows(Y_test)
-            ny = ny +1
+            ny = ny+1
         fold = fold+1
+    print(cl[3][1])
