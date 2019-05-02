@@ -33,10 +33,14 @@ def Porcentaje(X,Y):
 folds = 5
 runs = 1
 DataSet = ['Fox_scaled']#pruebas
-SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max']
-SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min']
+results_accuracie = []
+results_auc = []
+Noisy = ['Ruido 0%','Ruido 5%','Ruido 10%','Ruido 15%','Ruido 20%','Ruido 25%','Ruido 30%']
+resultados = [Noisy,results_accuracie,results_auc]
+SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resultados]
+SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resultados]
 Clasificadores = [SMILaMax,SMILaMin]
-Parametros = [{'type': 'max'},{'type': 'min'}]
+
 #DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
 carpeta = '../dataNoisy/'
 filename1 = 'X_train_bags.csv'
@@ -47,9 +51,8 @@ filename4 = 'Y_test_labels.csv'
 NoisyPercent = [0,5,10,15,20,25,30]
 
 for j in DataSet:
-    fold = 1
-    results_accuracie = []
-    results_auc = []
+    
+    
     print '\n********** DATASET: ',j,' **********\n'
     bags,labels,X = load_data(j)
     bags,labels = shuffle(bags, labels, random_state=rand.randint(0, 100))
@@ -58,13 +61,14 @@ for j in DataSet:
     except:
         print('Se creará la carpeta para el dataset')
     skf = StratifiedKFold(labels.reshape(len(labels)), n_folds=folds)
-    
+    fold = 1
     for train_index, test_index in skf:
         print('========= Fold :'+str(fold)+' =========')
         X_train = [bags[i] for i in train_index]        
         Y_train = labels[train_index]
         X_test  = [bags[i] for i in test_index]
         Y_test  = labels[test_index]
+        ny = 0
         for k in NoisyPercent:
             if k == 0:
                 carpetaSub = carpeta+j+'/fold_'+str(fold)+'/Original/'
@@ -95,7 +99,8 @@ for j in DataSet:
                 auc_score = (100 * roc_auc_score(Y_test,predictions))  
                 
 #                print '\n Precisión: '+ str(auc_score)
-                print('Clasificador :'+str(cl[2])+'\n\t Noisy :'+str(k)+'\n\t Precisión: '+ str(auc_score))
+               
+                print('Clasificador :'+str(cl[2])+'\n\t '+str(cl[3][0][ny])+'\n\t Precisión: '+ str(auc_score))
                 tp = tp+1
             #============================================
             try:
@@ -116,4 +121,5 @@ for j in DataSet:
             with open(carpetaSub+filename4, 'wb') as csvfile:
                 writer = csv.writer(csvfile)
                 writer.writerows(Y_test)
+            ny = ny +1
         fold = fold+1
