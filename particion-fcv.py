@@ -36,10 +36,11 @@ DataSet = ['Fox_scaled']#pruebas
 
 results_accuracie = []
 results_auc = []
-Noisy = ['Ruido 0%','Ruido 5%','Ruido 10%','Ruido 15%','Ruido 20%','Ruido 25%','Ruido 30%']
-
-trunk = [results_accuracie,results_auc]
-resultados = [Noisy,trunk]
+ruido = []
+#resultados = [[results_accuracie,results_auc],[results_accuracie,results_auc],[results_accuracie,results_auc],[results_accuracie,results_auc],[results_accuracie,results_auc],[results_accuracie,results_auc],[results_accuracie,results_auc]]
+resultados = [[],[],[],[],[],[],[]]
+#trunk = [results_accuracie,results_auc]
+#resultados = [Noisy,trunk]
 SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resultados]
 SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resultados]
 Clasificadores = [SMILaMax,SMILaMin]
@@ -54,8 +55,6 @@ filename4 = 'Y_test_labels.csv'
 NoisyPercent = [0,5,10,15,20,25,30]
 
 for j in DataSet:
-    
-    
     print '\n********** DATASET: ',j,' **********\n'
     bags,labels,X = load_data(j)
     bags,labels = shuffle(bags, labels, random_state=rand.randint(0, 100))
@@ -71,8 +70,8 @@ for j in DataSet:
         Y_train = labels[train_index]
         X_test  = [bags[i] for i in test_index]
         Y_test  = labels[test_index]
-        ny = 0
-        for k in NoisyPercent:
+        
+        for ny,k in enumerate(NoisyPercent):
             if k == 0:
                 carpetaSub = carpeta+j+'/fold_'+str(fold)+'/Original/'
             else:
@@ -87,14 +86,14 @@ for j in DataSet:
                     Y_train[al] = Y_train[al]-1
 #            print('-> Noisy :'+str(k))
             #============================================
-            tp = 0
-            for cl in Clasificadores:
-#                print '\n========= CLASIFICADOR: ',str(cl[2]),' ========='
-                if len(cl[1]) > 0:
-                    cl[0].fit(X_train, Y_train, **cl[1])
+            
+            Clasifica = Clasificadores
+            for i,cl in enumerate(Clasifica):
+                if len(Clasificadores[i][1]) > 0:
+                    Clasificadores[i][0].fit(X_train, Y_train, **Clasificadores[i][1])
                 else:
-                    cl[0].fit(bags, labels)
-                predictions = cl[0].predict(X_test) 
+                    Clasificadores[i][0].fit(bags, labels)
+                predictions = Clasificadores[i][0].predict(X_test) 
                 if (isinstance(predictions, tuple)):
                     predictions = predictions[0]
                 accuracie = (100 * np.average(Y_test.T == np.sign(predictions)))
@@ -102,10 +101,12 @@ for j in DataSet:
                 auc_score = (100 * roc_auc_score(Y_test,predictions))  
                 
 #                print '\n Precisión: '+ str(auc_score)
-#                cl[3][1][1].append(accuracie)
-                print('Clasificador :'+str(cl[2])+'\n\t '+str(cl[3][0][ny])+'\n\t Precisión: '+ str(auc_score))
-                tp = tp+1
+                Clasificadores[i][3][ny].append(str(accuracie)+' class '+str(i))
+             
+                print('Clasificador :'+str(cl[2])+'\n\t Ruido '+str(k)+'%\n\t Precisión: '+ str(auc_score))
+                
             #============================================
+           
             try:
                 os.stat(carpetaSub)
             except:
@@ -124,6 +125,6 @@ for j in DataSet:
             with open(carpetaSub+filename4, 'wb') as csvfile:
                 writer = csv.writer(csvfile)
                 writer.writerows(Y_test)
-            ny = ny+1
+            
         fold = fold+1
-    print(cl[3][1])
+    print(Clasificadores)
