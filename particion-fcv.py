@@ -50,7 +50,7 @@ for j in DataSet:
     fold = 1
     results_accuracie = []
     results_auc = []
-    print '\n========= DATASET: ',j,' =========\n'
+    print '\n********** DATASET: ',j,' **********\n'
     bags,labels,X = load_data(j)
     bags,labels = shuffle(bags, labels, random_state=rand.randint(0, 100))
     try:
@@ -58,9 +58,9 @@ for j in DataSet:
     except:
         print('Se creará la carpeta para el dataset')
     skf = StratifiedKFold(labels.reshape(len(labels)), n_folds=folds)
-      
+    
     for train_index, test_index in skf:
-#        print('===================================')
+        print('========= Fold :'+str(fold)+' =========')
         X_train = [bags[i] for i in train_index]        
         Y_train = labels[train_index]
         X_test  = [bags[i] for i in test_index]
@@ -78,11 +78,11 @@ for j in DataSet:
                     Y_train[al] = Y_train[al]+1
                 else:
                     Y_train[al] = Y_train[al]-1
-            print('Fold : '+str(fold)+' -> Noisy :'+str(k))
+#            print('-> Noisy :'+str(k))
             #============================================
             tp = 0
             for cl in Clasificadores:
-                print '\n========= CLASIFICADOR: ',str(cl[2]),' ========='
+#                print '\n========= CLASIFICADOR: ',str(cl[2]),' ========='
                 if len(cl[1]) > 0:
                     cl[0].fit(X_train, Y_train, **cl[1])
                 else:
@@ -94,7 +94,8 @@ for j in DataSet:
                 
                 auc_score = (100 * roc_auc_score(Y_test,predictions))  
                 
-                print '\n AUC: '+ str(auc_score) + '\n ACCURACIE: '+ str(accuracie)
+#                print '\n Precisión: '+ str(auc_score)
+                print('Clasificador :'+str(cl[2])+'\n\t Noisy :'+str(k)+'\n\t Precisión: '+ str(auc_score))
                 tp = tp+1
             #============================================
             try:
