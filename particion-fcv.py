@@ -34,16 +34,15 @@ folds = 5
 runs = 1
 DataSet = ['Fox_scaled']#pruebas
 
-results_accuracie = []
-results_auc = []
-ruido = []
-#resultados = [[results_accuracie,results_auc],[results_accuracie,results_auc],[results_accuracie,results_auc],[results_accuracie,results_auc],[results_accuracie,results_auc],[results_accuracie,results_auc],[results_accuracie,results_auc]]
-resultados = [[],[],[],[],[],[],[]]
-#trunk = [results_accuracie,results_auc]
-#resultados = [Noisy,trunk]
-SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resultados]
-SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resultados]
-Clasificadores = [SMILaMax,SMILaMin]
+resul = [[],[],[],[],[],[],[]]
+resul2 = [[],[],[],[],[],[],[]]
+resul3 = [[],[],[],[],[],[],[]]
+
+SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul]
+SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2]
+SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3]
+
+Clasificadores = [SMILaMax,SMILaMin,SMILaExt]
 
 #DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
 carpeta = '../dataNoisy/'
@@ -86,9 +85,8 @@ for j in DataSet:
                     Y_train[al] = Y_train[al]-1
 #            print('-> Noisy :'+str(k))
             #============================================
-            
-            Clasifica = Clasificadores
-            for i,cl in enumerate(Clasifica):
+
+            for i,cl in enumerate(Clasificadores):
                 if len(Clasificadores[i][1]) > 0:
                     Clasificadores[i][0].fit(X_train, Y_train, **Clasificadores[i][1])
                 else:
@@ -97,12 +95,8 @@ for j in DataSet:
                 if (isinstance(predictions, tuple)):
                     predictions = predictions[0]
                 accuracie = (100 * np.average(Y_test.T == np.sign(predictions)))
-                
                 auc_score = (100 * roc_auc_score(Y_test,predictions))  
-                
-#                print '\n Precisión: '+ str(auc_score)
-                Clasificadores[i][3][ny].append(str(accuracie)+' class '+str(i))
-             
+                Clasificadores[i][3][ny].append(str(accuracie)+' class '+str(i)+' Ruido '+str(k))
                 print('Clasificador :'+str(cl[2])+'\n\t Ruido '+str(k)+'%\n\t Precisión: '+ str(auc_score))
                 
             #============================================
