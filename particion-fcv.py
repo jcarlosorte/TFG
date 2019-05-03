@@ -32,18 +32,7 @@ def Porcentaje(X,Y):
 
 folds = 5
 runs = 1
-DataSet = ['Fox_scaled']#pruebas
-
-resul = [[],[],[],[],[],[],[]]
-resul2 = [[],[],[],[],[],[],[]]
-resul3 = [[],[],[],[],[],[],[]]
-
-SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul]
-SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2]
-SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3]
-
-Clasificadores = [SMILaMax,SMILaMin,SMILaExt]
-
+DataSet = ['Fox_scaled','Musk2_scaled']#pruebas
 #DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
 carpeta = '../dataNoisy/'
 filename1 = 'X_train_bags.csv'
@@ -53,7 +42,22 @@ filename4 = 'Y_test_labels.csv'
 
 NoisyPercent = [0,5,10,15,20,25,30]
 
+f = open("../TestNoisy.txt", "w+")       
 for j in DataSet:
+    resul = [[],[],[],[],[],[],[]]
+    resul2 = [[],[],[],[],[],[],[]]
+    resul3 = [[],[],[],[],[],[],[]]
+    SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul]
+    SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2]
+    SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3]
+    
+    Clasificadores = [SMILaMax,SMILaMin,SMILaExt]
+    for h,clasi in enumerate(Clasificadores):
+        print('Clasificador vacio: '+str(clasi[2]))
+        for p,noy in enumerate(NoisyPercent):
+            print('\t=>Ruido: '+str(noy)+'%\tPrecisión Media: '+str(np.mean(clasi[3][p])))
+    
+    
     print '\n********** DATASET: ',j,' **********\n'
     bags,labels,X = load_data(j)
     bags,labels = shuffle(bags, labels, random_state=rand.randint(0, 100))
@@ -96,8 +100,8 @@ for j in DataSet:
                     predictions = predictions[0]
                 accuracie = (100 * np.average(Y_test.T == np.sign(predictions)))
                 auc_score = (100 * roc_auc_score(Y_test,predictions))  
-                Clasificadores[i][3][ny].append(str(accuracie)+' class '+str(i)+' Ruido '+str(k))
-                print('Clasificador :'+str(cl[2])+'\n\t Ruido '+str(k)+'%\n\t Precisión: '+ str(auc_score))
+                Clasificadores[i][3][ny].append(accuracie)
+#                print('Clasificador :'+str(cl[2])+'\n\t Ruido '+str(k)+'%\n\t Precisión: '+ str(auc_score))
                 
             #============================================
            
@@ -121,4 +125,13 @@ for j in DataSet:
                 writer.writerows(Y_test)
             
         fold = fold+1
-    print(Clasificadores)
+    
+    f.write('\n********** DATASET: '+str(j)+' **********\n')
+    for h,clasi in enumerate(Clasificadores):
+        print('Clasificador: '+str(clasi[2]))
+        f.write('Clasificador: '+str(clasi[2])+'\n')
+        for p,noy in enumerate(NoisyPercent):
+            print('\t=>Ruido: '+str(noy)+'%\tPrecisión Media: '+str(np.mean(clasi[3][p])))
+            f.write('\t=>Ruido: '+str(noy)+'%\tPrecisión Media: '+str(np.mean(clasi[3][p]))+'\n')
+
+f.close()

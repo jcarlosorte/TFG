@@ -1,0 +1,52 @@
+
+********** DATASET: Fox_scaled **********
+Clasificador: MIL max
+	=>Ruido: 0%	Precisión Media: 66.5
+	=>Ruido: 5%	Precisión Media: 65.0
+	=>Ruido: 10%	Precisión Media: 63.5
+	=>Ruido: 15%	Precisión Media: 59.5
+	=>Ruido: 20%	Precisión Media: 56.0
+	=>Ruido: 25%	Precisión Media: 57.5
+	=>Ruido: 30%	Precisión Media: 50.0
+Clasificador: MIL min
+	=>Ruido: 0%	Precisión Media: 57.5
+	=>Ruido: 5%	Precisión Media: 58.5
+	=>Ruido: 10%	Precisión Media: 52.5
+	=>Ruido: 15%	Precisión Media: 51.0
+	=>Ruido: 20%	Precisión Media: 50.0
+	=>Ruido: 25%	Precisión Media: 51.0
+	=>Ruido: 30%	Precisión Media: 49.5
+Clasificador: MIL Extreme
+	=>Ruido: 0%	Precisión Media: 62.5
+	=>Ruido: 5%	Precisión Media: 66.0
+	=>Ruido: 10%	Precisión Media: 60.0
+	=>Ruido: 15%	Precisión Media: 60.5
+	=>Ruido: 20%	Precisión Media: 51.5
+	=>Ruido: 25%	Precisión Media: 55.5
+	=>Ruido: 30%	Precisión Media: 48.0
+
+********** DATASET: Musk2_scaled **********
+Clasificador: MIL max
+	=>Ruido: 0%	Precisión Media: 68.8897243108
+	=>Ruido: 5%	Precisión Media: 70.6892230576
+	=>Ruido: 10%	Precisión Media: 69.7368421053
+	=>Ruido: 15%	Precisión Media: 73.6466165414
+	=>Ruido: 20%	Precisión Media: 55.0601503759
+	=>Ruido: 25%	Precisión Media: 59.9172932331
+	=>Ruido: 30%	Precisión Media: 61.5689223058
+Clasificador: MIL min
+	=>Ruido: 0%	Precisión Media: 79.6040100251
+	=>Ruido: 5%	Precisión Media: 78.5513784461
+	=>Ruido: 10%	Precisión Media: 68.7368421053
+	=>Ruido: 15%	Precisión Media: 69.64160401
+	=>Ruido: 20%	Precisión Media: 55.2130325815
+	=>Ruido: 25%	Precisión Media: 58.7744360902
+	=>Ruido: 30%	Precisión Media: 59.9223057644
+Clasificador: MIL Extreme
+	=>Ruido: 0%	Precisión Media: 83.4185463659
+	=>Ruido: 5%	Precisión Media: 82.4135338346
+	=>Ruido: 10%	Precisión Media: 76.4987468672
+	=>Ruido: 15%	Precisión Media: 75.5513784461
+	=>Ruido: 20%	Precisión Media: 59.0651629073
+	=>Ruido: 25%	Precisión Media: 66.6315789474
+	=>Ruido: 30%	Precisión Media: 61.7167919799
