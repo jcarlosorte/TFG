@@ -107,7 +107,7 @@ for j in DataSet:
                 if len(Clasificadores[i][1]) > 0:
                     Clasificadores[i][0].fit(X_train, Y_train, **Clasificadores[i][1])
                 else:
-                    Clasificadores[i][0].fit(bags, labels)
+                    Clasificadores[i][0].fit(X_train, Y_train)
                 predictions = Clasificadores[i][0].predict(X_test) 
                 if (isinstance(predictions, tuple)):
                     predictions = predictions[0]
