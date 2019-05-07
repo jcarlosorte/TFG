@@ -21,18 +21,25 @@ from funciones import fun_aux
 folds = 5
 #DataSet = ['Fox_scaled','Musk2_scaled']#pruebas
 #DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
-DataSet = ['Elephant_scaled']
+DataSet = ['Fox_scaled']
 carpeta = '../dataNoisy/'
 filename1 = 'X_train_bags.csv'
 filename2 = 'Y_train_labels.csv'
 filename3 = 'X_test_bags.csv'
 filename4 = 'Y_test_labels.csv'
 file_test = '../TestNoisy.txt'
+file_data = '../DataNoisy.txt'
 NoisyPercent = [0,5,10,15,20,25,30]
-
+try:
+    os.stat(file_data)
+except:
+    h = open(file_data, "w+")
+    h.close()
+h = open(file_data, "a")
 for j in DataSet:
     Clasificadores = fun_aux.clasif()
-    print '\n********** DATASET: ',j,' **********\n'
+    print('\n********** DATASET: '+str(j)+' **********\n')
+    h.write('\n********** DATASET: '+str(j)+' **********\n')
     bags,labels,X = load_data(j)
     bags,labels = shuffle(bags, labels, random_state=rand.randint(0, 100))
     try:
@@ -44,6 +51,7 @@ for j in DataSet:
     
     for train_index, test_index in skf:
         print('========= Fold :'+str(fold)+' =========')
+        h.write('========= Fold :'+str(fold)+' =========')
         X_train = [bags[i] for i in train_index]        
         Y_train = labels[train_index]
         X_test  = [bags[i] for i in test_index]
@@ -73,23 +81,35 @@ for j in DataSet:
                     Cop_labe[al_c] = Cop_labe[al]+1
                 else:
                     Cop_labe[al_c] = Cop_labe[al]-1
-#            print('-> Noisy :'+str(k))
+            print('-> Noisy :'+str(k))
             #============================================
-
+            
             for i,cl in enumerate(Clasificadores):
-                if len(Clasificadores[i][1]) > 0:
-                    Clasificadores[i][0].fit(X_train, Y_train, **Clasificadores[i][1])
-                else:
-                    Clasificadores[i][0].fit(Cop_bags, Cop_labe)
-                predictions = Clasificadores[i][0].predict(X_test) 
-                if (isinstance(predictions, tuple)):
-                    predictions = predictions[0]
-                accuracie = (100 * np.average(Y_test.T == np.sign(predictions)))
-                auc_score = (100 * roc_auc_score(Y_test,predictions))
-                Clasificadores[i][3][ny].append(accuracie)
-                Clasificadores[i][4][ny].append(auc_score)
-                print('Clasificador :'+str(cl[2])+'\n\t Ruido '+str(k)+'%\n\t Score: '+ str(auc_score)+'%\n\t Precision: '+ str(accuracie))
+                accuracie = 0
+                auc_score = 0
                 
+                try:
+                    if len(Clasificadores[i][1]) > 0:
+                        Clasificadores[i][0].fit(X_train, Y_train, **Clasificadores[i][1])
+                    else:
+                        Clasificadores[i][0].fit(Cop_bags, Cop_labe)
+                    predictions = Clasificadores[i][0].predict(X_test) 
+                    if (isinstance(predictions, tuple)):
+                        predictions = predictions[0]
+                    accu_aux = np.average(Y_test.T == np.sign(predictions))
+                    accuracie = (100 * accu_aux)
+                    auc_sco_aux = roc_auc_score(Y_test,predictions)
+                    auc_score = (100 * auc_sco_aux)
+                    Clasificadores[i][3][ny].append(accuracie)
+                    Clasificadores[i][4][ny].append(auc_score)
+                except:
+                    Clasificadores[i][3][ny].append(50)
+                    Clasificadores[i][4][ny].append(50)
+                    print('Fallo en calculo')
+                    h.write('Fallo en calculo:\n')
+#                print('Clasificador :'+str(cl[2])+'\n\t Ruido '+str(k)+'%\n\t Score: '+ str(auc_score)+'%\n\t Precision: '+ str(accuracie))
+                h.write('Clasificador :'+str(cl[2])+'\n\t Ruido '+str(k)+'%\n\t Score: '+ str(auc_score)+'%\n\t Precision: '+ str(accuracie)+'\n')
+            
             #============================================
            
             try:
@@ -126,3 +146,4 @@ for j in DataSet:
             print('\t=>Ruido: '+str(noy)+'%\tPrecisión Media: '+str(np.mean(clasi[3][p]))+'\n\t\t\tMedia Roc Score: '+str(np.mean(clasi[4][p])))
             f.write('\t=>Ruido: '+str(noy)+'%\tPrecisión Media: '+str(np.mean(clasi[3][p]))+'\n\t\t\tMedia Roc Score: '+str(np.mean(clasi[4][p]))+'\n')
     f.close()
+h.close()
