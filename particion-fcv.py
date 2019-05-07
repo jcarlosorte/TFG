@@ -18,22 +18,13 @@ from data import load_data
 warnings.filterwarnings('ignore')
 from MILpy.functions.mil_cross_val import mil_cross_val
 
-#Import Algorithms 
-from MILpy.Algorithms.simpleMIL import simpleMIL
-from MILpy.Algorithms.MILBoost import MILBoost
-from MILpy.Algorithms.maxDD import maxDD
-from MILpy.Algorithms.CKNN import CKNN
-from MILpy.Algorithms.EMDD import EMDD
-#from MILpy.Algorithms.MILES import MILES
-from MILpy.Algorithms.BOW import BOW
-
-def Porcentaje(X,Y):
-    return X*Y/100
+from funciones import fun_aux
 
 folds = 5
-runs = 1
+
 #DataSet = ['Fox_scaled','Musk2_scaled']#pruebas
-DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
+#DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
+DataSet = ['Elephant_scaled']
 carpeta = '../dataNoisy/'
 filename1 = 'X_train_bags.csv'
 filename2 = 'Y_train_labels.csv'
@@ -42,35 +33,14 @@ filename4 = 'Y_test_labels.csv'
 
 NoisyPercent = [0,5,10,15,20,25,30]
 
-f = open("../TestNoisy.txt", "w+")       
+
 for j in DataSet:
-    resul1 = [[],[],[],[],[],[],[]]
-    resul2 = [[],[],[],[],[],[],[]]
-    resul3 = [[],[],[],[],[],[],[]]
-    resul4 = [[],[],[],[],[],[],[]]
-    resul5 = [[],[],[],[],[],[],[]]
-    resul6 = [[],[],[],[],[],[],[]]
-    resul7 = [[],[],[],[],[],[],[]]
-    resul8 = [[],[],[],[],[],[],[]]
-    roc_m_1 = [[],[],[],[],[],[],[]]
-    roc_m_2 = [[],[],[],[],[],[],[]]
-    roc_m_3 = [[],[],[],[],[],[],[]]
-    roc_m_4 = [[],[],[],[],[],[],[]]
-    roc_m_5 = [[],[],[],[],[],[],[]]
-    roc_m_6 = [[],[],[],[],[],[],[]]
-    roc_m_7 = [[],[],[],[],[],[],[]]
-    roc_m_8 = [[],[],[],[],[],[],[]]
-    SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul1,roc_m_1]
-    SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2,roc_m_2]
-    SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3,roc_m_3]
-    BOW_clas = [BOW(),{'k':100,'covar_type':'diag','n_iter':20},'BOW',resul4,roc_m_4]
-    CKNN_cla = [CKNN(),{'references': 3, 'citers': 5},'CKNN',resul5,roc_m_5]
-    maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',resul6,roc_m_6]
-    EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
-    MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
+
  
 #    Clasificadores = [SMILaMax,SMILaMin,SMILaExt]
-    Clasificadores = [SMILaMax,SMILaMin,SMILaExt,BOW_clas,CKNN_cla,maxDD_cl,EMDD_cla,MILB_cla]
+#    Clasificadores = [SMILaMax,SMILaMin,SMILaExt,BOW_clas,CKNN_cla,maxDD_cl,EMDD_cla,MILB_cla]
+#    Clasificadores = [EMDD_cla,MILB_cla]
+    Clasificadores = fun_aux.clasif()
     print '\n********** DATASET: ',j,' **********\n'
     bags,labels,X = load_data(j)
     bags,labels = shuffle(bags, labels, random_state=rand.randint(0, 100))
@@ -80,26 +50,39 @@ for j in DataSet:
         print('Se creará la carpeta para el dataset')
     skf = StratifiedKFold(labels.reshape(len(labels)), n_folds=folds)
     fold = 1
+    
     for train_index, test_index in skf:
         print('========= Fold :'+str(fold)+' =========')
         X_train = [bags[i] for i in train_index]        
         Y_train = labels[train_index]
         X_test  = [bags[i] for i in test_index]
         Y_test  = labels[test_index]
-        
+        Cop_bags = bags
+        Cop_labe = labels
+#        print(len(X_train))
+#        print(len(X_test))
         for ny,k in enumerate(NoisyPercent):
             if k == 0:
                 carpetaSub = carpeta+j+'/fold_'+str(fold)+'/Original/'
             else:
                 carpetaSub = carpeta+j+'/fold_'+str(fold)+'/Noisy_'+str(k)+'/'
 
-            LabelToChange = Porcentaje(len(train_index),k)
+            LabelToChange = fun_aux.Porcentaje(len(train_index),k)
             aleatorios = rand.sample(range(0,len(train_index)-1),LabelToChange)
+            cop_LabelToChange = fun_aux.Porcentaje(len(Cop_labe),k)
+            cop_aleatorios = rand.sample(range(0,len(Cop_labe)-1),cop_LabelToChange)
+            #cambiar etiquetas en train
             for al in aleatorios:
                 if Y_train[al] == 0:
                     Y_train[al] = Y_train[al]+1
                 else:
                     Y_train[al] = Y_train[al]-1
+            
+            for al_c in cop_aleatorios:
+                if Cop_labe[al_c] == 0:
+                    Cop_labe[al_c] = Cop_labe[al]+1
+                else:
+                    Cop_labe[al_c] = Cop_labe[al]-1
 #            print('-> Noisy :'+str(k))
             #============================================
 
@@ -107,7 +90,8 @@ for j in DataSet:
                 if len(Clasificadores[i][1]) > 0:
                     Clasificadores[i][0].fit(X_train, Y_train, **Clasificadores[i][1])
                 else:
-                    Clasificadores[i][0].fit(X_train, Y_train)
+                    Clasificadores[i][0].fit(Cop_bags, Cop_labe)
+#                    print('sin parametros')
                 predictions = Clasificadores[i][0].predict(X_test) 
                 if (isinstance(predictions, tuple)):
                     predictions = predictions[0]
@@ -115,7 +99,7 @@ for j in DataSet:
                 auc_score = (100 * roc_auc_score(Y_test,predictions))  
                 Clasificadores[i][3][ny].append(accuracie)
                 Clasificadores[i][4][ny].append(auc_score)
-#                print('Clasificador :'+str(cl[2])+'\n\t Ruido '+str(k)+'%\n\t Precisión: '+ str(auc_score))
+                print('Clasificador :'+str(cl[2])+'\n\t Ruido '+str(k)+'%\n\t Score: '+ str(auc_score)+'%\n\t Precision: '+ str(accuracie))
                 
             #============================================
            
@@ -139,7 +123,7 @@ for j in DataSet:
                 writer.writerows(Y_test)
             
         fold = fold+1
-    
+    f = open("../TestNoisy.txt", "a")
     f.write('\n********** DATASET: '+str(j)+' **********\n')
     for h,clasi in enumerate(Clasificadores):
         print('Clasificador: '+str(clasi[2]))
@@ -147,5 +131,4 @@ for j in DataSet:
         for p,noy in enumerate(NoisyPercent):
             print('\t=>Ruido: '+str(noy)+'%\tPrecisión Media: '+str(np.mean(clasi[3][p]))+'\n\t\t\tMedia Roc Score: '+str(np.mean(clasi[4][p])))
             f.write('\t=>Ruido: '+str(noy)+'%\tPrecisión Media: '+str(np.mean(clasi[3][p]))+'\n\t\t\tMedia Roc Score: '+str(np.mean(clasi[4][p]))+'\n')
-
-f.close()
+    f.close()

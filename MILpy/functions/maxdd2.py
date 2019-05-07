@@ -12,8 +12,7 @@ import numpy.matlib
 from scipy.sparse import identity
 from scipy import sparse
 from numpy import inf
-from scipy.optimize import fmin_bfgs   
-import numpy as np
+from scipy.optimize import fmin_bfgs
 from mil_lnsrch import mil_lnsrch
 from dfpmin import dfpmin
 from log_DD import log_DD

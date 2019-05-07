@@ -34,7 +34,7 @@ class EMDD(object):
         self._alf = None
         self._model = None
         
-    def fit(self,train_bags,train_labels,alf = 10,spoints = 10,epochs = np.array([4,4]),frac = 1,tol=[1e-5,1e-5,1e-7,1e-7]):
+    def fit(self,train_bags,train_labels,alf = 10,spoints = 10,epochs = np.array([3,3]),frac = 1,tol=[1e-4,1e-4,1e-4,1e-4]):
         """
         @param train_bags : a sequence of n bags; each bag is an m-by-k array-like
             object containing m instances with k features
@@ -78,7 +78,7 @@ class EMDD(object):
 
         scales = np.matlib.repmat(0.1,k,dim)
         pointlogp = np.matlib.repmat(inf,k,1)
-
+        
         #start the optimization k times:
         for i in range (0,k):
             bestinst = []
@@ -95,7 +95,8 @@ class EMDD(object):
                     bestinst.append(np.array([train_bags[j][J]]))
                 #run the maxDD on only the best instances
                 self._maxConcept,concepts = maxdd(np.array([startpoint[i]]),scales[i],bestinst,bagI,self._epochs,tol)    
-                end=len(self._maxConcept[0])    
+                end=len(self._maxConcept[0])
+#                print('Range i '+str(i)+' Range r '+str(r)+' End : '+str(end)+' Starpoint[i]: '+str(len(startpoint[i]))+' Scales[i] : '+str(len(scales[i]))+' bestinst : '+str(len(bestinst)))
                 startpoint[i] = self._maxConcept[0][0:dim]
                 scales[i] = self._maxConcept[0][dim:end]
                 # do we improve?
