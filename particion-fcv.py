@@ -4,24 +4,21 @@ Created on Mon Apr 29 14:45:16 2019
 
 @author: Juan Carlos
 """
-
-import sys,os,csv,shutil,copy
-import warnings
+#imports
+import sys,os,csv,shutil,copy,warnings
+import random as rand
+import numpy as np
 os.chdir('C:/Users/Administrador/Documents/GitHub/TFG/MILpy')
 sys.path.append(os.path.realpath('..'))
 from sklearn.utils import shuffle
 from sklearn.cross_validation import StratifiedKFold
 from sklearn.metrics import roc_auc_score
-import random as rand
-import numpy as np
 from data import load_data
 warnings.filterwarnings('ignore')
-from MILpy.functions.mil_cross_val import mil_cross_val
-from MILpy.Algorithms.simpleMIL import simpleMIL
+
 from funciones import fun_aux
-
+#definiciones
 folds = 5
-
 #DataSet = ['Fox_scaled','Musk2_scaled']#pruebas
 #DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
 DataSet = ['Elephant_scaled']
@@ -33,9 +30,7 @@ filename4 = 'Y_test_labels.csv'
 file_test = '../TestNoisy.txt'
 NoisyPercent = [0,5,10,15,20,25,30]
 
-
 for j in DataSet:
-
     Clasificadores = fun_aux.clasif()
     print '\n********** DATASET: ',j,' **********\n'
     bags,labels,X = load_data(j)
@@ -78,7 +73,7 @@ for j in DataSet:
                     Cop_labe[al_c] = Cop_labe[al]+1
                 else:
                     Cop_labe[al_c] = Cop_labe[al]-1
-            print('-> Noisy :'+str(k))
+#            print('-> Noisy :'+str(k))
             #============================================
 
             for i,cl in enumerate(Clasificadores):
