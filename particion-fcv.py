@@ -21,7 +21,7 @@ from funciones import fun_aux
 folds = 5
 #DataSet = ['Fox_scaled','Musk2_scaled']#pruebas
 #DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
-DataSet = ['Fox_scaled']
+DataSet = ['Fox_scaled','Elephant_scaled']
 carpeta = '../dataNoisy/'
 filename1 = 'X_train_bags.csv'
 filename2 = 'Y_train_labels.csv'
@@ -51,7 +51,7 @@ for j in DataSet:
     
     for train_index, test_index in skf:
         print('========= Fold :'+str(fold)+' =========')
-        h.write('========= Fold :'+str(fold)+' =========')
+        h.write('========= Fold :'+str(fold)+' =========\n')
         X_train = [bags[i] for i in train_index]        
         Y_train = labels[train_index]
         X_test  = [bags[i] for i in test_index]
@@ -87,7 +87,6 @@ for j in DataSet:
             for i,cl in enumerate(Clasificadores):
                 accuracie = 0
                 auc_score = 0
-                
                 try:
                     if len(Clasificadores[i][1]) > 0:
                         Clasificadores[i][0].fit(X_train, Y_train, **Clasificadores[i][1])
@@ -103,15 +102,34 @@ for j in DataSet:
                     Clasificadores[i][3][ny].append(accuracie)
                     Clasificadores[i][4][ny].append(auc_score)
                 except:
-                    Clasificadores[i][3][ny].append(50)
-                    Clasificadores[i][4][ny].append(50)
-                    print('Fallo en calculo')
-                    h.write('Fallo en calculo:\n')
+                    print('Fallo, segundo intento')
+                    h.write('Fallo, segundo intento\n')
+                    try:
+                        if len(Clasificadores[i][1]) > 0:
+                            Clasificadores[i][0].fit(X_train, Y_train, **Clasificadores[i][1])
+                        else:
+                            Clasificadores[i][0].fit(Cop_bags, Cop_labe)
+                        predictions = Clasificadores[i][0].predict(X_test) 
+                        if (isinstance(predictions, tuple)):
+                            predictions = predictions[0]
+                        accu_aux = np.average(Y_test.T == np.sign(predictions))
+                        accuracie = (100 * accu_aux)
+                        auc_sco_aux = roc_auc_score(Y_test,predictions)
+                        auc_score = (100 * auc_sco_aux)
+                        Clasificadores[i][3][ny].append(accuracie)
+                        Clasificadores[i][4][ny].append(auc_score)
+                        print('OK')
+                        h.write('OK\n')
+                    except:
+                        Clasificadores[i][3][ny].append(50)
+                        Clasificadores[i][4][ny].append(50)
+                        print('Fallo en calculo')
+                        h.write('Fallo en calculo:\n')
 #                print('Clasificador :'+str(cl[2])+'\n\t Ruido '+str(k)+'%\n\t Score: '+ str(auc_score)+'%\n\t Precision: '+ str(accuracie))
                 h.write('Clasificador :'+str(cl[2])+'\n\t Ruido '+str(k)+'%\n\t Score: '+ str(auc_score)+'%\n\t Precision: '+ str(accuracie)+'\n')
             
             #============================================
-           
+            #Se sobreescribe cada vez que se ejecutan para sustituir las nuevas particiones
             try:
                 os.stat(carpetaSub)
             except:
@@ -139,11 +157,11 @@ for j in DataSet:
         f.close()
     f = open(file_test, "a")
     f.write('\n********** DATASET: '+str(j)+' **********\n')
-    for h,clasi in enumerate(Clasificadores):
+    for h2,clasi in enumerate(Clasificadores):
         print('Clasificador: '+str(clasi[2]))
         f.write('Clasificador: '+str(clasi[2])+'\n')
         for p,noy in enumerate(NoisyPercent):
-            print('\t=>Ruido: '+str(noy)+'%\tPrecisión Media: '+str(np.mean(clasi[3][p]))+'\n\t\t\tMedia Roc Score: '+str(np.mean(clasi[4][p])))
-            f.write('\t=>Ruido: '+str(noy)+'%\tPrecisión Media: '+str(np.mean(clasi[3][p]))+'\n\t\t\tMedia Roc Score: '+str(np.mean(clasi[4][p]))+'\n')
+            print('\t=>Ruido: '+str(noy)+'%\tPrecisión Media: '+str(np.mean(clasi[3][p]))+'%\n\t\t\tMedia Roc Score: '+str(np.mean(clasi[4][p])))
+            f.write('\t=>Ruido: '+str(noy)+'%\tPrecisión Media: '+str(np.mean(clasi[3][p]))+'%\n\t\t\tMedia Roc Score: '+str(np.mean(clasi[4][p]))+'\n')
     f.close()
 h.close()
