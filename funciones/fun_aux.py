@@ -5,7 +5,7 @@ Created on Tue May  7 09:27:08 2019
 @author: Juan Carlos Orte
 """
 
-import sys,os,csv,shutil
+import sys,os
 import warnings
 os.chdir('C:/Users/Administrador/Documents/GitHub/TFG/MILpy')
 sys.path.append(os.path.realpath('..'))
@@ -60,12 +60,12 @@ def clasif():
     EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
     MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
     MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
-#    aux.append(SMILaMax)
-#    aux.append(SMILaMin)
-#    aux.append(SMILaExt)
-#    aux.append(BOW_clas)
-#    aux.append(CKNN_cla)
-#    aux.append(maxDD_cl)
+    aux.append(SMILaMax)
+    aux.append(SMILaMin)
+    aux.append(SMILaExt)
+    aux.append(BOW_clas)
+    aux.append(CKNN_cla)
+    aux.append(maxDD_cl)
     aux.append(EMDD_cla)
     aux.append(MILB_cla)
 #    aux.append(MILES_cl)

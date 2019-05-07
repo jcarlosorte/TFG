@@ -5,7 +5,7 @@ Created on Mon Apr 29 14:45:16 2019
 @author: Juan Carlos
 """
 
-import sys,os,csv,shutil
+import sys,os,csv,shutil,copy
 import warnings
 os.chdir('C:/Users/Administrador/Documents/GitHub/TFG/MILpy')
 sys.path.append(os.path.realpath('..'))
@@ -17,7 +17,7 @@ import numpy as np
 from data import load_data
 warnings.filterwarnings('ignore')
 from MILpy.functions.mil_cross_val import mil_cross_val
-
+from MILpy.Algorithms.simpleMIL import simpleMIL
 from funciones import fun_aux
 
 folds = 5
@@ -30,16 +30,12 @@ filename1 = 'X_train_bags.csv'
 filename2 = 'Y_train_labels.csv'
 filename3 = 'X_test_bags.csv'
 filename4 = 'Y_test_labels.csv'
-
+file_test = '../TestNoisy.txt'
 NoisyPercent = [0,5,10,15,20,25,30]
 
 
 for j in DataSet:
 
- 
-#    Clasificadores = [SMILaMax,SMILaMin,SMILaExt]
-#    Clasificadores = [SMILaMax,SMILaMin,SMILaExt,BOW_clas,CKNN_cla,maxDD_cl,EMDD_cla,MILB_cla]
-#    Clasificadores = [EMDD_cla,MILB_cla]
     Clasificadores = fun_aux.clasif()
     print '\n********** DATASET: ',j,' **********\n'
     bags,labels,X = load_data(j)
@@ -57,10 +53,9 @@ for j in DataSet:
         Y_train = labels[train_index]
         X_test  = [bags[i] for i in test_index]
         Y_test  = labels[test_index]
-        Cop_bags = bags
-        Cop_labe = labels
-#        print(len(X_train))
-#        print(len(X_test))
+        Cop_bags = copy.copy(bags)
+        Cop_labe = copy.copy(labels)
+
         for ny,k in enumerate(NoisyPercent):
             if k == 0:
                 carpetaSub = carpeta+j+'/fold_'+str(fold)+'/Original/'
@@ -83,7 +78,7 @@ for j in DataSet:
                     Cop_labe[al_c] = Cop_labe[al]+1
                 else:
                     Cop_labe[al_c] = Cop_labe[al]-1
-#            print('-> Noisy :'+str(k))
+            print('-> Noisy :'+str(k))
             #============================================
 
             for i,cl in enumerate(Clasificadores):
@@ -91,12 +86,11 @@ for j in DataSet:
                     Clasificadores[i][0].fit(X_train, Y_train, **Clasificadores[i][1])
                 else:
                     Clasificadores[i][0].fit(Cop_bags, Cop_labe)
-#                    print('sin parametros')
                 predictions = Clasificadores[i][0].predict(X_test) 
                 if (isinstance(predictions, tuple)):
                     predictions = predictions[0]
                 accuracie = (100 * np.average(Y_test.T == np.sign(predictions)))
-                auc_score = (100 * roc_auc_score(Y_test,predictions))  
+                auc_score = (100 * roc_auc_score(Y_test,predictions))
                 Clasificadores[i][3][ny].append(accuracie)
                 Clasificadores[i][4][ny].append(auc_score)
                 print('Clasificador :'+str(cl[2])+'\n\t Ruido '+str(k)+'%\n\t Score: '+ str(auc_score)+'%\n\t Precision: '+ str(accuracie))
@@ -123,7 +117,12 @@ for j in DataSet:
                 writer.writerows(Y_test)
             
         fold = fold+1
-    f = open("../TestNoisy.txt", "a")
+    try:
+        os.stat(file_test)
+    except:
+        f = open(file_test, "w+")
+        f.close()
+    f = open(file_test, "a")
     f.write('\n********** DATASET: '+str(j)+' **********\n')
     for h,clasi in enumerate(Clasificadores):
         print('Clasificador: '+str(clasi[2]))
