@@ -1,1122 +1,1118 @@
 
-********** DATASET: Fox_scaled **********
+********** DATASET: musk1_scaled **********
 ========= Fold :1 =========
 Clasificador :MIL max
 	 Ruido 0%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 63.3333333333%
+	 Precision: 63.1578947368
 Clasificador :MIL min
 	 Ruido 0%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 88.8888888889%
+	 Precision: 89.4736842105
 Clasificador :MIL Extreme
 	 Ruido 0%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 89.4444444444%
+	 Precision: 89.4736842105
 Clasificador :BOW
 	 Ruido 0%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 63.3333333333%
+	 Precision: 63.1578947368
 Clasificador :CKNN
 	 Ruido 0%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 89.4444444444%
+	 Precision: 89.4736842105
 Clasificador :DIVERSE DENSITY
 	 Ruido 0%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 83.8888888889%
+	 Precision: 84.2105263158
 Clasificador :EM-DD
 	 Ruido 0%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 94.4444444444%
+	 Precision: 94.7368421053
 Clasificador :MILBOOST
 	 Ruido 0%
-	 Score: 73.5%
-	 Precision: 50.0
+	 Score: 81.1111111111%
+	 Precision: 52.3545706371
 Clasificador :MIL max
 	 Ruido 5%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 63.3333333333%
+	 Precision: 63.1578947368
 Clasificador :MIL min
 	 Ruido 5%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 88.8888888889%
+	 Precision: 89.4736842105
 Clasificador :MIL Extreme
 	 Ruido 5%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 89.4444444444%
+	 Precision: 89.4736842105
 Clasificador :BOW
 	 Ruido 5%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 68.3333333333%
+	 Precision: 68.4210526316
 Clasificador :CKNN
 	 Ruido 5%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 89.4444444444%
+	 Precision: 89.4736842105
 Clasificador :DIVERSE DENSITY
 	 Ruido 5%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 63.8888888889%
+	 Precision: 63.1578947368
 Clasificador :EM-DD
 	 Ruido 5%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 94.4444444444%
+	 Precision: 94.7368421053
 Clasificador :MILBOOST
 	 Ruido 5%
-	 Score: 73.5%
-	 Precision: 50.0
+	 Score: 78.3333333333%
+	 Precision: 52.3545706371
 Clasificador :MIL max
 	 Ruido 10%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 57.7777777778%
+	 Precision: 57.8947368421
 Clasificador :MIL min
 	 Ruido 10%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 88.8888888889%
+	 Precision: 89.4736842105
 Clasificador :MIL Extreme
 	 Ruido 10%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 73.3333333333%
+	 Precision: 73.6842105263
 Clasificador :BOW
 	 Ruido 10%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 64.4444444444%
+	 Precision: 63.1578947368
 Clasificador :CKNN
 	 Ruido 10%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 73.3333333333%
+	 Precision: 73.6842105263
 Clasificador :DIVERSE DENSITY
 	 Ruido 10%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 83.8888888889%
+	 Precision: 84.2105263158
 Clasificador :EM-DD
 	 Ruido 10%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 83.3333333333%
+	 Precision: 84.2105263158
 Clasificador :MILBOOST
 	 Ruido 10%
-	 Score: 63.0%
-	 Precision: 50.0
+	 Score: 71.1111111111%
+	 Precision: 52.3545706371
 Clasificador :MIL max
 	 Ruido 15%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 67.2222222222%
+	 Precision: 68.4210526316
 Clasificador :MIL min
 	 Ruido 15%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 77.7777777778%
+	 Precision: 78.9473684211
 Clasificador :MIL Extreme
 	 Ruido 15%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 72.7777777778%
+	 Precision: 73.6842105263
 Clasificador :BOW
 	 Ruido 15%
-	 Score: 42.5%
-	 Precision: 42.5
+	 Score: 63.3333333333%
+	 Precision: 63.1578947368
 Clasificador :CKNN
 	 Ruido 15%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 73.3333333333%
+	 Precision: 73.6842105263
 Clasificador :DIVERSE DENSITY
 	 Ruido 15%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 83.8888888889%
+	 Precision: 84.2105263158
 Clasificador :EM-DD
 	 Ruido 15%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 94.4444444444%
+	 Precision: 94.7368421053
 Clasificador :MILBOOST
 	 Ruido 15%
-	 Score: 49.0%
-	 Precision: 50.0
+	 Score: 71.1111111111%
+	 Precision: 52.3545706371
 Clasificador :MIL max
 	 Ruido 20%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 45.5555555556%
+	 Precision: 47.3684210526
 Clasificador :MIL min
 	 Ruido 20%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 61.1111111111%
+	 Precision: 63.1578947368
 Clasificador :MIL Extreme
 	 Ruido 20%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 45.5555555556%
+	 Precision: 47.3684210526
 Clasificador :BOW
 	 Ruido 20%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 48.8888888889%
+	 Precision: 47.3684210526
 Clasificador :CKNN
 	 Ruido 20%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 46.6666666667%
+	 Precision: 47.3684210526
 Clasificador :DIVERSE DENSITY
 	 Ruido 20%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 44.4444444444%
+	 Precision: 42.1052631579
 Clasificador :EM-DD
 	 Ruido 20%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 78.8888888889%
+	 Precision: 78.9473684211
 Clasificador :MILBOOST
 	 Ruido 20%
-	 Score: 61.75%
-	 Precision: 50.0
+	 Score: 73.3333333333%
+	 Precision: 52.3545706371
 Clasificador :MIL max
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 48.8888888889%
+	 Precision: 47.3684210526
 Clasificador :MIL min
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 64.4444444444%
+	 Precision: 63.1578947368
 Clasificador :MIL Extreme
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 48.3333333333%
+	 Precision: 47.3684210526
 Clasificador :BOW
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 47.7777777778%
+	 Precision: 47.3684210526
 Clasificador :CKNN
 	 Ruido 25%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 32.2222222222%
+	 Precision: 31.5789473684
 Clasificador :DIVERSE DENSITY
 	 Ruido 25%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 63.8888888889%
+	 Precision: 63.1578947368
 Clasificador :EM-DD
 	 Ruido 25%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 78.3333333333%
+	 Precision: 78.9473684211
 Clasificador :MILBOOST
 	 Ruido 25%
-	 Score: 33.5%
-	 Precision: 50.0
+	 Score: 77.7777777778%
+	 Precision: 52.3545706371
 Clasificador :MIL max
 	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 52.7777777778%
+	 Precision: 52.6315789474
 Clasificador :MIL min
 	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 53.8888888889%
+	 Precision: 52.6315789474
 Clasificador :MIL Extreme
 	 Ruido 30%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 62.7777777778%
+	 Precision: 63.1578947368
 Clasificador :BOW
 	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 43.8888888889%
+	 Precision: 42.1052631579
 Clasificador :CKNN
 	 Ruido 30%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 32.2222222222%
+	 Precision: 31.5789473684
 Clasificador :DIVERSE DENSITY
 	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 59.4444444444%
+	 Precision: 57.8947368421
 Clasificador :EM-DD
 	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 78.3333333333%
+	 Precision: 78.9473684211
 Clasificador :MILBOOST
 	 Ruido 30%
-	 Score: 38.75%
-	 Precision: 50.0
+	 Score: 55.5555555556%
+	 Precision: 52.3545706371
 ========= Fold :2 =========
 Clasificador :MIL max
 	 Ruido 0%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 62.7777777778%
+	 Precision: 63.1578947368
 Clasificador :MIL min
 	 Ruido 0%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 77.7777777778%
+	 Precision: 78.9473684211
 Clasificador :MIL Extreme
 	 Ruido 0%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 88.8888888889%
+	 Precision: 89.4736842105
 Clasificador :BOW
 	 Ruido 0%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 72.7777777778%
+	 Precision: 73.6842105263
 Clasificador :CKNN
 	 Ruido 0%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 68.3333333333%
+	 Precision: 68.4210526316
 Clasificador :DIVERSE DENSITY
 	 Ruido 0%
+	 Score: 73.8888888889%
+	 Precision: 73.6842105263
+Clasificador :EM-DD
+	 Ruido 0%
+	 Score: 88.8888888889%
+	 Precision: 89.4736842105
+Clasificador :MILBOOST
+	 Ruido 0%
+	 Score: 51.1111111111%
+	 Precision: 52.3545706371
+Clasificador :MIL max
+	 Ruido 5%
+	 Score: 63.3333333333%
+	 Precision: 63.1578947368
+Clasificador :MIL min
+	 Ruido 5%
+	 Score: 77.7777777778%
+	 Precision: 78.9473684211
+Clasificador :MIL Extreme
+	 Ruido 5%
+	 Score: 83.3333333333%
+	 Precision: 84.2105263158
+Clasificador :BOW
+	 Ruido 5%
+	 Score: 68.3333333333%
+	 Precision: 68.4210526316
+Clasificador :CKNN
+	 Ruido 5%
+	 Score: 52.7777777778%
+	 Precision: 52.6315789474
+Clasificador :DIVERSE DENSITY
+	 Ruido 5%
+	 Score: 73.8888888889%
+	 Precision: 73.6842105263
+Clasificador :EM-DD
+	 Ruido 5%
+	 Score: 83.3333333333%
+	 Precision: 84.2105263158
+Clasificador :MILBOOST
+	 Ruido 5%
+	 Score: 51.1111111111%
+	 Precision: 52.3545706371
+Clasificador :MIL max
+	 Ruido 10%
+	 Score: 68.8888888889%
+	 Precision: 68.4210526316
+Clasificador :MIL min
+	 Ruido 10%
+	 Score: 77.7777777778%
+	 Precision: 78.9473684211
+Clasificador :MIL Extreme
+	 Ruido 10%
+	 Score: 88.8888888889%
+	 Precision: 89.4736842105
+Clasificador :BOW
+	 Ruido 10%
+	 Score: 68.8888888889%
+	 Precision: 68.4210526316
+Clasificador :CKNN
+	 Ruido 10%
+	 Score: 68.3333333333%
+	 Precision: 68.4210526316
+Clasificador :DIVERSE DENSITY
+	 Ruido 10%
+	 Score: 68.8888888889%
+	 Precision: 68.4210526316
+Clasificador :EM-DD
+	 Ruido 10%
+	 Score: 83.3333333333%
+	 Precision: 84.2105263158
+Clasificador :MILBOOST
+	 Ruido 10%
+	 Score: 59.4444444444%
+	 Precision: 52.3545706371
+Clasificador :MIL max
+	 Ruido 15%
+	 Score: 62.7777777778%
+	 Precision: 63.1578947368
+Clasificador :MIL min
+	 Ruido 15%
+	 Score: 72.2222222222%
+	 Precision: 73.6842105263
+Clasificador :MIL Extreme
+	 Ruido 15%
+	 Score: 88.8888888889%
+	 Precision: 89.4736842105
+Clasificador :BOW
+	 Ruido 15%
+	 Score: 67.7777777778%
+	 Precision: 68.4210526316
+Clasificador :CKNN
+	 Ruido 15%
+	 Score: 57.2222222222%
+	 Precision: 57.8947368421
+Clasificador :DIVERSE DENSITY
+	 Ruido 15%
+	 Score: 68.3333333333%
+	 Precision: 68.4210526316
+Clasificador :EM-DD
+	 Ruido 15%
+	 Score: 83.3333333333%
+	 Precision: 84.2105263158
+Clasificador :MILBOOST
+	 Ruido 15%
+	 Score: 53.3333333333%
+	 Precision: 52.3545706371
+Clasificador :MIL max
+	 Ruido 20%
+	 Score: 57.2222222222%
+	 Precision: 57.8947368421
+Clasificador :MIL min
+	 Ruido 20%
+	 Score: 77.7777777778%
+	 Precision: 78.9473684211
+Clasificador :MIL Extreme
+	 Ruido 20%
+	 Score: 77.7777777778%
+	 Precision: 78.9473684211
+Clasificador :BOW
+	 Ruido 20%
+	 Score: 78.3333333333%
+	 Precision: 78.9473684211
+Clasificador :CKNN
+	 Ruido 20%
+	 Score: 62.7777777778%
+	 Precision: 63.1578947368
+Clasificador :DIVERSE DENSITY
+	 Ruido 20%
+	 Score: 58.3333333333%
+	 Precision: 57.8947368421
+Clasificador :EM-DD
+	 Ruido 20%
+	 Score: 88.8888888889%
+	 Precision: 89.4736842105
+Clasificador :MILBOOST
+	 Ruido 20%
 	 Score: 45.0%
-	 Precision: 45.0
-Clasificador :EM-DD
-	 Ruido 0%
-	 Score: 70.0%
-	 Precision: 70.0
-Clasificador :MILBOOST
-	 Ruido 0%
-	 Score: 42.0%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 5%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :MIL min
-	 Ruido 5%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 5%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :BOW
-	 Ruido 5%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :CKNN
-	 Ruido 5%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 5%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :EM-DD
-	 Ruido 5%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :MILBOOST
-	 Ruido 5%
-	 Score: 42.75%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 10%
-	 Score: 52.5%
-	 Precision: 52.5
-Clasificador :MIL min
-	 Ruido 10%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 10%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :BOW
-	 Ruido 10%
-	 Score: 42.5%
-	 Precision: 42.5
-Clasificador :CKNN
-	 Ruido 10%
-	 Score: 52.5%
-	 Precision: 52.5
-Clasificador :DIVERSE DENSITY
-	 Ruido 10%
-	 Score: 52.5%
-	 Precision: 52.5
-Fallo, segundo intento
-OK
-Clasificador :EM-DD
-	 Ruido 10%
-	 Score: 60.0%
-	 Precision: 60.0
-Clasificador :MILBOOST
-	 Ruido 10%
-	 Score: 47.125%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 15%
-	 Score: 47.5%
-	 Precision: 47.5
-Clasificador :MIL min
-	 Ruido 15%
-	 Score: 42.5%
-	 Precision: 42.5
-Clasificador :MIL Extreme
-	 Ruido 15%
-	 Score: 42.5%
-	 Precision: 42.5
-Clasificador :BOW
-	 Ruido 15%
-	 Score: 42.5%
-	 Precision: 42.5
-Clasificador :CKNN
-	 Ruido 15%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 15%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :EM-DD
-	 Ruido 15%
-	 Score: 62.5%
-	 Precision: 62.5
-Clasificador :MILBOOST
-	 Ruido 15%
-	 Score: 34.375%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 20%
-	 Score: 45.0%
-	 Precision: 45.0
-Clasificador :MIL min
-	 Ruido 20%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 20%
-	 Score: 42.5%
-	 Precision: 42.5
-Clasificador :BOW
-	 Ruido 20%
-	 Score: 42.5%
-	 Precision: 42.5
-Clasificador :CKNN
-	 Ruido 20%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 20%
-	 Score: 52.5%
-	 Precision: 52.5
-Clasificador :EM-DD
-	 Ruido 20%
-	 Score: 72.5%
-	 Precision: 72.5
-Clasificador :MILBOOST
-	 Ruido 20%
-	 Score: 36.875%
-	 Precision: 50.0
+	 Precision: 52.3545706371
 Clasificador :MIL max
 	 Ruido 25%
-	 Score: 72.5%
-	 Precision: 72.5
+	 Score: 41.1111111111%
+	 Precision: 42.1052631579
 Clasificador :MIL min
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 61.6666666667%
+	 Precision: 63.1578947368
 Clasificador :MIL Extreme
 	 Ruido 25%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 56.6666666667%
+	 Precision: 57.8947368421
 Clasificador :BOW
 	 Ruido 25%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 73.3333333333%
+	 Precision: 73.6842105263
 Clasificador :CKNN
 	 Ruido 25%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 41.6666666667%
+	 Precision: 42.1052631579
 Clasificador :DIVERSE DENSITY
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 58.3333333333%
+	 Precision: 57.8947368421
 Clasificador :EM-DD
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 78.3333333333%
+	 Precision: 78.9473684211
 Clasificador :MILBOOST
 	 Ruido 25%
-	 Score: 40.25%
-	 Precision: 50.0
+	 Score: 58.3333333333%
+	 Precision: 52.3545706371
 Clasificador :MIL max
 	 Ruido 30%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 45.5555555556%
+	 Precision: 47.3684210526
 Clasificador :MIL min
 	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 56.1111111111%
+	 Precision: 57.8947368421
 Clasificador :MIL Extreme
 	 Ruido 30%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 50.5555555556%
+	 Precision: 52.6315789474
 Clasificador :BOW
 	 Ruido 30%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 41.1111111111%
+	 Precision: 42.1052631579
 Clasificador :CKNN
 	 Ruido 30%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 26.6666666667%
+	 Precision: 26.3157894737
 Clasificador :DIVERSE DENSITY
 	 Ruido 30%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 44.4444444444%
+	 Precision: 42.1052631579
 Clasificador :EM-DD
 	 Ruido 30%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 68.8888888889%
+	 Precision: 68.4210526316
 Clasificador :MILBOOST
 	 Ruido 30%
-	 Score: 49.75%
-	 Precision: 50.0
+	 Score: 56.6666666667%
+	 Precision: 52.3545706371
 ========= Fold :3 =========
 Clasificador :MIL max
 	 Ruido 0%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :MIL min
 	 Ruido 0%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 88.8888888889%
+	 Precision: 88.8888888889
 Clasificador :MIL Extreme
 	 Ruido 0%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :BOW
 	 Ruido 0%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :CKNN
 	 Ruido 0%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 88.8888888889%
+	 Precision: 88.8888888889
 Clasificador :DIVERSE DENSITY
 	 Ruido 0%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 94.4444444444%
+	 Precision: 94.4444444444
 Clasificador :EM-DD
 	 Ruido 0%
-	 Score: 72.5%
-	 Precision: 72.5
+	 Score: 94.4444444444%
+	 Precision: 94.4444444444
 Clasificador :MILBOOST
 	 Ruido 0%
-	 Score: 75.0%
+	 Score: 74.6913580247%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 5%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :MIL min
 	 Ruido 5%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :MIL Extreme
 	 Ruido 5%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :BOW
 	 Ruido 5%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :CKNN
 	 Ruido 5%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 88.8888888889%
+	 Precision: 88.8888888889
 Clasificador :DIVERSE DENSITY
 	 Ruido 5%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :EM-DD
 	 Ruido 5%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 94.4444444444%
+	 Precision: 94.4444444444
 Clasificador :MILBOOST
 	 Ruido 5%
-	 Score: 74.75%
+	 Score: 76.5432098765%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 10%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :MIL min
 	 Ruido 10%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :MIL Extreme
 	 Ruido 10%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :BOW
 	 Ruido 10%
-	 Score: 62.5%
-	 Precision: 62.5
-Clasificador :CKNN
-	 Ruido 10%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 10%
-	 Score: 60.0%
-	 Precision: 60.0
-Clasificador :EM-DD
-	 Ruido 10%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :MILBOOST
-	 Ruido 10%
-	 Score: 80.5%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 15%
-	 Score: 52.5%
-	 Precision: 52.5
-Clasificador :MIL min
-	 Ruido 15%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 15%
-	 Score: 52.5%
-	 Precision: 52.5
-Clasificador :BOW
-	 Ruido 15%
-	 Score: 55.0%
-	 Precision: 55.0
-Clasificador :CKNN
-	 Ruido 15%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 15%
-	 Score: 55.0%
-	 Precision: 55.0
-Clasificador :EM-DD
-	 Ruido 15%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :MILBOOST
-	 Ruido 15%
-	 Score: 80.375%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 20%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :MIL min
-	 Ruido 20%
-	 Score: 52.5%
-	 Precision: 52.5
-Clasificador :MIL Extreme
-	 Ruido 20%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :BOW
-	 Ruido 20%
-	 Score: 42.5%
-	 Precision: 42.5
-Clasificador :CKNN
-	 Ruido 20%
-	 Score: 60.0%
-	 Precision: 60.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 20%
-	 Score: 62.5%
-	 Precision: 62.5
-Clasificador :EM-DD
-	 Ruido 20%
-	 Score: 70.0%
-	 Precision: 70.0
-Clasificador :MILBOOST
-	 Ruido 20%
-	 Score: 50.25%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 25%
-	 Score: 55.0%
-	 Precision: 55.0
-Clasificador :MIL min
-	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 25%
-	 Score: 52.5%
-	 Precision: 52.5
-Clasificador :BOW
-	 Ruido 25%
-	 Score: 60.0%
-	 Precision: 60.0
-Clasificador :CKNN
-	 Ruido 25%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :DIVERSE DENSITY
-	 Ruido 25%
-	 Score: 55.0%
-	 Precision: 55.0
-Clasificador :EM-DD
-	 Ruido 25%
-	 Score: 52.5%
-	 Precision: 52.5
-Clasificador :MILBOOST
-	 Ruido 25%
-	 Score: 61.375%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 30%
-	 Score: 67.5%
-	 Precision: 67.5
-Clasificador :MIL min
-	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 30%
-	 Score: 60.0%
-	 Precision: 60.0
-Clasificador :BOW
-	 Ruido 30%
 	 Score: 50.0%
 	 Precision: 50.0
 Clasificador :CKNN
+	 Ruido 10%
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
+Clasificador :DIVERSE DENSITY
+	 Ruido 10%
+	 Score: 88.8888888889%
+	 Precision: 88.8888888889
+Clasificador :EM-DD
+	 Ruido 10%
+	 Score: 94.4444444444%
+	 Precision: 94.4444444444
+Clasificador :MILBOOST
+	 Ruido 10%
+	 Score: 76.5432098765%
+	 Precision: 50.0
+Clasificador :MIL max
+	 Ruido 15%
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
+Clasificador :MIL min
+	 Ruido 15%
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
+Clasificador :MIL Extreme
+	 Ruido 15%
+	 Score: 77.7777777778%
+	 Precision: 77.7777777778
+Clasificador :BOW
+	 Ruido 15%
+	 Score: 44.4444444444%
+	 Precision: 44.4444444444
+Clasificador :CKNN
+	 Ruido 15%
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
+Clasificador :DIVERSE DENSITY
+	 Ruido 15%
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
+Clasificador :EM-DD
+	 Ruido 15%
+	 Score: 88.8888888889%
+	 Precision: 88.8888888889
+Clasificador :MILBOOST
+	 Ruido 15%
+	 Score: 76.5432098765%
+	 Precision: 50.0
+Clasificador :MIL max
+	 Ruido 20%
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
+Clasificador :MIL min
+	 Ruido 20%
+	 Score: 77.7777777778%
+	 Precision: 77.7777777778
+Clasificador :MIL Extreme
+	 Ruido 20%
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
+Clasificador :BOW
+	 Ruido 20%
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
+Clasificador :CKNN
+	 Ruido 20%
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
+Clasificador :DIVERSE DENSITY
+	 Ruido 20%
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
+Clasificador :EM-DD
+	 Ruido 20%
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
+Clasificador :MILBOOST
+	 Ruido 20%
+	 Score: 64.1975308642%
+	 Precision: 50.0
+Clasificador :MIL max
+	 Ruido 25%
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
+Clasificador :MIL min
+	 Ruido 25%
+	 Score: 38.8888888889%
+	 Precision: 38.8888888889
+Clasificador :MIL Extreme
+	 Ruido 25%
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
+Clasificador :BOW
+	 Ruido 25%
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
+Clasificador :CKNN
+	 Ruido 25%
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
+Clasificador :DIVERSE DENSITY
+	 Ruido 25%
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
+Clasificador :EM-DD
+	 Ruido 25%
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
+Clasificador :MILBOOST
+	 Ruido 25%
+	 Score: 60.4938271605%
+	 Precision: 50.0
+Clasificador :MIL max
 	 Ruido 30%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
+Clasificador :MIL min
+	 Ruido 30%
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
+Clasificador :MIL Extreme
+	 Ruido 30%
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
+Clasificador :BOW
+	 Ruido 30%
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
+Clasificador :CKNN
+	 Ruido 30%
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :DIVERSE DENSITY
 	 Ruido 30%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :EM-DD
 	 Ruido 30%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 88.8888888889%
+	 Precision: 88.8888888889
 Clasificador :MILBOOST
 	 Ruido 30%
-	 Score: 46.0%
+	 Score: 73.4567901235%
 	 Precision: 50.0
 ========= Fold :4 =========
 Clasificador :MIL max
 	 Ruido 0%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :MIL min
 	 Ruido 0%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :MIL Extreme
 	 Ruido 0%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 94.4444444444%
+	 Precision: 94.4444444444
 Clasificador :BOW
 	 Ruido 0%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :CKNN
 	 Ruido 0%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :DIVERSE DENSITY
 	 Ruido 0%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :EM-DD
 	 Ruido 0%
-	 Score: 72.5%
-	 Precision: 72.5
+	 Score: 88.8888888889%
+	 Precision: 88.8888888889
 Clasificador :MILBOOST
 	 Ruido 0%
-	 Score: 59.875%
+	 Score: 56.1728395062%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 5%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :MIL min
 	 Ruido 5%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :MIL Extreme
 	 Ruido 5%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 94.4444444444%
+	 Precision: 94.4444444444
 Clasificador :BOW
 	 Ruido 5%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 77.7777777778%
+	 Precision: 77.7777777778
 Clasificador :CKNN
 	 Ruido 5%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 88.8888888889%
+	 Precision: 88.8888888889
 Clasificador :DIVERSE DENSITY
 	 Ruido 5%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :EM-DD
 	 Ruido 5%
-	 Score: 72.5%
-	 Precision: 72.5
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :MILBOOST
 	 Ruido 5%
-	 Score: 58.375%
+	 Score: 56.1728395062%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 10%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :MIL min
 	 Ruido 10%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :MIL Extreme
 	 Ruido 10%
-	 Score: 42.5%
-	 Precision: 42.5
+	 Score: 88.8888888889%
+	 Precision: 88.8888888889
 Clasificador :BOW
 	 Ruido 10%
-	 Score: 45.0%
-	 Precision: 45.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :CKNN
 	 Ruido 10%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :DIVERSE DENSITY
 	 Ruido 10%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 77.7777777778%
+	 Precision: 77.7777777778
 Clasificador :EM-DD
 	 Ruido 10%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 88.8888888889%
+	 Precision: 88.8888888889
 Clasificador :MILBOOST
 	 Ruido 10%
-	 Score: 51.375%
+	 Score: 56.1728395062%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 15%
-	 Score: 42.5%
-	 Precision: 42.5
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :MIL min
 	 Ruido 15%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :MIL Extreme
 	 Ruido 15%
-	 Score: 45.0%
-	 Precision: 45.0
+	 Score: 94.4444444444%
+	 Precision: 94.4444444444
 Clasificador :BOW
 	 Ruido 15%
-	 Score: 45.0%
-	 Precision: 45.0
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :CKNN
 	 Ruido 15%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :DIVERSE DENSITY
 	 Ruido 15%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :EM-DD
 	 Ruido 15%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 77.7777777778%
+	 Precision: 77.7777777778
 Clasificador :MILBOOST
 	 Ruido 15%
-	 Score: 54.25%
+	 Score: 56.1728395062%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 20%
-	 Score: 42.5%
-	 Precision: 42.5
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
 Clasificador :MIL min
 	 Ruido 20%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
 Clasificador :MIL Extreme
 	 Ruido 20%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
 Clasificador :BOW
 	 Ruido 20%
 	 Score: 50.0%
 	 Precision: 50.0
 Clasificador :CKNN
 	 Ruido 20%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :DIVERSE DENSITY
 	 Ruido 20%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :EM-DD
 	 Ruido 20%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :MILBOOST
 	 Ruido 20%
-	 Score: 49.625%
+	 Score: 56.1728395062%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 77.7777777778%
+	 Precision: 77.7777777778
 Clasificador :MIL min
 	 Ruido 25%
 	 Score: 50.0%
 	 Precision: 50.0
 Clasificador :MIL Extreme
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 77.7777777778%
+	 Precision: 77.7777777778
 Clasificador :BOW
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :CKNN
 	 Ruido 25%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :DIVERSE DENSITY
 	 Ruido 25%
 	 Score: 50.0%
 	 Precision: 50.0
 Clasificador :EM-DD
 	 Ruido 25%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
 Clasificador :MILBOOST
 	 Ruido 25%
-	 Score: 54.0%
+	 Score: 43.2098765432%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 30%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
 Clasificador :MIL min
 	 Ruido 30%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 50.0%
+	 Precision: 50.0
 Clasificador :MIL Extreme
 	 Ruido 30%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 44.4444444444%
+	 Precision: 44.4444444444
 Clasificador :BOW
 	 Ruido 30%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :CKNN
 	 Ruido 30%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :DIVERSE DENSITY
 	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
 Clasificador :EM-DD
 	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :MILBOOST
 	 Ruido 30%
-	 Score: 61.875%
+	 Score: 56.7901234568%
 	 Precision: 50.0
 ========= Fold :5 =========
 Clasificador :MIL max
 	 Ruido 0%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :MIL min
 	 Ruido 0%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 88.8888888889%
+	 Precision: 88.8888888889
 Clasificador :MIL Extreme
 	 Ruido 0%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 88.8888888889%
+	 Precision: 88.8888888889
 Clasificador :BOW
 	 Ruido 0%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 77.7777777778%
+	 Precision: 77.7777777778
 Clasificador :CKNN
 	 Ruido 0%
-	 Score: 75.0%
-	 Precision: 75.0
+	 Score: 94.4444444444%
+	 Precision: 94.4444444444
 Clasificador :DIVERSE DENSITY
 	 Ruido 0%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :EM-DD
 	 Ruido 0%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :MILBOOST
 	 Ruido 0%
-	 Score: 49.5%
+	 Score: 49.3827160494%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 5%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :MIL min
 	 Ruido 5%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 77.7777777778%
+	 Precision: 77.7777777778
 Clasificador :MIL Extreme
 	 Ruido 5%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 77.7777777778%
+	 Precision: 77.7777777778
 Clasificador :BOW
 	 Ruido 5%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :CKNN
 	 Ruido 5%
-	 Score: 72.5%
-	 Precision: 72.5
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :DIVERSE DENSITY
 	 Ruido 5%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :EM-DD
 	 Ruido 5%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 83.3333333333%
+	 Precision: 83.3333333333
 Clasificador :MILBOOST
 	 Ruido 5%
-	 Score: 48.25%
+	 Score: 52.4691358025%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 10%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :MIL min
+	 Ruido 10%
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
+Clasificador :MIL Extreme
+	 Ruido 10%
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
+Clasificador :BOW
+	 Ruido 10%
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
+Clasificador :CKNN
+	 Ruido 10%
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
+Clasificador :DIVERSE DENSITY
 	 Ruido 10%
 	 Score: 50.0%
 	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 10%
-	 Score: 60.0%
-	 Precision: 60.0
-Clasificador :BOW
-	 Ruido 10%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :CKNN
-	 Ruido 10%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 10%
-	 Score: 42.5%
-	 Precision: 42.5
 Clasificador :EM-DD
 	 Ruido 10%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :MILBOOST
 	 Ruido 10%
-	 Score: 41.875%
+	 Score: 49.3827160494%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 15%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
 Clasificador :MIL min
 	 Ruido 15%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :MIL Extreme
 	 Ruido 15%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :BOW
 	 Ruido 15%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :CKNN
 	 Ruido 15%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 50.0%
+	 Precision: 50.0
 Clasificador :DIVERSE DENSITY
 	 Ruido 15%
-	 Score: 52.5%
-	 Precision: 52.5
-Fallo, segundo intento
-OK
+	 Score: 50.0%
+	 Precision: 50.0
 Clasificador :EM-DD
 	 Ruido 15%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :MILBOOST
 	 Ruido 15%
-	 Score: 36.0%
+	 Score: 49.3827160494%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 20%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
 Clasificador :MIL min
 	 Ruido 20%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :MIL Extreme
 	 Ruido 20%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :BOW
 	 Ruido 20%
-	 Score: 42.5%
-	 Precision: 42.5
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :CKNN
 	 Ruido 20%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :DIVERSE DENSITY
 	 Ruido 20%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 50.0%
+	 Precision: 50.0
 Clasificador :EM-DD
 	 Ruido 20%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 50.0%
+	 Precision: 50.0
 Clasificador :MILBOOST
 	 Ruido 20%
-	 Score: 47.625%
+	 Score: 49.3827160494%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 25%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 77.7777777778%
+	 Precision: 77.7777777778
 Clasificador :MIL min
 	 Ruido 25%
-	 Score: 40.0%
-	 Precision: 40.0
+	 Score: 61.1111111111%
+	 Precision: 61.1111111111
 Clasificador :MIL Extreme
 	 Ruido 25%
-	 Score: 37.5%
-	 Precision: 37.5
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :BOW
 	 Ruido 25%
-	 Score: 37.5%
-	 Precision: 37.5
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :CKNN
 	 Ruido 25%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 66.6666666667%
+	 Precision: 66.6666666667
 Clasificador :DIVERSE DENSITY
 	 Ruido 25%
-	 Score: 45.0%
-	 Precision: 45.0
+	 Score: 50.0%
+	 Precision: 50.0
 Clasificador :EM-DD
 	 Ruido 25%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 50.0%
+	 Precision: 50.0
 Clasificador :MILBOOST
 	 Ruido 25%
-	 Score: 31.5%
+	 Score: 49.3827160494%
 	 Precision: 50.0
 Clasificador :MIL max
 	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
 Clasificador :MIL min
 	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :MIL Extreme
 	 Ruido 30%
-	 Score: 45.0%
-	 Precision: 45.0
+	 Score: 72.2222222222%
+	 Precision: 72.2222222222
 Clasificador :BOW
 	 Ruido 30%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
 Clasificador :CKNN
 	 Ruido 30%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 55.5555555556%
+	 Precision: 55.5555555556
 Clasificador :DIVERSE DENSITY
 	 Ruido 30%
 	 Score: 50.0%
@@ -1127,1132 +1123,643 @@ Clasificador :EM-DD
 	 Precision: 50.0
 Clasificador :MILBOOST
 	 Ruido 30%
-	 Score: 29.5%
+	 Score: 49.3827160494%
 	 Precision: 50.0
 
-********** DATASET: Elephant_scaled **********
+********** DATASET: Musk2_scaled **********
 ========= Fold :1 =========
 Clasificador :MIL max
 	 Ruido 0%
-	 Score: 85.0%
-	 Precision: 85.0
+	 Score: 75.9615384615%
+	 Precision: 76.1904761905
 Clasificador :MIL min
 	 Ruido 0%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 78.3653846154%
+	 Precision: 76.1904761905
 Clasificador :MIL Extreme
 	 Ruido 0%
-	 Score: 87.5%
-	 Precision: 87.5
+	 Score: 72.1153846154%
+	 Precision: 71.4285714286
 Clasificador :BOW
 	 Ruido 0%
-	 Score: 82.5%
-	 Precision: 82.5
+	 Score: 71.1538461538%
+	 Precision: 76.1904761905
 Clasificador :CKNN
 	 Ruido 0%
-	 Score: 82.5%
-	 Precision: 82.5
+	 Score: 69.7115384615%
+	 Precision: 71.4285714286
 Clasificador :DIVERSE DENSITY
 	 Ruido 0%
-	 Score: 75.0%
-	 Precision: 75.0
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 0%
-	 Score: 90.0%
-	 Precision: 90.0
+	 Score: 74.5192307692%
+	 Precision: 71.4285714286
 Clasificador :MILBOOST
 	 Ruido 0%
-	 Score: 59.875%
-	 Precision: 50.0
+	 Score: 59.1346153846%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 5%
-	 Score: 90.0%
-	 Precision: 90.0
+	 Score: 67.3076923077%
+	 Precision: 71.4285714286
 Clasificador :MIL min
 	 Ruido 5%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 78.3653846154%
+	 Precision: 76.1904761905
 Clasificador :MIL Extreme
 	 Ruido 5%
-	 Score: 92.5%
-	 Precision: 92.5
+	 Score: 69.7115384615%
+	 Precision: 71.4285714286
 Clasificador :BOW
 	 Ruido 5%
-	 Score: 87.5%
-	 Precision: 87.5
+	 Score: 58.6538461538%
+	 Precision: 66.6666666667
 Clasificador :CKNN
 	 Ruido 5%
-	 Score: 82.5%
-	 Precision: 82.5
+	 Score: 63.4615384615%
+	 Precision: 66.6666666667
 Clasificador :DIVERSE DENSITY
 	 Ruido 5%
-	 Score: 75.0%
-	 Precision: 75.0
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 5%
-	 Score: 87.5%
-	 Precision: 87.5
+	 Score: 74.5192307692%
+	 Precision: 71.4285714286
 Clasificador :MILBOOST
 	 Ruido 5%
-	 Score: 59.875%
-	 Precision: 50.0
+	 Score: 53.8461538462%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 10%
-	 Score: 87.5%
-	 Precision: 87.5
+	 Score: 61.0576923077%
+	 Precision: 66.6666666667
 Clasificador :MIL min
 	 Ruido 10%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 53.3653846154%
+	 Precision: 57.1428571429
 Clasificador :MIL Extreme
 	 Ruido 10%
-	 Score: 85.0%
-	 Precision: 85.0
+	 Score: 61.0576923077%
+	 Precision: 66.6666666667
 Clasificador :BOW
 	 Ruido 10%
-	 Score: 80.0%
-	 Precision: 80.0
+	 Score: 49.5192307692%
+	 Precision: 52.380952381
 Clasificador :CKNN
 	 Ruido 10%
-	 Score: 80.0%
-	 Precision: 80.0
+	 Score: 57.2115384615%
+	 Precision: 61.9047619048
 Clasificador :DIVERSE DENSITY
 	 Ruido 10%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 52.4038461538%
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 10%
-	 Score: 85.0%
-	 Precision: 85.0
+	 Score: 76.9230769231%
+	 Precision: 71.4285714286
 Clasificador :MILBOOST
 	 Ruido 10%
-	 Score: 59.875%
-	 Precision: 50.0
+	 Score: 49.5192307692%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 15%
-	 Score: 77.5%
-	 Precision: 77.5
+	 Score: 61.0576923077%
+	 Precision: 66.6666666667
 Clasificador :MIL min
 	 Ruido 15%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 54.8076923077%
+	 Precision: 61.9047619048
 Clasificador :MIL Extreme
 	 Ruido 15%
-	 Score: 77.5%
-	 Precision: 77.5
+	 Score: 61.0576923077%
+	 Precision: 66.6666666667
 Clasificador :BOW
 	 Ruido 15%
-	 Score: 82.5%
-	 Precision: 82.5
+	 Score: 54.8076923077%
+	 Precision: 61.9047619048
 Clasificador :CKNN
 	 Ruido 15%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 55.7692307692%
+	 Precision: 57.1428571429
 Clasificador :DIVERSE DENSITY
 	 Ruido 15%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 50.0%
+	 Precision: 38.0952380952
 Clasificador :EM-DD
 	 Ruido 15%
-	 Score: 92.5%
-	 Precision: 92.5
+	 Score: 57.6923076923%
+	 Precision: 47.619047619
 Clasificador :MILBOOST
 	 Ruido 15%
-	 Score: 59.875%
-	 Precision: 50.0
+	 Score: 52.4038461538%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 20%
-	 Score: 75.0%
-	 Precision: 75.0
+	 Score: 52.4038461538%
+	 Precision: 61.9047619048
 Clasificador :MIL min
 	 Ruido 20%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 50.9615384615%
+	 Precision: 57.1428571429
 Clasificador :MIL Extreme
 	 Ruido 20%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 58.6538461538%
+	 Precision: 66.6666666667
 Clasificador :BOW
 	 Ruido 20%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 49.5192307692%
+	 Precision: 52.380952381
 Clasificador :CKNN
 	 Ruido 20%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 49.5192307692%
+	 Precision: 52.380952381
 Clasificador :DIVERSE DENSITY
 	 Ruido 20%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 70.6730769231%
+	 Precision: 66.6666666667
 Clasificador :EM-DD
 	 Ruido 20%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 57.6923076923%
+	 Precision: 47.619047619
 Clasificador :MILBOOST
 	 Ruido 20%
-	 Score: 59.875%
-	 Precision: 50.0
+	 Score: 54.3269230769%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 40.8653846154%
+	 Precision: 47.619047619
 Clasificador :MIL min
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 47.1153846154%
+	 Precision: 52.380952381
 Clasificador :MIL Extreme
 	 Ruido 25%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 50.9615384615%
+	 Precision: 57.1428571429
 Clasificador :BOW
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 41.8269230769%
+	 Precision: 42.8571428571
 Clasificador :CKNN
 	 Ruido 25%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 48.0769230769%
+	 Precision: 47.619047619
 Clasificador :DIVERSE DENSITY
 	 Ruido 25%
 	 Score: 50.0%
-	 Precision: 50.0
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 25%
 	 Score: 50.0%
-	 Precision: 50.0
+	 Precision: 61.9047619048
 Clasificador :MILBOOST
 	 Ruido 25%
-	 Score: 59.875%
-	 Precision: 50.0
+	 Score: 48.5576923077%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 30%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 35.5769230769%
+	 Precision: 38.0952380952
 Clasificador :MIL min
 	 Ruido 30%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 29.3269230769%
+	 Precision: 33.3333333333
 Clasificador :MIL Extreme
 	 Ruido 30%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 37.0192307692%
+	 Precision: 42.8571428571
 Clasificador :BOW
 	 Ruido 30%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 25.4807692308%
+	 Precision: 28.5714285714
 Clasificador :CKNN
 	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 24.0384615385%
+	 Precision: 23.8095238095
 Clasificador :DIVERSE DENSITY
 	 Ruido 30%
 	 Score: 50.0%
-	 Precision: 50.0
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 30%
 	 Score: 50.0%
-	 Precision: 50.0
+	 Precision: 61.9047619048
 Clasificador :MILBOOST
 	 Ruido 30%
-	 Score: 59.875%
-	 Precision: 50.0
+	 Score: 55.2884615385%
+	 Precision: 39.2290249433
 ========= Fold :2 =========
 Clasificador :MIL max
 	 Ruido 0%
-	 Score: 80.0%
-	 Precision: 80.0
+	 Score: 67.3076923077%
+	 Precision: 71.4285714286
 Clasificador :MIL min
 	 Ruido 0%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 75.0%
+	 Precision: 80.9523809524
 Clasificador :MIL Extreme
 	 Ruido 0%
-	 Score: 80.0%
-	 Precision: 80.0
+	 Score: 83.6538461538%
+	 Precision: 85.7142857143
 Clasificador :BOW
 	 Ruido 0%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 52.4038461538%
+	 Precision: 61.9047619048
 Clasificador :CKNN
 	 Ruido 0%
-	 Score: 82.5%
-	 Precision: 82.5
+	 Score: 77.4038461538%
+	 Precision: 80.9523809524
 Clasificador :DIVERSE DENSITY
 	 Ruido 0%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 0%
-	 Score: 77.5%
-	 Precision: 77.5
+	 Score: 80.7692307692%
+	 Precision: 76.1904761905
 Clasificador :MILBOOST
 	 Ruido 0%
-	 Score: 68.25%
-	 Precision: 50.0
+	 Score: 71.1538461538%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 5%
-	 Score: 82.5%
-	 Precision: 82.5
+	 Score: 63.4615384615%
+	 Precision: 66.6666666667
 Clasificador :MIL min
 	 Ruido 5%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 75.0%
+	 Precision: 80.9523809524
 Clasificador :MIL Extreme
 	 Ruido 5%
-	 Score: 80.0%
-	 Precision: 80.0
+	 Score: 83.6538461538%
+	 Precision: 85.7142857143
 Clasificador :BOW
 	 Ruido 5%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 61.0576923077%
+	 Precision: 66.6666666667
 Clasificador :CKNN
 	 Ruido 5%
-	 Score: 80.0%
-	 Precision: 80.0
+	 Score: 77.4038461538%
+	 Precision: 80.9523809524
 Clasificador :DIVERSE DENSITY
 	 Ruido 5%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 5%
-	 Score: 72.5%
-	 Precision: 72.5
+	 Score: 84.6153846154%
+	 Precision: 80.9523809524
 Clasificador :MILBOOST
 	 Ruido 5%
-	 Score: 68.25%
-	 Precision: 50.0
+	 Score: 81.7307692308%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 10%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 65.8653846154%
+	 Precision: 66.6666666667
 Clasificador :MIL min
 	 Ruido 10%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 71.1538461538%
+	 Precision: 76.1904761905
 Clasificador :MIL Extreme
 	 Ruido 10%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 75.9615384615%
+	 Precision: 76.1904761905
 Clasificador :BOW
 	 Ruido 10%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 33.1730769231%
+	 Precision: 38.0952380952
 Clasificador :CKNN
 	 Ruido 10%
-	 Score: 82.5%
-	 Precision: 82.5
+	 Score: 77.4038461538%
+	 Precision: 80.9523809524
 Clasificador :DIVERSE DENSITY
 	 Ruido 10%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 10%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :MILBOOST
 	 Ruido 10%
-	 Score: 68.25%
-	 Precision: 50.0
+	 Score: 74.0384615385%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 15%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 68.2692307692%
+	 Precision: 66.6666666667
 Clasificador :MIL min
 	 Ruido 15%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 63.4615384615%
+	 Precision: 66.6666666667
 Clasificador :MIL Extreme
 	 Ruido 15%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 82.2115384615%
+	 Precision: 80.9523809524
 Clasificador :BOW
 	 Ruido 15%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 54.8076923077%
+	 Precision: 61.9047619048
 Clasificador :CKNN
 	 Ruido 15%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 69.7115384615%
+	 Precision: 71.4285714286
 Clasificador :DIVERSE DENSITY
 	 Ruido 15%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 15%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :MILBOOST
 	 Ruido 15%
-	 Score: 68.25%
-	 Precision: 50.0
+	 Score: 65.3846153846%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 20%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 46.1538461538%
+	 Precision: 57.1428571429
 Clasificador :MIL min
 	 Ruido 20%
 	 Score: 50.0%
-	 Precision: 50.0
+	 Precision: 61.9047619048
 Clasificador :MIL Extreme
 	 Ruido 20%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 46.1538461538%
+	 Precision: 57.1428571429
 Clasificador :BOW
 	 Ruido 20%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 38.4615384615%
+	 Precision: 47.619047619
 Clasificador :CKNN
 	 Ruido 20%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 34.6153846154%
+	 Precision: 42.8571428571
 Clasificador :DIVERSE DENSITY
 	 Ruido 20%
-	 Score: 72.5%
-	 Precision: 72.5
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 20%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :MILBOOST
 	 Ruido 20%
-	 Score: 68.25%
-	 Precision: 50.0
+	 Score: 66.3461538462%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 25%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :MIL min
 	 Ruido 25%
 	 Score: 50.0%
-	 Precision: 50.0
+	 Precision: 61.9047619048
 Clasificador :MIL Extreme
 	 Ruido 25%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :BOW
 	 Ruido 25%
-	 Score: 37.5%
-	 Precision: 37.5
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :CKNN
 	 Ruido 25%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 56.25%
+	 Precision: 66.6666666667
 Clasificador :DIVERSE DENSITY
 	 Ruido 25%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 50.0%
+	 Precision: 38.0952380952
 Clasificador :EM-DD
 	 Ruido 25%
-	 Score: 62.5%
-	 Precision: 62.5
+	 Score: 61.5384615385%
+	 Precision: 52.380952381
 Clasificador :MILBOOST
 	 Ruido 25%
-	 Score: 68.25%
-	 Precision: 50.0
+	 Score: 65.3846153846%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 30%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 46.1538461538%
+	 Precision: 57.1428571429
 Clasificador :MIL min
 	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 46.1538461538%
+	 Precision: 57.1428571429
 Clasificador :MIL Extreme
 	 Ruido 30%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 46.1538461538%
+	 Precision: 57.1428571429
 Clasificador :BOW
 	 Ruido 30%
-	 Score: 32.5%
-	 Precision: 32.5
+	 Score: 37.0192307692%
+	 Precision: 42.8571428571
 Clasificador :CKNN
 	 Ruido 30%
-	 Score: 55.0%
-	 Precision: 55.0
+	 Score: 48.5576923077%
+	 Precision: 57.1428571429
 Clasificador :DIVERSE DENSITY
 	 Ruido 30%
 	 Score: 50.0%
-	 Precision: 50.0
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 30%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :MILBOOST
 	 Ruido 30%
-	 Score: 68.25%
-	 Precision: 50.0
+	 Score: 63.4615384615%
+	 Precision: 39.2290249433
 ========= Fold :3 =========
 Clasificador :MIL max
 	 Ruido 0%
-	 Score: 80.0%
-	 Precision: 80.0
+	 Score: 73.5576923077%
+	 Precision: 76.1904761905
 Clasificador :MIL min
 	 Ruido 0%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 71.1538461538%
+	 Precision: 76.1904761905
 Clasificador :MIL Extreme
 	 Ruido 0%
-	 Score: 82.5%
-	 Precision: 82.5
+	 Score: 77.4038461538%
+	 Precision: 80.9523809524
 Clasificador :BOW
 	 Ruido 0%
-	 Score: 72.5%
-	 Precision: 72.5
+	 Score: 77.4038461538%
+	 Precision: 80.9523809524
 Clasificador :CKNN
 	 Ruido 0%
-	 Score: 72.5%
-	 Precision: 72.5
+	 Score: 81.25%
+	 Precision: 85.7142857143
 Clasificador :DIVERSE DENSITY
 	 Ruido 0%
+	 Score: 50.0%
+	 Precision: 61.9047619048
+Clasificador :EM-DD
+	 Ruido 0%
+	 Score: 72.1153846154%
+	 Precision: 71.4285714286
+Clasificador :MILBOOST
+	 Ruido 0%
+	 Score: 73.5576923077%
+	 Precision: 39.2290249433
+Clasificador :MIL max
+	 Ruido 5%
+	 Score: 69.7115384615%
+	 Precision: 71.4285714286
+Clasificador :MIL min
+	 Ruido 5%
+	 Score: 89.9038461538%
+	 Precision: 90.4761904762
+Clasificador :MIL Extreme
+	 Ruido 5%
+	 Score: 83.6538461538%
+	 Precision: 85.7142857143
+Clasificador :BOW
+	 Ruido 5%
+	 Score: 83.6538461538%
+	 Precision: 85.7142857143
+Clasificador :CKNN
+	 Ruido 5%
+	 Score: 81.25%
+	 Precision: 85.7142857143
+Clasificador :DIVERSE DENSITY
+	 Ruido 5%
+	 Score: 50.0%
+	 Precision: 61.9047619048
+Clasificador :EM-DD
+	 Ruido 5%
+	 Score: 88.4615384615%
+	 Precision: 85.7142857143
+Clasificador :MILBOOST
+	 Ruido 5%
 	 Score: 62.5%
-	 Precision: 62.5
-Clasificador :EM-DD
-	 Ruido 0%
-	 Score: 82.5%
-	 Precision: 82.5
-Clasificador :MILBOOST
-	 Ruido 0%
-	 Score: 59.875%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 5%
-	 Score: 72.5%
-	 Precision: 72.5
-Clasificador :MIL min
-	 Ruido 5%
-	 Score: 82.5%
-	 Precision: 82.5
-Clasificador :MIL Extreme
-	 Ruido 5%
-	 Score: 80.0%
-	 Precision: 80.0
-Clasificador :BOW
-	 Ruido 5%
-	 Score: 80.0%
-	 Precision: 80.0
-Clasificador :CKNN
-	 Ruido 5%
-	 Score: 72.5%
-	 Precision: 72.5
-Clasificador :DIVERSE DENSITY
-	 Ruido 5%
-	 Score: 62.5%
-	 Precision: 62.5
-Clasificador :EM-DD
-	 Ruido 5%
-	 Score: 85.0%
-	 Precision: 85.0
-Clasificador :MILBOOST
-	 Ruido 5%
-	 Score: 59.875%
-	 Precision: 50.0
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 10%
-	 Score: 80.0%
-	 Precision: 80.0
+	 Score: 60.5769230769%
+	 Precision: 57.1428571429
 Clasificador :MIL min
 	 Ruido 10%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 66.8269230769%
+	 Precision: 61.9047619048
 Clasificador :MIL Extreme
 	 Ruido 10%
-	 Score: 82.5%
-	 Precision: 82.5
+	 Score: 78.3653846154%
+	 Precision: 76.1904761905
 Clasificador :BOW
 	 Ruido 10%
-	 Score: 80.0%
-	 Precision: 80.0
+	 Score: 56.7307692308%
+	 Precision: 52.380952381
 Clasificador :CKNN
 	 Ruido 10%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 73.5576923077%
+	 Precision: 76.1904761905
 Clasificador :DIVERSE DENSITY
 	 Ruido 10%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 50.0%
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 10%
-	 Score: 80.0%
-	 Precision: 80.0
+	 Score: 76.9230769231%
+	 Precision: 71.4285714286
 Clasificador :MILBOOST
 	 Ruido 10%
-	 Score: 59.875%
-	 Precision: 50.0
+	 Score: 74.5192307692%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 15%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 59.6153846154%
+	 Precision: 61.9047619048
 Clasificador :MIL min
+	 Ruido 15%
+	 Score: 59.6153846154%
+	 Precision: 61.9047619048
+Clasificador :MIL Extreme
+	 Ruido 15%
+	 Score: 67.3076923077%
+	 Precision: 71.4285714286
+Clasificador :BOW
+	 Ruido 15%
+	 Score: 50.9615384615%
+	 Precision: 57.1428571429
+Clasificador :CKNN
+	 Ruido 15%
+	 Score: 77.4038461538%
+	 Precision: 80.9523809524
+Clasificador :DIVERSE DENSITY
 	 Ruido 15%
 	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 15%
-	 Score: 77.5%
-	 Precision: 77.5
-Clasificador :BOW
-	 Ruido 15%
-	 Score: 70.0%
-	 Precision: 70.0
-Clasificador :CKNN
-	 Ruido 15%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 15%
-	 Score: 77.5%
-	 Precision: 77.5
+	 Precision: 61.9047619048
 Clasificador :EM-DD
 	 Ruido 15%
 	 Score: 50.0%
-	 Precision: 50.0
+	 Precision: 61.9047619048
 Clasificador :MILBOOST
 	 Ruido 15%
-	 Score: 59.875%
-	 Precision: 50.0
+	 Score: 73.5576923077%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 20%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 57.2115384615%
+	 Precision: 61.9047619048
 Clasificador :MIL min
 	 Ruido 20%
-	 Score: 52.5%
-	 Precision: 52.5
+	 Score: 65.8653846154%
+	 Precision: 66.6666666667
 Clasificador :MIL Extreme
 	 Ruido 20%
-	 Score: 72.5%
-	 Precision: 72.5
+	 Score: 63.4615384615%
+	 Precision: 66.6666666667
 Clasificador :BOW
 	 Ruido 20%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Score: 53.3653846154%
+	 Precision: 57.1428571429
 Clasificador :CKNN
 	 Ruido 20%
-	 Score: 47.5%
-	 Precision: 47.5
+	 Score: 54.8076923077%
+	 Precision: 61.9047619048
 Clasificador :DIVERSE DENSITY
-	 Ruido 20%
-	 Score: 67.5%
-	 Precision: 67.5
-Clasificador :EM-DD
-	 Ruido 20%
-	 Score: 80.0%
-	 Precision: 80.0
-Clasificador :MILBOOST
-	 Ruido 20%
-	 Score: 59.875%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 25%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :MIL min
-	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 25%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :BOW
-	 Ruido 25%
-	 Score: 55.0%
-	 Precision: 55.0
-Clasificador :CKNN
-	 Ruido 25%
-	 Score: 60.0%
-	 Precision: 60.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 25%
-	 Score: 67.5%
-	 Precision: 67.5
-Clasificador :EM-DD
-	 Ruido 25%
-	 Score: 62.5%
-	 Precision: 62.5
-Clasificador :MILBOOST
-	 Ruido 25%
-	 Score: 59.875%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 30%
-	 Score: 55.0%
-	 Precision: 55.0
-Clasificador :MIL min
-	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 30%
-	 Score: 47.5%
-	 Precision: 47.5
-Clasificador :BOW
-	 Ruido 30%
-	 Score: 47.5%
-	 Precision: 47.5
-Clasificador :CKNN
-	 Ruido 30%
-	 Score: 55.0%
-	 Precision: 55.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :EM-DD
-	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MILBOOST
-	 Ruido 30%
-	 Score: 59.875%
-	 Precision: 50.0
-========= Fold :4 =========
-Clasificador :MIL max
-	 Ruido 0%
-	 Score: 80.0%
-	 Precision: 80.0
-Clasificador :MIL min
-	 Ruido 0%
-	 Score: 67.5%
-	 Precision: 67.5
-Clasificador :MIL Extreme
-	 Ruido 0%
-	 Score: 77.5%
-	 Precision: 77.5
-Clasificador :BOW
-	 Ruido 0%
-	 Score: 70.0%
-	 Precision: 70.0
-Clasificador :CKNN
-	 Ruido 0%
-	 Score: 77.5%
-	 Precision: 77.5
-Clasificador :DIVERSE DENSITY
-	 Ruido 0%
-	 Score: 70.0%
-	 Precision: 70.0
-Clasificador :EM-DD
-	 Ruido 0%
-	 Score: 82.5%
-	 Precision: 82.5
-Clasificador :MILBOOST
-	 Ruido 0%
-	 Score: 57.875%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 5%
-	 Score: 75.0%
-	 Precision: 75.0
-Clasificador :MIL min
-	 Ruido 5%
-	 Score: 70.0%
-	 Precision: 70.0
-Clasificador :MIL Extreme
-	 Ruido 5%
-	 Score: 80.0%
-	 Precision: 80.0
-Clasificador :BOW
-	 Ruido 5%
-	 Score: 67.5%
-	 Precision: 67.5
-Clasificador :CKNN
-	 Ruido 5%
-	 Score: 75.0%
-	 Precision: 75.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 5%
-	 Score: 70.0%
-	 Precision: 70.0
-Clasificador :EM-DD
-	 Ruido 5%
-	 Score: 85.0%
-	 Precision: 85.0
-Clasificador :MILBOOST
-	 Ruido 5%
-	 Score: 57.875%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 10%
-	 Score: 75.0%
-	 Precision: 75.0
-Clasificador :MIL min
-	 Ruido 10%
-	 Score: 52.5%
-	 Precision: 52.5
-Clasificador :MIL Extreme
-	 Ruido 10%
-	 Score: 72.5%
-	 Precision: 72.5
-Clasificador :BOW
-	 Ruido 10%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :CKNN
-	 Ruido 10%
-	 Score: 75.0%
-	 Precision: 75.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 10%
-	 Score: 70.0%
-	 Precision: 70.0
-Clasificador :EM-DD
-	 Ruido 10%
-	 Score: 77.5%
-	 Precision: 77.5
-Clasificador :MILBOOST
-	 Ruido 10%
-	 Score: 57.875%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 15%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL min
-	 Ruido 15%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 15%
-	 Score: 62.5%
-	 Precision: 62.5
-Clasificador :BOW
-	 Ruido 15%
-	 Score: 55.0%
-	 Precision: 55.0
-Clasificador :CKNN
-	 Ruido 15%
-	 Score: 67.5%
-	 Precision: 67.5
-Clasificador :DIVERSE DENSITY
-	 Ruido 15%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :EM-DD
-	 Ruido 15%
-	 Score: 75.0%
-	 Precision: 75.0
-Clasificador :MILBOOST
-	 Ruido 15%
-	 Score: 57.875%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 20%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :MIL min
 	 Ruido 20%
 	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 20%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :BOW
-	 Ruido 20%
-	 Score: 62.5%
-	 Precision: 62.5
-Clasificador :CKNN
-	 Ruido 20%
-	 Score: 47.5%
-	 Precision: 47.5
-Clasificador :DIVERSE DENSITY
-	 Ruido 20%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Precision: 61.9047619048
 Clasificador :EM-DD
-	 Ruido 20%
-	 Score: 70.0%
-	 Precision: 70.0
-Clasificador :MILBOOST
-	 Ruido 20%
-	 Score: 57.875%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 25%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :MIL min
-	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 25%
-	 Score: 60.0%
-	 Precision: 60.0
-Clasificador :BOW
-	 Ruido 25%
-	 Score: 42.5%
-	 Precision: 42.5
-Clasificador :CKNN
-	 Ruido 25%
-	 Score: 52.5%
-	 Precision: 52.5
-Clasificador :DIVERSE DENSITY
-	 Ruido 25%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :EM-DD
-	 Ruido 25%
-	 Score: 62.5%
-	 Precision: 62.5
-Clasificador :MILBOOST
-	 Ruido 25%
-	 Score: 58.5%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 30%
-	 Score: 45.0%
-	 Precision: 45.0
-Clasificador :MIL min
-	 Ruido 30%
-	 Score: 47.5%
-	 Precision: 47.5
-Clasificador :MIL Extreme
-	 Ruido 30%
-	 Score: 45.0%
-	 Precision: 45.0
-Clasificador :BOW
-	 Ruido 30%
-	 Score: 45.0%
-	 Precision: 45.0
-Clasificador :CKNN
-	 Ruido 30%
-	 Score: 45.0%
-	 Precision: 45.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :EM-DD
-	 Ruido 30%
-	 Score: 52.5%
-	 Precision: 50.0
-Clasificador :MILBOOST
-	 Ruido 30%
-	 Score: 57.875%
-	 Precision: 50.0
-========= Fold :5 =========
-Clasificador :MIL max
-	 Ruido 0%
-	 Score: 80.0%
-	 Precision: 80.0
-Clasificador :MIL min
-	 Ruido 0%
-	 Score: 75.0%
-	 Precision: 75.0
-Clasificador :MIL Extreme
-	 Ruido 0%
-	 Score: 85.0%
-	 Precision: 85.0
-Clasificador :BOW
-	 Ruido 0%
-	 Score: 75.0%
-	 Precision: 75.0
-Clasificador :CKNN
-	 Ruido 0%
-	 Score: 82.5%
-	 Precision: 82.5
-Clasificador :DIVERSE DENSITY
-	 Ruido 0%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :EM-DD
-	 Ruido 0%
-	 Score: 82.5%
-	 Precision: 82.5
-Clasificador :MILBOOST
-	 Ruido 0%
-	 Score: 57.75%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 5%
-	 Score: 75.0%
-	 Precision: 75.0
-Clasificador :MIL min
-	 Ruido 5%
-	 Score: 72.5%
-	 Precision: 72.5
-Clasificador :MIL Extreme
-	 Ruido 5%
-	 Score: 85.0%
-	 Precision: 85.0
-Clasificador :BOW
-	 Ruido 5%
-	 Score: 67.5%
-	 Precision: 67.5
-Clasificador :CKNN
-	 Ruido 5%
-	 Score: 82.5%
-	 Precision: 82.5
-Clasificador :DIVERSE DENSITY
-	 Ruido 5%
-	 Score: 67.5%
-	 Precision: 67.5
-Clasificador :EM-DD
-	 Ruido 5%
-	 Score: 80.0%
-	 Precision: 80.0
-Clasificador :MILBOOST
-	 Ruido 5%
-	 Score: 57.75%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 10%
-	 Score: 60.0%
-	 Precision: 60.0
-Clasificador :MIL min
-	 Ruido 10%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :MIL Extreme
-	 Ruido 10%
-	 Score: 62.5%
-	 Precision: 62.5
-Clasificador :BOW
-	 Ruido 10%
-	 Score: 62.5%
-	 Precision: 62.5
-Clasificador :CKNN
-	 Ruido 10%
-	 Score: 75.0%
-	 Precision: 75.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 10%
-	 Score: 77.5%
-	 Precision: 77.5
-Clasificador :EM-DD
-	 Ruido 10%
-	 Score: 77.5%
-	 Precision: 77.5
-Clasificador :MILBOOST
-	 Ruido 10%
-	 Score: 57.75%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 15%
-	 Score: 62.5%
-	 Precision: 62.5
-Clasificador :MIL min
-	 Ruido 15%
-	 Score: 52.5%
-	 Precision: 52.5
-Clasificador :MIL Extreme
-	 Ruido 15%
-	 Score: 70.0%
-	 Precision: 70.0
-Clasificador :BOW
-	 Ruido 15%
-	 Score: 60.0%
-	 Precision: 60.0
-Clasificador :CKNN
-	 Ruido 15%
-	 Score: 75.0%
-	 Precision: 75.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 15%
-	 Score: 47.5%
-	 Precision: 47.5
-Clasificador :EM-DD
-	 Ruido 15%
-	 Score: 67.5%
-	 Precision: 67.5
-Clasificador :MILBOOST
-	 Ruido 15%
-	 Score: 57.75%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 20%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :MIL min
 	 Ruido 20%
 	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 20%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :BOW
-	 Ruido 20%
-	 Score: 47.5%
-	 Precision: 47.5
-Clasificador :CKNN
-	 Ruido 20%
-	 Score: 70.0%
-	 Precision: 70.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 20%
-	 Score: 65.0%
-	 Precision: 65.0
-Clasificador :EM-DD
-	 Ruido 20%
-	 Score: 60.0%
-	 Precision: 60.0
+	 Precision: 61.9047619048
 Clasificador :MILBOOST
 	 Ruido 20%
-	 Score: 57.75%
-	 Precision: 50.0
+	 Score: 73.5576923077%
+	 Precision: 39.2290249433
 Clasificador :MIL max
 	 Ruido 25%
-	 Score: 70.0%
-	 Precision: 70.0
+	 Score: 62.0192307692%
+	 Precision: 61.9047619048
 Clasificador :MIL min
 	 Ruido 25%
-	 Score: 50.0%
-	 Precision: 50.0
+	 Score: 54.3269230769%
+	 Precision: 52.380952381
 Clasificador :MIL Extreme
 	 Ruido 25%
-	 Score: 65.0%
-	 Precision: 65.0
+	 Score: 68.2692307692%
+	 Precision: 66.6666666667
 Clasificador :BOW
 	 Ruido 25%
-	 Score: 67.5%
-	 Precision: 67.5
+	 Score: 35.0961538462%
+	 Precision: 28.5714285714
 Clasificador :CKNN
 	 Ruido 25%
-	 Score: 57.5%
-	 Precision: 57.5
+	 Score: 50.9615384615%
+	 Precision: 57.1428571429
 Clasificador :DIVERSE DENSITY
 	 Ruido 25%
 	 Score: 62.5%
-	 Precision: 62.5
+	 Precision: 71.4285714286
 Clasificador :EM-DD
-	 Ruido 25%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :MILBOOST
-	 Ruido 25%
-	 Score: 57.75%
-	 Precision: 50.0
-Clasificador :MIL max
-	 Ruido 30%
-	 Score: 45.0%
-	 Precision: 45.0
-Clasificador :MIL min
-	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MIL Extreme
-	 Ruido 30%
-	 Score: 55.0%
-	 Precision: 55.0
-Clasificador :BOW
-	 Ruido 30%
-	 Score: 47.5%
-	 Precision: 47.5
-Clasificador :CKNN
-	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :DIVERSE DENSITY
-	 Ruido 30%
-	 Score: 57.5%
-	 Precision: 57.5
-Clasificador :EM-DD
-	 Ruido 30%
-	 Score: 50.0%
-	 Precision: 50.0
-Clasificador :MILBOOST
-	 Ruido 30%
-	 Score: 57.75%
-	 Precision: 50.0

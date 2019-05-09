@@ -20,8 +20,8 @@ from funciones import fun_aux
 #definiciones
 folds = 5
 #DataSet = ['Fox_scaled','Musk2_scaled']#pruebas
-#DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
-DataSet = ['Fox_scaled','Elephant_scaled']
+DataSet = ['musk1_scaled','Musk2_scaled','Elephant_scaled','Fox_scaled','mutagenesis1_scaled','mutagenesis2_scaled','Tiger_scaled']
+#DataSet = ['Fox_scaled','Elephant_scaled']
 carpeta = '../dataNoisy/'
 filename1 = 'X_train_bags.csv'
 filename2 = 'Y_train_labels.csv'
