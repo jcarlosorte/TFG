@@ -486,3 +486,125 @@ Clasificador: MILBOOST
 			Media Roc Score: 52.1
 	=>Ruido: 30%	Precisión Media: 50.0%
 			Media Roc Score: 49.9
+
+********** DATASET: mutagenesis1_scaled **********
+Clasificador: MIL max
+	=>Ruido: 0%	Precisión Media: 67.5533428165%
+			Media Roc Score: 54.0102564103
+	=>Ruido: 5%	Precisión Media: 68.079658606%
+			Media Roc Score: 54.4102564103
+	=>Ruido: 10%	Precisión Media: 67.012802276%
+			Media Roc Score: 52.8717948718
+	=>Ruido: 15%	Precisión Media: 64.3243243243%
+			Media Roc Score: 51.9794871795
+	=>Ruido: 20%	Precisión Media: 48.9758179232%
+			Media Roc Score: 52.9641025641
+	=>Ruido: 25%	Precisión Media: 57.4822190612%
+			Media Roc Score: 49.7333333333
+	=>Ruido: 30%	Precisión Media: 41.6073968706%
+			Media Roc Score: 52.6615384615
+Clasificador: MIL min
+	=>Ruido: 0%	Precisión Media: 69.7439544808%
+			Media Roc Score: 58.6923076923
+	=>Ruido: 5%	Precisión Media: 70.7965860597%
+			Media Roc Score: 59.4923076923
+	=>Ruido: 10%	Precisión Media: 71.3229018492%
+			Media Roc Score: 59.8923076923
+	=>Ruido: 15%	Precisión Media: 70.2702702703%
+			Media Roc Score: 58.7230769231
+	=>Ruido: 20%	Precisión Media: 46.3157894737%
+			Media Roc Score: 51.0769230769
+	=>Ruido: 25%	Precisión Media: 60.7254623044%
+			Media Roc Score: 51.7
+	=>Ruido: 30%	Precisión Media: 40.5263157895%
+			Media Roc Score: 50.0
+Clasificador: MIL Extreme
+	=>Ruido: 0%	Precisión Media: 69.2034139403%
+			Media Roc Score: 58.2923076923
+	=>Ruido: 5%	Precisión Media: 69.7155049787%
+			Media Roc Score: 58.258974359
+	=>Ruido: 10%	Precisión Media: 69.7155049787%
+			Media Roc Score: 58.3230769231
+	=>Ruido: 15%	Precisión Media: 68.093883357%
+			Media Roc Score: 58.4230769231
+	=>Ruido: 20%	Precisión Media: 46.3157894737%
+			Media Roc Score: 51.0769230769
+	=>Ruido: 25%	Precisión Media: 57.4822190612%
+			Media Roc Score: 50.4717948718
+	=>Ruido: 30%	Precisión Media: 47.9231863442%
+			Media Roc Score: 57.0923076923
+Clasificador: BOW
+	=>Ruido: 0%	Precisión Media: 69.1749644381%
+			Media Roc Score: 54.0384615385
+	=>Ruido: 5%	Precisión Media: 69.1749644381%
+			Media Roc Score: 54.0384615385
+	=>Ruido: 10%	Precisión Media: 68.093883357%
+			Media Roc Score: 52.3717948718
+	=>Ruido: 15%	Precisión Media: 69.6728307255%
+			Media Roc Score: 56.3487179487
+	=>Ruido: 20%	Precisión Media: 64.4096728307%
+			Media Roc Score: 59.7487179487
+	=>Ruido: 25%	Precisión Media: 53.1152204836%
+			Media Roc Score: 49.0692307692
+	=>Ruido: 30%	Precisión Media: 49.0184921764%
+			Media Roc Score: 55.7897435897
+Clasificador: CKNN
+	=>Ruido: 0%	Precisión Media: 78.2503556188%
+			Media Roc Score: 73.1179487179
+	=>Ruido: 5%	Precisión Media: 77.1834992888%
+			Media Roc Score: 71.9487179487
+	=>Ruido: 10%	Precisión Media: 71.8634423898%
+			Media Roc Score: 70.1641025641
+	=>Ruido: 15%	Precisión Media: 66.0170697013%
+			Media Roc Score: 67.7384615385
+	=>Ruido: 20%	Precisión Media: 57.9658605974%
+			Media Roc Score: 60.758974359
+	=>Ruido: 25%	Precisión Media: 55.2347083926%
+			Media Roc Score: 56.4641025641
+	=>Ruido: 30%	Precisión Media: 48.8904694168%
+			Media Roc Score: 53.2692307692
+Clasificador: DIVERSE DENSITY
+	=>Ruido: 0%	Precisión Media: 74.4381223329%
+			Media Roc Score: 63.0307692308
+	=>Ruido: 5%	Precisión Media: 75.5192034139%
+			Media Roc Score: 65.0666666667
+	=>Ruido: 10%	Precisión Media: 76.0312944523%
+			Media Roc Score: 66.9435897436
+	=>Ruido: 15%	Precisión Media: 70.8108108108%
+			Media Roc Score: 58.3358974359
+	=>Ruido: 20%	Precisión Media: 75.960170697%
+			Media Roc Score: 71.3897435897
+	=>Ruido: 25%	Precisión Media: 53.3285917496%
+			Media Roc Score: 50.9
+	=>Ruido: 30%	Precisión Media: 52.6315789474%
+			Media Roc Score: 54.0307692308
+Clasificador: EM-DD
+	=>Ruido: 0%	Precisión Media: 66.5007112376%
+			Media Roc Score: 50.0
+	=>Ruido: 5%	Precisión Media: 66.5007112376%
+			Media Roc Score: 50.0
+	=>Ruido: 10%	Precisión Media: 67.0412517781%
+			Media Roc Score: 50.8333333333
+	=>Ruido: 15%	Precisión Media: 66.5007112376%
+			Media Roc Score: 50.0
+	=>Ruido: 20%	Precisión Media: 59.4736842105%
+			Media Roc Score: 50.0
+	=>Ruido: 25%	Precisión Media: 53.8691322902%
+			Media Roc Score: 50.0
+	=>Ruido: 30%	Precisión Media: 53.1578947368%
+			Media Roc Score: 50.0
+Clasificador: MILBOOST
+	=>Ruido: 0%	Precisión Media: 65.6222569803%
+			Media Roc Score: 89.0615384615
+	=>Ruido: 5%	Precisión Media: 65.6222569803%
+			Media Roc Score: 88.9641025641
+	=>Ruido: 10%	Precisión Media: 65.6222569803%
+			Media Roc Score: 89.1538461538
+	=>Ruido: 15%	Precisión Media: 65.6222569803%
+			Media Roc Score: 82.5487179487
+	=>Ruido: 20%	Precisión Media: 65.6222569803%
+			Media Roc Score: 83.0128205128
+	=>Ruido: 25%	Precisión Media: 65.6222569803%
+			Media Roc Score: 88.5948717949
+	=>Ruido: 30%	Precisión Media: 65.6222569803%
+			Media Roc Score: 89.2948717949
