@@ -18,6 +18,7 @@ from funciones.fun_aux import mil_cross_noisy
 from funciones.fun_aux import crearDataSet
 from funciones.fvc import fvc_part
 from funciones.fun_aux import roc_auc_score_FIXED
-from funciones.fun_aux import mil_cv_filter
+from funciones.fun_aux import mil_cv_filter_ef
+from funciones.fun_aux import mil_cv_filter_cvcf
 from funciones.fun_aux import cla_filter
 from funciones.fun_aux import filtrado_final

@@ -53,14 +53,14 @@ def clasif():
     EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
     MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
     MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
-    aux.append(SMILaMax)
-    aux.append(SMILaMin)
-    aux.append(SMILaExt)
+#    aux.append(SMILaMax)
+#    aux.append(SMILaMin)
+#    aux.append(SMILaExt)
 #    aux.append(BOW_clas)
 #    aux.append(CKNN_cla)
 #    aux.append(maxDD_cl)
 #    aux.append(EMDD_cla)
-#    aux.append(MILB_cla)
+    aux.append(MILB_cla)
 #    aux.append(MILES_cl)
     return aux
 def cla_filter():
@@ -258,7 +258,7 @@ def roc_auc_score_FIXED(y_true, y_pred):
         return accuracy_score(y_true, np.rint(y_pred))
     return roc_auc_score(y_true, y_pred)    
     
-def mil_cv_filter(bags_f,labels_f,folds,votacion):
+def mil_cv_filter_ef(bags_f,labels_f,folds,votacion):
 #    print('\t\t\tFiltrando...')
     Clasificadores = cla_filter()
     bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, 100))
@@ -328,7 +328,77 @@ def mil_cv_filter(bags_f,labels_f,folds,votacion):
     X_train_NoNy = [bags_f[i] for i in nonNoisyBags]
     Y_train_NoNy = labels_f[nonNoisyBags]
     return X_train_NoNy,Y_train_NoNy
-        
+def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion):
+#    print('\t\t\tFiltrando...')
+    Clasificadores = cla_filter()
+    bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, 100))
+    skf = StratifiedKFold(n_splits=folds)
+    isCorrectLabel = np.ones((len(Clasificadores), len(labels_f)), dtype=bool)
+    for train_index, test_index in skf.split(bags_f, labels_f.reshape(len(labels_f))):
+        X_train = [bags_f[i] for i in train_index]        
+        Y_train = labels_f[train_index]
+        X_test  = [bags_f[i] for i in test_index]
+        Y_test  = labels_f[test_index]
+        for s,cl in enumerate(Clasificadores):
+            
+            try:
+                if len(Clasificadores[s][1]) > 0:
+                    Clasificadores[s][0].fit(X_train, Y_train, **Clasificadores[s][1])
+                else:
+                    Clasificadores[s][0].fit(X_train, Y_train)
+                predictions = Clasificadores[s][0].predict(X_train)
+                if (isinstance(predictions, tuple)):
+                    predictions = predictions[0]
+            except:
+                print('Fallo, segundo intento')
+                try:
+                    if len(Clasificadores[s][1]) > 0:
+                        Clasificadores[s][0].fit(X_train, Y_train, **Clasificadores[s][1])
+                    else:
+                        Clasificadores[s][0].fit(X_train, Y_train)
+                    predictions = Clasificadores[s][0].predict(X_train)
+                    if (isinstance(predictions, tuple)):
+                        predictions = predictions[0]
+                    print('OK')
+                except:
+                    print('Fallo en calculo')
+            for l,p in enumerate(train_index): 
+                isCorrectLabel[s][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
+
+    if votacion == 'maxVotos':
+        noisyBags = []
+        for n in range(0,len(labels_f)):
+            aux = 0
+            for m in range(0,len(Clasificadores)):
+                if not isCorrectLabel[m][n]:
+                    aux = aux+1
+            if aux > len(Clasificadores)/2:
+                noisyBags.append(n)
+    if votacion == 'consenso':
+        noisyBags = []
+        for n in range(0,len(labels_f)):
+            aux = True
+            for m in range(0,len(Clasificadores)):
+                if aux:
+                    if isCorrectLabel[m][n]:
+                        aux = False
+            if aux:
+                noisyBags.append(n)
+    nonNoisyBags = []
+    cont = 0
+    if len(noisyBags) == 0:
+        for z in range(0,len(bags_f)):
+            nonNoisyBags.append(z)
+    else:
+        for z in range(0,len(bags_f)):
+            if cont < len(noisyBags) and noisyBags[cont] == z:
+                cont = cont + 1
+            else:
+                nonNoisyBags.append(z)
+    X_train_NoNy = [bags_f[i] for i in nonNoisyBags]
+    Y_train_NoNy = labels_f[nonNoisyBags]
+    return X_train_NoNy,Y_train_NoNy
+      
 def filtrado_final(X_train,Y_train,X_test,Y_test):  
     Clasificadores = clasif()
     results = np.zeros((len(Clasificadores),2))

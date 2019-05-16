@@ -7,80 +7,59 @@ Created on Sat May 11 23:40:14 2019
 
 #imports
 import warnings
-import numpy as np
 from data import load_data
+import random as rand
+import numpy as np
+from sklearn.utils import shuffle
+from sklearn.model_selection import StratifiedKFold
 warnings.filterwarnings('ignore')
 
 from funciones import fun_aux
 
 def CVcF(b,votacion,folds,ruido):
+    DaTSe = 0
     for DataSet in b:
         bags,labels,X = load_data(DataSet)
-        #bags,labels = shuffle(bags, labels, random_state=rand.randint(0, 100))
-        Clasificadores = fun_aux.clasif()
-    
-        isCorrectLabel = np.ones((len(Clasificadores), len(labels)), dtype=bool)
+        bags,labels = shuffle(bags, labels, random_state=rand.randint(0, 100))
+        skf = StratifiedKFold(n_splits=folds)
+#        dataAcc = np.zeros((len(b),len(ruido),folds,2))
         print('\n\tDATASET: '+str(DataSet)+'\n')
+        
         for ny,k in enumerate(ruido):
             print('\t\t=>RUIDO : '+str(k))
-            for j in range(1,folds+1):
-                train_index,Y_train,test_index,Y_test = fun_aux.loadNoisy(DataSet,k,j)
-                X_train = [bags[i] for i in train_index]     
+            fold = 1
+            results_Fil = []
+            results_Ori = []
+            for train_index, test_index in skf.split(bags, labels.reshape(len(labels))):
+                print('\t\t  =>FOLD : '+str(fold))
+                X_train = [bags[i] for i in train_index]        
+                Y_train = labels[train_index]
                 X_test  = [bags[i] for i in test_index]
-                bag_all = np.concatenate((X_train, X_test), axis=None)
-                label_all = np.concatenate((Y_train, Y_test), axis=None)
-                for i,cl in enumerate(Clasificadores):
-                    try:
-                        if len(Clasificadores[i][1]) > 0:
-                            Clasificadores[i][0].fit(X_train, Y_train, **Clasificadores[i][1])
-                        else:
-                            Clasificadores[i][0].fit(X_train, Y_train)
-                        predictions = Clasificadores[i][0].predict(bag_all) 
-                        if (isinstance(predictions, tuple)):
-                            predictions = predictions[0]
-                    except:
-                        print('Fallo, segundo intento')
-                        try:
-                            if len(Clasificadores[i][1]) > 0:
-                                Clasificadores[i][0].fit(X_train, Y_train, **Clasificadores[i][1])
-                            else:
-                                Clasificadores[i][0].fit(X_train, Y_train)
-                            predictions = Clasificadores[i][0].predict(bag_all) 
-                            if (isinstance(predictions, tuple)):
-                                predictions = predictions[0]
-                            print('OK')
-                        except:
-                            print('Fallo en calculo')
-                   
-#                    for l,p in enumerate(test_index):    
-#                        isCorrectLabel[i][p] = (Y_test.T[0][l] == np.sign(predictions[l]))
-                    for l in range(0,len(label_all)):    
-                        isCorrectLabel[i][l] = (label_all[l] == np.sign(predictions[l]))
-
-        #        print('========= Fold :'+str(j)+' =========')
-            
-            if votacion == 'maxVotos':
-                noisyBags = []
-                for n in range(0,len(labels)):
-                    aux = 0
-                    for m in range(0,len(Clasificadores)):
-                        if not isCorrectLabel[m][n]:
-                            aux = aux+1
-                    if aux > len(Clasificadores)/2:
-                        noisyBags.append(n)
-            if votacion == 'consenso':
-                noisyBags = []
-                for n in range(0,len(labels)):
-                    aux = True
-                    for m in range(0,len(Clasificadores)):
-                        if aux:
-                            if isCorrectLabel[m][n]:
-                                aux = False
-                    if aux:
-                        noisyBags.append(n)
-        #    print('Noisy instances = ')
-        #    print(noisyBags)
-        #    print('Total = '+str(len(noisyBags)))
-            fun_aux.crearDataSet(noisyBags,bags,labels,DataSet,folds)
-
-    
+                Y_test  = labels[test_index]
+                X_train_NoNy,Y_train_NoNy = fun_aux.mil_cv_filter_cvcf(X_train,Y_train,folds,votacion)
+                print('\t\t\t=>Original')
+                results_Ori.append(fun_aux.filtrado_final(X_train,Y_train,X_test,Y_test)) 
+                print('\t\t\t=>Filtrado')
+                results_Fil.append(fun_aux.filtrado_final(X_train_NoNy,Y_train_NoNy,X_test,Y_test))
+                fold = fold + 1
+            Clasificadores = fun_aux.clasif()
+            results_accuracie_F = []
+            results_auc_F = []
+            results_accuracie_O = []
+            results_auc_O = []
+            for h in range(0,len(Clasificadores)):
+                print('\t\t\t\t-->Clasificador :'+str(Clasificadores[h][2]))
+                for g in range(0,folds):
+                    results_accuracie_F.append(results_Fil[g][h][0])
+                    results_auc_F.append(results_Fil[g][h][1])
+                    results_accuracie_O.append(results_Ori[g][h][0])
+                    results_auc_O.append(results_Ori[g][h][1])
+                print('\t\t\t\t\t-->Original')
+                print('\t\t\t\t\t Precisión: '+ str(np.mean(results_accuracie_O))+'%')
+                print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_O)))
+                print('\t\t\t\t\t-->Filtrado')
+                print('\t\t\t\t\t Precisión: '+ str(np.mean(results_accuracie_F))+'%')
+                print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F)))
+#            dataAcc[DaTSe][ny][fold-1][0] = 
+#            dataAcc[DaTSe][ny][fold-1][1] =
+    DaTSe = DaTSe + 1
