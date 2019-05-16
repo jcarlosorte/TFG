@@ -333,7 +333,7 @@ def filtrado_final(X_train,Y_train,X_test,Y_test):
     Clasificadores = clasif()
     results = np.zeros((len(Clasificadores),2))
     for s,cl in enumerate(Clasificadores):
-        print('\t\t\t\t-->Clasificador :'+str(cl[2]))
+#        print('\t\t\t\t-->Clasificador :'+str(cl[2]))
         try:
             if len(Clasificadores[s][1]) > 0:
                 Clasificadores[s][0].fit(X_train, Y_train, **Clasificadores[s][1])
@@ -362,5 +362,5 @@ def filtrado_final(X_train,Y_train,X_test,Y_test):
                 print('Fallo en calculo')      
         results[s][0] = accuracie
         results[s][1] = auc_score
-        print('\t\t\t\t\t Precisión: '+ str(accuracie)+'%\n\t\t\t\t\t Roc Score: '+ str(auc_score))
+#        print('\t\t\t\t\t Precisión: '+ str(accuracie)+'%\n\t\t\t\t\t Roc Score: '+ str(auc_score))
     return results

@@ -31,16 +31,16 @@ def EF(b,votacion,folds,ruido):
             results_Fil = []
             results_Ori = []
             for train_index, test_index in skf.split(bags, labels.reshape(len(labels))):
-                print('\t\t=>FOLD : '+str(fold))
+                print('\t\t  =>FOLD : '+str(fold))
                 X_train = [bags[i] for i in train_index]        
                 Y_train = labels[train_index]
                 X_test  = [bags[i] for i in test_index]
                 Y_test  = labels[test_index]
                 
                 X_train_NoNy,Y_train_NoNy = fun_aux.mil_cv_filter(X_train,Y_train,folds,votacion)
-               
+                print('\t\t\t=>Original')
                 results_Ori.append(fun_aux.filtrado_final(X_train,Y_train,X_test,Y_test)) 
-
+                print('\t\t\t=>Filtrado')
                 results_Fil.append(fun_aux.filtrado_final(X_train_NoNy,Y_train_NoNy,X_test,Y_test))
 
                 fold = fold + 1
