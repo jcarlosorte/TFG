@@ -67,7 +67,7 @@ class EMDD(object):
         #PONER AQUI TODAS LAS CONDICIONALES DE SPOINTS 
 
         if alf<1:
-            print 'Hacer Algo' #k = max(round(alf*length(I)),1);
+            print ('Hacer Algo') #k = max(round(alf*length(I)),1);
         else:
             k = alf
     

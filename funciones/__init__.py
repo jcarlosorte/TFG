@@ -11,5 +11,13 @@ funciones
 """
 __name__ = 'funciones'
 __version__ = '1.0'
-from fun_aux import Porcentaje
-from fun_aux import clasif
+from funciones.fun_aux import Porcentaje
+from funciones.fun_aux import clasif
+from funciones.fun_aux import loadNoisy
+from funciones.fun_aux import mil_cross_noisy
+from funciones.fun_aux import crearDataSet
+from funciones.fvc import fvc_part
+from funciones.fun_aux import roc_auc_score_FIXED
+from funciones.fun_aux import mil_cv_filter
+from funciones.fun_aux import cla_filter
+from funciones.fun_aux import filtrado_final

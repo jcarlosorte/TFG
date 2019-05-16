@@ -15,9 +15,8 @@ from scipy.sparse import identity
 from scipy import sparse
 from numpy import inf
 from scipy.optimize import fmin_bfgs   
-import numpy as np
-from mil_lnsrch import mil_lnsrch
-from log_DD import log_DD
+from functions.mil_lnsrch import mil_lnsrch
+from functions.log_DD import log_DD
 
 def dfpmin(*args):
 

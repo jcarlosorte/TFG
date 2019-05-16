@@ -9,9 +9,8 @@ import numpy.matlib
 from scipy.sparse import identity
 from scipy import sparse
 from numpy import inf
-from scipy.optimize import fmin_bfgs   
-import numpy as np
-from bagprob import bagprob
+from scipy.optimize import fmin_bfgs
+from functions.bagprob import bagprob
 
 def log_DD(*args):
     #Parameters

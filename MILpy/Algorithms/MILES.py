@@ -84,7 +84,7 @@ class MILES(object):
         v = u[0:nrcon]-u[nrcon:2*nrcon]
         I = np.where(abs(v)>1e-9)
         if len(I) == 0:
-            print 'All weights are zero.'
+            print ('All weights are zero.')
             I = 1; 
         
         w = v[I]

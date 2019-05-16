@@ -13,9 +13,9 @@ from scipy.sparse import identity
 from scipy import sparse
 from numpy import inf
 from scipy.optimize import fmin_bfgs
-from mil_lnsrch import mil_lnsrch
-from dfpmin import dfpmin
-from log_DD import log_DD
+from functions.mil_lnsrch import mil_lnsrch
+from functions.dfpmin import dfpmin
+from functions.log_DD import log_DD
 
 def maxdd (*args):
     #Parameters

@@ -154,14 +154,14 @@ metrics.auc(fpr, tpr)
 #Crear Funcion Instupdate Input = Bags,LabelOfBags,Z,phi,w(mi svm)
     #1)Me calcule el loss de mi svm con las Bags
 lin_svc = svm.LinearSVC().fit(Z, train_labels.reshape(len(train_labels)))
-print 'Coef antes de todos updates'
-print lin_svc.coef_
+print ('Coef antes de todos updates')
+print (lin_svc.coef_)
 pred_decision = lin_svc.decision_function(Z)
 margin = train_labels * pred_decision
 losses = 1 - margin
 v = np.average(losses)
 phi_prototypes_prim = np.zeros(len(train_bags))
-print 'Loss antes de update es '+ str(v)
+print ('Loss antes de update es '+ str(v))
 for i in range (0,len(train_bags)):
     if losses[i] > 0:
         for j in range (0,len(train_bags[i])):
@@ -175,7 +175,7 @@ for i in range (0,len(train_bags)):
                     phi_prototypes = phi_prototypes_prim
                     lin_svc = svm.LinearSVC().fit(Z, train_labels)
 
-print 'Loss despues del update es '+ str(v)
+print ('Loss despues del update es '+ str(v))
 
 #Actualizar Prototipos prototypes con phi_prototypes
 
@@ -208,6 +208,6 @@ hinge_loss(test_labels, pred_decision)
 
 
 accuracie = np.average(test_labels.T == np.sign(predicted))
-print '\n Accuracy: %.2f%%' % (100 * accuracie)
+print ('\n Accuracy: %.2f%%' % (100 * accuracie))
 fpr, tpr, thresholds = metrics.roc_curve(test_labels, predicted, pos_label=1.)
 metrics.auc(fpr, tpr)
