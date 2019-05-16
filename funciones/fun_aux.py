@@ -102,6 +102,45 @@ def cla_filter():
 #    aux.append(MILB_cla)
 #    aux.append(MILES_cl)
     return aux
+def cla_filter_cvcf():
+    aux = []
+    resul1 = [[],[],[],[],[],[],[]]
+    resul2 = [[],[],[],[],[],[],[]]
+    resul3 = [[],[],[],[],[],[],[]]
+    resul4 = [[],[],[],[],[],[],[]]
+    resul5 = [[],[],[],[],[],[],[]]
+    resul6 = [[],[],[],[],[],[],[]]
+    resul7 = [[],[],[],[],[],[],[]]
+    resul8 = [[],[],[],[],[],[],[]]
+    resul9 = [[],[],[],[],[],[],[]]
+    roc_m_1 = [[],[],[],[],[],[],[]]
+    roc_m_2 = [[],[],[],[],[],[],[]]
+    roc_m_3 = [[],[],[],[],[],[],[]]
+    roc_m_4 = [[],[],[],[],[],[],[]]
+    roc_m_5 = [[],[],[],[],[],[],[]]
+    roc_m_6 = [[],[],[],[],[],[],[]]
+    roc_m_7 = [[],[],[],[],[],[],[]]
+    roc_m_8 = [[],[],[],[],[],[],[]]
+    roc_m_9 = [[],[],[],[],[],[],[]]
+    SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul1,roc_m_1]
+    SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2,roc_m_2]
+    SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3,roc_m_3]
+    BOW_clas = [BOW(),{'k':90,'covar_type':'diag','n_iter':20},'BOW',resul4,roc_m_4]
+    CKNN_cla = [CKNN(),{'references': 3, 'citers': 5},'CKNN',resul5,roc_m_5]
+    maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',resul6,roc_m_6]
+    EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
+    MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
+    MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
+#    aux.append(SMILaMax)
+#    aux.append(SMILaMin)
+#    aux.append(SMILaExt)
+#    aux.append(BOW_clas)
+    aux.append(CKNN_cla)
+#    aux.append(maxDD_cl)
+#    aux.append(EMDD_cla)
+#    aux.append(MILB_cla)
+#    aux.append(MILES_cl)
+    return aux
 def loadNoisy(dataset,noisy_file,fold_file):
     carpeta = '../dataNoisy/'
     filename1 = 'X_train_bags.csv'
