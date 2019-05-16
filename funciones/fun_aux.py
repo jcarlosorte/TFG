@@ -331,6 +331,7 @@ def mil_cv_filter(bags_f,labels_f,folds,votacion):
         
 def filtrado_final(X_train,Y_train,X_test,Y_test):  
     Clasificadores = clasif()
+    results = np.zeros((len(Clasificadores),2))
     for s,cl in enumerate(Clasificadores):
         print('\t\t\t\t-->Clasificador :'+str(cl[2]))
         try:
@@ -359,4 +360,7 @@ def filtrado_final(X_train,Y_train,X_test,Y_test):
                 print('OK')     
             except:
                 print('Fallo en calculo')      
+        results[s][0] = accuracie
+        results[s][1] = auc_score
         print('\t\t\t\t\t Precisión: '+ str(accuracie)+'%\n\t\t\t\t\t Roc Score: '+ str(auc_score))
+    return results
