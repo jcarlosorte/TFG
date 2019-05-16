@@ -54,8 +54,8 @@ def clasif():
     MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
     MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
     aux.append(SMILaMax)
-    aux.append(SMILaMin)
-    aux.append(SMILaExt)
+#    aux.append(SMILaMin)
+#    aux.append(SMILaExt)
     aux.append(BOW_clas)
 #    aux.append(CKNN_cla)
 #    aux.append(maxDD_cl)

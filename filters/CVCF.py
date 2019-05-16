@@ -31,8 +31,9 @@ def CVcF(b,votacion,folds,ruido):
             Clasificadores_filtro = fun_aux.cla_filter_cvcf()
             for s,cl in enumerate(Clasificadores):
                 fold = 1
-                results_Fil = np.zeros((len(Clasificadores_filtro),folds))
-                results_Ori = np.zeros((folds))
+#                results_Fil = np.zeros((len(Clasificadores_filtro),folds))
+                results_Fil = [[] for x in range(len(Clasificadores_filtro))] 
+                results_Ori = []
                 clasificador_ = Clasificadores[s]
                 for train_index, test_index in skf.split(bags, labels.reshape(len(labels))):
                     print('\t\t  =>FOLD : '+str(fold))
@@ -45,14 +46,14 @@ def CVcF(b,votacion,folds,ruido):
                         clasificador_f = Clasificadores_filtro[j]
                         print('\t\t\t=>Filtrado con '+str(cl_f[2]))
                         X_train_NoNy,Y_train_NoNy = mil_cv_filter_cvcf(X_train,Y_train,folds,votacion,clasificador_f) 
-                        results_Fil[j][fold-1] = filtrado_final(X_train_NoNy,Y_train_NoNy,X_test,Y_test,clasificador_)
-
+                        results_Fil[j].append(filtrado_final(X_train_NoNy,Y_train_NoNy,X_test,Y_test,clasificador_))
+                    print(len(X_train_NoNy))
+                    print(len(X_train))
                     print('\t\t\t=>Original')
-                    results_Ori = filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_)
+                    results_Ori.append(filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_))
                     fold = fold + 1
                 results_accuracie_O = []
                 results_auc_O = []
-                print(results_accuracie_O)
                 print('\t\t\t\t-->Clasificador :'+str(clasificador_[2]))
                 for g in range(0,folds):
                     results_accuracie_O.append(results_Ori[g][0])
@@ -68,8 +69,8 @@ def CVcF(b,votacion,folds,ruido):
                     for g in range(0,folds):
                         results_accuracie_F.append(results_Fil[j][g][0])
                         results_auc_F.append(results_Fil[j][g][1])  
-                        print('\t\t\t\t\t Precisión: '+ str(np.mean(results_accuracie_F, dtype=np.float64))+'%')
-                        print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F, dtype=np.float64)))
+                    print('\t\t\t\t\t Precisión: '+ str(np.mean(results_accuracie_F, dtype=np.float64))+'%')
+                    print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F, dtype=np.float64)))
 #            dataAcc[DaTSe][ny][fold-1][0] = 
 #            dataAcc[DaTSe][ny][fold-1][1] =
     DaTSe = DaTSe + 1
@@ -112,7 +113,9 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
                 print('Fallo en calculo')
         for l,p in enumerate(train_index): 
             isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
+        
         fold = fold + 1
+    print(isCorrectLabel)
     if votacion == 'maxVotos':
         noisyBags = []
         for n in range(0,len(labels_f)):
@@ -131,8 +134,10 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
                     if isCorrectLabel[m][n]:
                         aux = False
             if aux:
+                print('holi')
                 noisyBags.append(n)
     nonNoisyBags = []
+    
     cont = 0
     if len(noisyBags) == 0:
         for z in range(0,len(bags_f)):
