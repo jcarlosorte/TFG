@@ -131,11 +131,11 @@ def cla_filter_cvcf():
     EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
     MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
     MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
-#    aux.append(SMILaMax)
+    aux.append(SMILaMax)
 #    aux.append(SMILaMin)
 #    aux.append(SMILaExt)
 #    aux.append(BOW_clas)
-    aux.append(CKNN_cla)
+#    aux.append(CKNN_cla)
 #    aux.append(maxDD_cl)
 #    aux.append(EMDD_cla)
 #    aux.append(MILB_cla)

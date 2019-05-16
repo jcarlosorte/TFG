@@ -35,6 +35,13 @@ def EF(b,votacion,folds,ruido):
                 Y_train = labels[train_index]
                 X_test  = [bags[i] for i in test_index]
                 Y_test  = labels[test_index]
+                LabelToChange = fun_aux.Porcentaje(len(train_index),k)
+                aleatorios = rand.sample(range(0,len(train_index)),int(LabelToChange))
+                for al in aleatorios:
+                    if Y_train[al] == 0:
+                        Y_train[al] = Y_train[al]+1
+                    else:
+                        Y_train[al] = Y_train[al]-1
                 X_train_NoNy,Y_train_NoNy = fun_aux.mil_cv_filter_ef(X_train,Y_train,folds,votacion)
                 print('\t\t\t=>Original')
                 results_Ori.append(fun_aux.filtrado_final(X_train,Y_train,X_test,Y_test)) 

@@ -26,7 +26,7 @@ def CVcF(b,votacion,folds,ruido):
         print('\n\tDATASET: '+str(DataSet)+'\n')
         
         for ny,k in enumerate(ruido):
-            print('\t\t=>RUIDO : '+str(k))   
+            print('\t\t=>RUIDO : '+str(k))
             Clasificadores = fun_aux.clasif()
             Clasificadores_filtro = fun_aux.cla_filter_cvcf()
             for s,cl in enumerate(Clasificadores):
@@ -41,15 +41,22 @@ def CVcF(b,votacion,folds,ruido):
                     Y_train = labels[train_index]
                     X_test  = [bags[i] for i in test_index]
                     Y_test  = labels[test_index]
-                    
+                    LabelToChange = fun_aux.Porcentaje(len(train_index),k)
+                    aleatorios = rand.sample(range(0,len(train_index)),int(LabelToChange))
+                    for al in aleatorios:
+                        if Y_train[al] == 0:
+                            Y_train[al] = Y_train[al]+1
+                        else:
+                            Y_train[al] = Y_train[al]-1
+
                     for j,cl_f in enumerate(Clasificadores_filtro):
                         clasificador_f = Clasificadores_filtro[j]
-                        print('\t\t\t=>Filtrado con '+str(cl_f[2]))
+#                        print('\t\t\t=>Filtrado con '+str(cl_f[2]))
                         X_train_NoNy,Y_train_NoNy = mil_cv_filter_cvcf(X_train,Y_train,folds,votacion,clasificador_f) 
                         results_Fil[j].append(filtrado_final(X_train_NoNy,Y_train_NoNy,X_test,Y_test,clasificador_))
-                    print(len(X_train_NoNy))
-                    print(len(X_train))
-                    print('\t\t\t=>Original')
+#                    print(len(X_train_NoNy))
+#                    print(len(X_train))
+#                    print('\t\t\t=>Original')
                     results_Ori.append(filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_))
                     fold = fold + 1
                 results_accuracie_O = []
@@ -77,8 +84,6 @@ def CVcF(b,votacion,folds,ruido):
 
 def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
 #    print('\t\t\tFiltrando...')
-    
-    
     bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, 100))
     skf = StratifiedKFold(n_splits=folds)
     isCorrectLabel = np.ones((folds, len(labels_f)), dtype=bool)
@@ -88,8 +93,6 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
         Y_train = labels_f[train_index]
         X_test  = [bags_f[i] for i in test_index]
         Y_test  = labels_f[test_index]
-#        for s,cl in enumerate(Clasificadores):
-        
         try:
             if len(clasificador_[1]) > 0:
                 clasificador_[0].fit(X_train, Y_train, **clasificador_[1])
@@ -113,9 +116,7 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
                 print('Fallo en calculo')
         for l,p in enumerate(train_index): 
             isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
-        
         fold = fold + 1
-    print(isCorrectLabel)
     if votacion == 'maxVotos':
         noisyBags = []
         for n in range(0,len(labels_f)):
@@ -136,8 +137,7 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
             if aux:
                 print('holi')
                 noisyBags.append(n)
-    nonNoisyBags = []
-    
+    nonNoisyBags = [] 
     cont = 0
     if len(noisyBags) == 0:
         for z in range(0,len(bags_f)):
