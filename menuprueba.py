@@ -22,11 +22,11 @@ DataSet = ['Tiger_scaled']
 ruido = [0,5]
 #print('********** Crear dataset con ruido **********')
 #fvc.fvc_part(DataSet,folds,ruido)
-print('********** Ensemble Filter **********')
-EF.EF(DataSet,votacion,folds,ruido)
-print('********** CV Committees Filter **********')
+#print('********** Ensemble Filter **********')
+#EF.EF(DataSet,votacion,folds,ruido)
+#print('********** CV Committees Filter **********')
 votacion = 'maxVotos'
-CVCF.CVcF(DataSet,votacion,folds,ruido)
+#CVCF.CVcF(DataSet,votacion,folds,ruido)
 #print('********** Iterative Partitioning Filter **********')
-votacion = 'consenso'
-#IPF.IPF(DataSet,votacion,folds,ruido)
+#votacion = 'consenso'
+IPF.IPF(DataSet,votacion,folds,ruido)

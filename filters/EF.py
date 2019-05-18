@@ -20,7 +20,7 @@ def EF(b,votacion,folds,ruido):
     DaTSe = 0
     for DataSet in b:
         bags,labels,X = load_data(DataSet)
-        bags,labels = shuffle(bags, labels, random_state=rand.randint(0, 100))
+        bags,labels = shuffle(bags, labels, random_state=rand.randint(0, len(labels)-1))
         skf = StratifiedKFold(n_splits=folds)
 #        dataAcc = np.zeros((len(b),len(ruido),folds,2))
         print('\n\tDATASET: '+str(DataSet)+'\n')
@@ -30,7 +30,7 @@ def EF(b,votacion,folds,ruido):
             results_Fil = []
             results_Ori = []
             for train_index, test_index in skf.split(bags, labels.reshape(len(labels))):
-                print('\t\t  =>FOLD : '+str(fold))
+                print('\t\t\t=>FOLD : '+str(fold))
                 X_train = [bags[i] for i in train_index]        
                 Y_train = labels[train_index]
                 X_test  = [bags[i] for i in test_index]
@@ -43,9 +43,9 @@ def EF(b,votacion,folds,ruido):
                     else:
                         Y_train[al] = Y_train[al]-1
                 X_train_NoNy,Y_train_NoNy = fun_aux.mil_cv_filter_ef(X_train,Y_train,folds,votacion)
-                print('\t\t\t=>Original')
+#                print('\t\t\t=>Original')
                 results_Ori.append(fun_aux.filtrado_final(X_train,Y_train,X_test,Y_test)) 
-                print('\t\t\t=>Filtrado')
+#                print('\t\t\t=>Filtrado')
                 results_Fil.append(fun_aux.filtrado_final(X_train_NoNy,Y_train_NoNy,X_test,Y_test))
                 fold = fold + 1
             Clasificadores = fun_aux.clasif()

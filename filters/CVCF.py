@@ -20,7 +20,7 @@ def CVcF(b,votacion,folds,ruido):
     DaTSe = 0
     for DataSet in b:
         bags,labels,X = load_data(DataSet)
-        bags,labels = shuffle(bags, labels, random_state=rand.randint(0, 100))
+        bags,labels = shuffle(bags, labels, random_state=rand.randint(0, len(labels)-1))
         skf = StratifiedKFold(n_splits=folds)
 #        dataAcc = np.zeros((len(b),len(ruido),folds,2))
         print('\n\tDATASET: '+str(DataSet)+'\n')
@@ -36,7 +36,7 @@ def CVcF(b,votacion,folds,ruido):
                 results_Ori = []
                 clasificador_ = Clasificadores[s]
                 for train_index, test_index in skf.split(bags, labels.reshape(len(labels))):
-                    print('\t\t  =>FOLD : '+str(fold))
+                    print('\t\t\t=>FOLD : '+str(fold))
                     X_train = [bags[i] for i in train_index]        
                     Y_train = labels[train_index]
                     X_test  = [bags[i] for i in test_index]
@@ -84,15 +84,14 @@ def CVcF(b,votacion,folds,ruido):
 
 def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
 #    print('\t\t\tFiltrando...')
-    bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, 100))
+    bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0,len(labels_f)-1))
     skf = StratifiedKFold(n_splits=folds)
     isCorrectLabel = np.ones((folds, len(labels_f)), dtype=bool)
     fold = 0
     for train_index, test_index in skf.split(bags_f, labels_f.reshape(len(labels_f))):
         X_train = [bags_f[i] for i in train_index]        
         Y_train = labels_f[train_index]
-        X_test  = [bags_f[i] for i in test_index]
-        Y_test  = labels_f[test_index]
+
         try:
             if len(clasificador_[1]) > 0:
                 clasificador_[0].fit(X_train, Y_train, **clasificador_[1])
@@ -135,7 +134,6 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
                     if isCorrectLabel[m][n]:
                         aux = False
             if aux:
-                print('holi')
                 noisyBags.append(n)
     nonNoisyBags = [] 
     cont = 0
