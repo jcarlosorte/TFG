@@ -7,14 +7,14 @@ Created on Sat May 11 23:40:14 2019
 
 #imports
 import warnings
-from data import load_data
+from MILpy.data.load_data import load_data
 import random as rand
 import numpy as np
 from sklearn.utils import shuffle
 from sklearn.model_selection import StratifiedKFold
 warnings.filterwarnings('ignore')
 from sklearn.metrics import roc_auc_score, accuracy_score
-from funciones import fun_aux
+#from funciones import fun_aux
 #Import Algorithms 
 from MILpy.Algorithms.simpleMIL import simpleMIL
 from MILpy.Algorithms.MILBoost import MILBoost

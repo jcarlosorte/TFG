@@ -7,11 +7,11 @@ Created on Fri May 10 10:11:00 2019
 
 import sys,os,warnings
 
-os.chdir('C:/Users/Administrador/Documents/GitHub/TFG/MILpy')
+os.chdir('/home/jcorte/TFG/MILpy')
 sys.path.append(os.path.realpath('..'))
 
 warnings.filterwarnings('ignore')
-from funciones import fvc
+#from funciones import fvc
 from filters import EF
 from filters import CVCF
 from filters import IPF

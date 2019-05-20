@@ -7,7 +7,7 @@ Created on Sun May 12 00:18:24 2019
 
 #imports
 import warnings
-from data import load_data
+from MILpy.data.load_data import load_data
 import random as rand
 import numpy as np
 from sklearn.utils import shuffle

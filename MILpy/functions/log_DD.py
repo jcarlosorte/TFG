@@ -8,9 +8,8 @@ import numpy as np
 import numpy.matlib
 from scipy.sparse import identity
 from scipy import sparse
-from numpy import inf
 from scipy.optimize import fmin_bfgs
-from functions.bagprob import bagprob
+from MILpy.functions.bagprob import bagprob
 
 def log_DD(*args):
     #Parameters

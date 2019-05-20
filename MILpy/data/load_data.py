@@ -25,7 +25,7 @@ def load_data(data):
     else:
         file = data
         filename_bag = 'data/'+file+'/Bag2.mat'
-        filename_labels = 'data/'+file+'/bagI.mat'
+        filename_labels = 'data/'+file+'/BagI.mat'
         X_g = loadmat('data/'+file+'/X.mat')
     
         

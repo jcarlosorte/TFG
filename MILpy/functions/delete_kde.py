@@ -10,10 +10,10 @@ from sklearn.neighbors.kde import KernelDensity
 from sklearn import svm, cross_validation, metrics
 import numpy as np
 import sys,os
-os.chdir('/Users/josemiguelarrieta/Documents/MILpy')
-sys.path.append(os.path.realpath('..'))
+#os.chdir('/Users/josemiguelarrieta/Documents/MILpy')
+#sys.path.append(os.path.realpath('..'))
 from sklearn.metrics import hinge_loss
-from data import load_data
+from MILpy.data import load_data
 from sklearn.utils import shuffle
 import random as rand
 from copy import deepcopy
