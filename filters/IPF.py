@@ -13,7 +13,7 @@ import numpy as np
 from sklearn.utils import shuffle
 from sklearn.model_selection import StratifiedKFold
 warnings.filterwarnings('ignore')
-
+from sklearn.metrics import roc_auc_score, accuracy_score
 from funciones import fun_aux
 
 
@@ -38,7 +38,7 @@ def IPF(b,votacion,folds,ruido):
                 results_Ori = []
                 clasificador_ = Clasificadores[s]
                 for train_index, test_index in skf.split(bags, labels.reshape(len(labels))):
-                    print('\t\t\t=>FOLD : '+str(fold))
+#                    print('\t\t\t=>FOLD : '+str(fold))
                     X_train = [bags[i] for i in train_index]        
                     Y_train = labels[train_index]
                     X_test  = [bags[i] for i in test_index]
@@ -55,7 +55,6 @@ def IPF(b,votacion,folds,ruido):
                         clasificador_f = Clasificadores_filtro[j]
 #                        print('\t\t\t=>Filtrado con '+str(cl_f[2]))
                         X_train_NoNy,Y_train_NoNy = mil_cv_filter_ipf(X_train,Y_train,folds,votacion,clasificador_f) 
-                        print(len(X_train_NoNy))
                         results_Fil[j].append(filtrado_final(X_train_NoNy,Y_train_NoNy,X_test,Y_test,clasificador_))
 #                    print(len(X_train_NoNy))
 #                    print(len(X_train))
@@ -102,7 +101,7 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
         for train_index, test_index in skf.split(bags_f, labels_f.reshape(len(labels_f))):
             X_train = [bags_f[i] for i in train_index]        
             Y_train = labels_f[train_index]
-            print('\t\t\t=>FOLD : '+str(fold))
+#            print('\t\t\t=>FOLD : '+str(fold))
             try:
                 if len(clasificador_[1]) > 0:
                     clasificador_[0].fit(X_train, Y_train, **clasificador_[1])
@@ -207,3 +206,8 @@ def filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_):
     results[1] = auc_score
 #    print('\t\t\t\t\t Precisión: '+ str(accuracie)+'%\n\t\t\t\t\t Roc Score: '+ str(auc_score))
     return results
+
+def roc_auc_score_FIXED(y_true, y_pred):
+    if len(np.unique(y_true)) == 1 or len(np.unique(y_true)) == 0: # bug in roc_auc_score
+        return accuracy_score(y_true, np.rint(y_pred))
+    return roc_auc_score(y_true, y_pred) 

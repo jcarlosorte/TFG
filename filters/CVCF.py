@@ -13,7 +13,7 @@ import numpy as np
 from sklearn.utils import shuffle
 from sklearn.model_selection import StratifiedKFold
 warnings.filterwarnings('ignore')
-
+from sklearn.metrics import roc_auc_score, accuracy_score
 from funciones import fun_aux
 
 def CVcF(b,votacion,folds,ruido):
@@ -184,3 +184,8 @@ def filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_):
     results[1] = auc_score
 #    print('\t\t\t\t\t Precisión: '+ str(accuracie)+'%\n\t\t\t\t\t Roc Score: '+ str(auc_score))
     return results
+
+def roc_auc_score_FIXED(y_true, y_pred):
+    if len(np.unique(y_true)) == 1 or len(np.unique(y_true)) == 0: # bug in roc_auc_score
+        return accuracy_score(y_true, np.rint(y_pred))
+    return roc_auc_score(y_true, y_pred) 
