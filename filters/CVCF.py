@@ -91,7 +91,7 @@ def CVcF(b,votacion,folds,ruido):
     DaTSe = DaTSe + 1
 
 def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
-#    print('\t\t\tFiltrando...')
+    print('\t\t\tFiltrando...')
     bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0,len(labels_f)-1))
     skf = StratifiedKFold(n_splits=folds)
     isCorrectLabel = np.ones((folds, len(labels_f)), dtype=bool)
@@ -154,6 +154,7 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
                 cont = cont + 1
             else:
                 nonNoisyBags.append(z)
+    print('\t\t\t=>Elementos eliminados : '+str(len(noisyBags)))
     X_train_NoNy = [bags_f[i] for i in nonNoisyBags]
     Y_train_NoNy = labels_f[nonNoisyBags]
     return X_train_NoNy,Y_train_NoNy

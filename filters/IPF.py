@@ -92,14 +92,13 @@ def IPF(b,votacion,folds,ruido):
     DaTSe = DaTSe + 1
     
 def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
-#    print('\t\t\tFiltrando...')
+    print('\t\t\tFiltrando...')
     error = 0.01
     toStop = 3
     stop = True
     countToStop = 0
     vuelta = 0
     skf = StratifiedKFold(n_splits=folds)
-#    print(len(bags_f))
     while stop:
         bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, len(labels_f)-1))
         isCorrectLabel = np.ones((folds, len(labels_f)), dtype=bool)
@@ -174,9 +173,9 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
             labels_f = labels_f[nonNoisyBags]
 
         vuelta = vuelta + 1
+    print('\t\t\t=>Elementos eliminados : '+str(len(noisyBags)))
     X_train_NoNy = bags_f
     Y_train_NoNy = labels_f
-#    print(len(X_train_NoNy))
     return X_train_NoNy,Y_train_NoNy
 
 def filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_):  
@@ -191,7 +190,7 @@ def filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_):
         predictions = clasificador_[0].predict(X_test) 
         if (isinstance(predictions, tuple)):
             predictions = predictions[0]
-        accuracie = (100 * np.average(Y_test.T == np.sign(predictions))) 
+        accuracie = (100 * np.average(Y_test.T == np.sign(predictions)))
         auc_score = (100 * roc_auc_score_FIXED(Y_test,predictions))
     except:
         print('Fallo, segundo intento')

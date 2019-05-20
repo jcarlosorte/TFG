@@ -131,7 +131,7 @@ def clasif():
     return aux
 
 def mil_cv_filter_ef(bags_f,labels_f,folds,votacion):
-#    print('\t\t\tFiltrando...')
+    print('\t\t\tFiltrando...')
     Clasificadores = cla_filter()
     bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, 100))
     skf = StratifiedKFold(n_splits=folds)
@@ -197,6 +197,7 @@ def mil_cv_filter_ef(bags_f,labels_f,folds,votacion):
                 cont = cont + 1
             else:
                 nonNoisyBags.append(z)
+    print('\t\t\t=>Elementos eliminados : '+str(len(noisyBags)))
     X_train_NoNy = [bags_f[i] for i in nonNoisyBags]
     Y_train_NoNy = labels_f[nonNoisyBags]
     return X_train_NoNy,Y_train_NoNy
