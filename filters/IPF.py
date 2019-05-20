@@ -14,8 +14,15 @@ from sklearn.utils import shuffle
 from sklearn.model_selection import StratifiedKFold
 warnings.filterwarnings('ignore')
 from sklearn.metrics import roc_auc_score, accuracy_score
-from funciones import fun_aux
-
+#from funciones import fun_aux
+#Import Algorithms 
+from MILpy.Algorithms.simpleMIL import simpleMIL
+from MILpy.Algorithms.MILBoost import MILBoost
+from MILpy.Algorithms.maxDD import maxDD
+from MILpy.Algorithms.CKNN import CKNN
+from MILpy.Algorithms.EMDD import EMDD
+from MILpy.Algorithms.MILES import MILES
+from MILpy.Algorithms.BOW import BOW
 
 def IPF(b,votacion,folds,ruido):
     
@@ -29,8 +36,8 @@ def IPF(b,votacion,folds,ruido):
         
         for ny,k in enumerate(ruido):
             print('\t\t=>RUIDO : '+str(k))
-            Clasificadores = fun_aux.clasif()
-            Clasificadores_filtro = fun_aux.cla_filter_cvcf()
+            Clasificadores = clasif()
+            Clasificadores_filtro = cla_filter_cvcf()
             for s,cl in enumerate(Clasificadores):
                 fold = 1
 #                results_Fil = np.zeros((len(Clasificadores_filtro),folds))
@@ -43,7 +50,7 @@ def IPF(b,votacion,folds,ruido):
                     Y_train = labels[train_index]
                     X_test  = [bags[i] for i in test_index]
                     Y_test  = labels[test_index]
-                    LabelToChange = fun_aux.Porcentaje(len(train_index),k)
+                    LabelToChange = Porcentaje(len(train_index),k)
                     aleatorios = rand.sample(range(0,len(train_index)),int(LabelToChange))
                     for al in aleatorios:
                         if Y_train[al] == 0:
@@ -185,7 +192,7 @@ def filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_):
         if (isinstance(predictions, tuple)):
             predictions = predictions[0]
         accuracie = (100 * np.average(Y_test.T == np.sign(predictions))) 
-        auc_score = (100 * fun_aux.roc_auc_score_FIXED(Y_test,predictions))
+        auc_score = (100 * roc_auc_score_FIXED(Y_test,predictions))
     except:
         print('Fallo, segundo intento')
       
@@ -198,7 +205,7 @@ def filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_):
             if (isinstance(predictions, tuple)):
                 predictions = predictions[0]
             accuracie = (100 * np.average(Y_test.T == np.sign(predictions)))   
-            auc_score = (100 * fun_aux.roc_auc_score_FIXED(Y_test,predictions))
+            auc_score = (100 * roc_auc_score_FIXED(Y_test,predictions))
             print('OK')     
         except:
             print('Fallo en calculo')      
@@ -210,4 +217,87 @@ def filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_):
 def roc_auc_score_FIXED(y_true, y_pred):
     if len(np.unique(y_true)) == 1 or len(np.unique(y_true)) == 0: # bug in roc_auc_score
         return accuracy_score(y_true, np.rint(y_pred))
-    return roc_auc_score(y_true, y_pred) 
+    return roc_auc_score(y_true, y_pred)
+
+def Porcentaje(X,Y):
+    return X*Y/100
+
+def clasif():
+    aux = []
+    resul1 = [[],[],[],[],[],[],[]]
+    resul2 = [[],[],[],[],[],[],[]]
+    resul3 = [[],[],[],[],[],[],[]]
+    resul4 = [[],[],[],[],[],[],[]]
+    resul5 = [[],[],[],[],[],[],[]]
+    resul6 = [[],[],[],[],[],[],[]]
+    resul7 = [[],[],[],[],[],[],[]]
+    resul8 = [[],[],[],[],[],[],[]]
+    resul9 = [[],[],[],[],[],[],[]]
+    roc_m_1 = [[],[],[],[],[],[],[]]
+    roc_m_2 = [[],[],[],[],[],[],[]]
+    roc_m_3 = [[],[],[],[],[],[],[]]
+    roc_m_4 = [[],[],[],[],[],[],[]]
+    roc_m_5 = [[],[],[],[],[],[],[]]
+    roc_m_6 = [[],[],[],[],[],[],[]]
+    roc_m_7 = [[],[],[],[],[],[],[]]
+    roc_m_8 = [[],[],[],[],[],[],[]]
+    roc_m_9 = [[],[],[],[],[],[],[]]
+    SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul1,roc_m_1]
+    SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2,roc_m_2]
+    SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3,roc_m_3]
+    BOW_clas = [BOW(),{'k':90,'covar_type':'diag','n_iter':20},'BOW',resul4,roc_m_4]
+    CKNN_cla = [CKNN(),{'references': 3, 'citers': 5},'CKNN',resul5,roc_m_5]
+    maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',resul6,roc_m_6]
+    EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
+    MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
+    MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
+    aux.append(SMILaMax)
+    aux.append(SMILaMin)
+    aux.append(SMILaExt)
+#    aux.append(BOW_clas)
+#    aux.append(CKNN_cla)
+#    aux.append(maxDD_cl)
+#    aux.append(EMDD_cla)
+#    aux.append(MILB_cla)
+#    aux.append(MILES_cl)
+    return aux
+
+def cla_filter_cvcf():
+    aux = []
+    resul1 = [[],[],[],[],[],[],[]]
+    resul2 = [[],[],[],[],[],[],[]]
+    resul3 = [[],[],[],[],[],[],[]]
+    resul4 = [[],[],[],[],[],[],[]]
+    resul5 = [[],[],[],[],[],[],[]]
+    resul6 = [[],[],[],[],[],[],[]]
+    resul7 = [[],[],[],[],[],[],[]]
+    resul8 = [[],[],[],[],[],[],[]]
+    resul9 = [[],[],[],[],[],[],[]]
+    roc_m_1 = [[],[],[],[],[],[],[]]
+    roc_m_2 = [[],[],[],[],[],[],[]]
+    roc_m_3 = [[],[],[],[],[],[],[]]
+    roc_m_4 = [[],[],[],[],[],[],[]]
+    roc_m_5 = [[],[],[],[],[],[],[]]
+    roc_m_6 = [[],[],[],[],[],[],[]]
+    roc_m_7 = [[],[],[],[],[],[],[]]
+    roc_m_8 = [[],[],[],[],[],[],[]]
+    roc_m_9 = [[],[],[],[],[],[],[]]
+    SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul1,roc_m_1]
+    SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2,roc_m_2]
+    SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3,roc_m_3]
+    BOW_clas = [BOW(),{'k':90,'covar_type':'diag','n_iter':20},'BOW',resul4,roc_m_4]
+    CKNN_cla = [CKNN(),{'references': 3, 'citers': 5},'CKNN',resul5,roc_m_5]
+    maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',resul6,roc_m_6]
+    EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
+    MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
+    MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
+    aux.append(SMILaMax)
+    aux.append(SMILaMin)
+    aux.append(SMILaExt)
+#    aux.append(BOW_clas)
+#    aux.append(CKNN_cla)
+#    aux.append(maxDD_cl)
+#    aux.append(EMDD_cla)
+#    aux.append(MILB_cla)
+#    aux.append(MILES_cl)
+    return aux
