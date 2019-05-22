@@ -6,7 +6,7 @@ Created on Thu May  9 21:37:39 2019
 """
 
 #imports
-import warnings
+import warnings,copy
 from MILpy.data.load_data import load_data
 import random as rand
 import numpy as np
@@ -70,13 +70,13 @@ def EF(b,votacion,folds,ruido):
                     results_accuracie_O.append(results_Ori[g][h][0])
                     results_auc_O.append(results_Ori[g][h][1])
                 print('\t\t\t\t\t-->Original')
-                print('\t\t\t\t\t Precisión: '+ str(np.mean(results_accuracie_O))+'%')
+                print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_O))+'%')
                 print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_O)))
                 print('\t\t\t\t\t-->Filtrado por ')
                 for h,cl_f0 in enumerate(Clasificadores_filtro):
                     print('\t\t\t\t\t * '+str(cl_f0[2]))
 #                print('\t\t\t\t\t-->Filtrado')
-                print('\t\t\t\t\t Precisión: '+ str(np.mean(results_accuracie_F))+'%')
+                print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_F))+'%')
                 print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F)))
 #            dataAcc[DaTSe][ny][fold-1][0] = 
 #            dataAcc[DaTSe][ny][fold-1][1] =
@@ -119,14 +119,14 @@ def clasif():
     EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
     MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
     MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
-#    aux.append(SMILaMax)
+    aux.append(SMILaMax)
     aux.append(SMILaMin)
-#    aux.append(SMILaExt)
+    aux.append(SMILaExt)
     aux.append(BOW_clas)
-#    aux.append(CKNN_cla)
-#    aux.append(maxDD_cl)
-#    aux.append(EMDD_cla)
-#    aux.append(MILB_cla)
+    aux.append(CKNN_cla)
+    aux.append(maxDD_cl)
+    aux.append(EMDD_cla)
+    aux.append(MILB_cla)
 #    aux.append(MILES_cl)
     return aux
 
@@ -205,6 +205,30 @@ def mil_cv_filter_ef(bags_f,labels_f,folds,votacion):
 def filtrado_final(X_train,Y_train,X_test,Y_test):  
     Clasificadores = clasif()
     results = np.zeros((len(Clasificadores),2))
+    aux_lab = True
+    if len(np.unique(Y_train)) == 1:
+        if Y_train[0] == 0:
+            for b in range(0,len(Y_test)):
+                if aux_lab:
+                    if Y_test[b] == 1:
+                        aux_Y_train = copy.copy(Y_test[b])
+                        aux_X_train = copy.copy(X_test[b])
+                        Y_test[b] = copy.copy(Y_train[0])
+                        X_test[b] = copy.copy(X_train[0])
+                        Y_train[0] = copy.copy(aux_Y_train)
+                        X_train[0] = copy.copy(aux_X_train)
+                        aux_lab = False
+        else:
+            for b in range(0,len(Y_test)):
+                if aux_lab:
+                    if Y_test[b] == 0:
+                        aux_Y_train = copy.copy(Y_test[b])
+                        aux_X_train = copy.copy(X_test[b])
+                        Y_test[b] = copy.copy(Y_train[0])
+                        X_test[b] = copy.copy(X_train[0])
+                        Y_train[0] = copy.copy(aux_Y_train)
+                        X_train[0] = copy.copy(aux_X_train)
+                        aux_lab = False
     for s,cl in enumerate(Clasificadores):
 #        print('\t\t\t\t-->Clasificador :'+str(cl[2]))
         try:
@@ -267,13 +291,13 @@ def cla_filter():
     EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
     MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
     MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
-    aux.append(SMILaMax)
-    aux.append(SMILaMin)
-    aux.append(SMILaExt)
-#    aux.append(BOW_clas)
-#    aux.append(CKNN_cla)
+#    aux.append(SMILaMax)
+#    aux.append(SMILaMin)
+#    aux.append(SMILaExt)
+    aux.append(BOW_clas)
+    aux.append(CKNN_cla)
 #    aux.append(maxDD_cl)
-#    aux.append(EMDD_cla)
+    aux.append(EMDD_cla)
 #    aux.append(MILB_cla)
 #    aux.append(MILES_cl)
     return aux

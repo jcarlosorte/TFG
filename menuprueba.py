@@ -17,16 +17,16 @@ from filters import CVCF
 from filters import IPF
 folds = 5
 votacion = 'consenso'
-DataSet = ['tiger_scaled']
+DataSet = ['fox_scaled']
 #ruido = [0,5,10,15,20,25,30]
-ruido = [0]
+ruido = [10]
 #print('********** Crear dataset con ruido **********')
 #fvc.fvc_part(DataSet,folds,ruido)
 #print('********** Ensemble Filter **********')
-EF.EF(DataSet,votacion,folds,ruido)
+#EF.EF(DataSet,votacion,folds,ruido)
 #print('********** CV Committees Filter por '+str(votacion)+'**********')
-#votacion = 'maxVotos'
-CVCF.CVcF(DataSet,votacion,folds,ruido)
+votacion = 'maxVotos'
+#CVCF.CVcF(DataSet,votacion,folds,ruido)
 #print('********** Iterative Partitioning Filter **********')
 #votacion = 'consenso'
 IPF.IPF(DataSet,votacion,folds,ruido)

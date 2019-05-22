@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#SBATCH -J filtrosArrayTFG
+
+#SBATCH -p larga
+
+#SBATCH -o /home/jcorte/TFG/dataNoisy/Ruido%a/slurm_output_%A_ruido%a.dat
+
+#SBATCH -e /home/jcorte/TFG/dataNoisy/Ruido%a/slurm_err_%A_ruido%a.dat
+
+#SBATCH --array=0,5,10,15,20,25,30
+
+DIR[0]=/home/jcorte/TFG/dataNoisy/Ruido0/
+DIR[5]=/home/jcorte/TFG/dataNoisy/Ruido5/
+DIR[10]=/home/jcorte/TFG/dataNoisy/Ruido10/
+DIR[15]=/home/jcorte/TFG/dataNoisy/Ruido15/
+DIR[20]=/home/jcorte/TFG/dataNoisy/Ruido20/
+DIR[25]=/home/jcorte/TFG/dataNoisy/Ruido25/
+DIR[30]=/home/jcorte/TFG/dataNoisy/Ruido30/
+
+cd ${DIR[$SLURM_ARRAY_TASK_ID]}; python3 menu.py

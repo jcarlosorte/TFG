@@ -6,7 +6,7 @@ Created on Sun May 12 00:18:24 2019
 """
 
 #imports
-import warnings
+import warnings,copy
 from MILpy.data.load_data import load_data
 import random as rand
 import numpy as np
@@ -75,7 +75,7 @@ def IPF(b,votacion,folds,ruido):
                     results_accuracie_O.append(results_Ori[g][0])
                     results_auc_O.append(results_Ori[g][1])
                 print('\t\t\t\t\t-->Original')
-                print('\t\t\t\t\t Precisión: '+ str(np.mean(results_accuracie_O, dtype=np.float64))+'%')
+                print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_O, dtype=np.float64))+'%')
                 print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_O, dtype=np.float64)))
                 
                 for h,cl_f0 in enumerate(Clasificadores_filtro):
@@ -85,7 +85,7 @@ def IPF(b,votacion,folds,ruido):
                     for g in range(0,folds):
                         results_accuracie_F.append(results_Fil[j][g][0])
                         results_auc_F.append(results_Fil[j][g][1])  
-                    print('\t\t\t\t\t Precisión: '+ str(np.mean(results_accuracie_F, dtype=np.float64))+'%')
+                    print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_F, dtype=np.float64))+'%')
                     print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F, dtype=np.float64)))
 #            dataAcc[DaTSe][ny][fold-1][0] = 
 #            dataAcc[DaTSe][ny][fold-1][1] =
@@ -98,12 +98,15 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
     stop = True
     countToStop = 0
     vuelta = 0
+    if len(labels_f) < folds:
+        folds = len(labels_f)
     skf = StratifiedKFold(n_splits=folds)
+    
     while stop:
         bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, len(labels_f)-1))
         isCorrectLabel = np.ones((folds, len(labels_f)), dtype=bool)
         fold = 0
-
+        
         for train_index, test_index in skf.split(bags_f, labels_f.reshape(len(labels_f))):
             X_train = [bags_f[i] for i in train_index]        
             Y_train = labels_f[train_index]
@@ -182,6 +185,30 @@ def filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_):
     results = np.zeros((2))
     accuracie = 0
     auc_score = 0
+    aux_lab = True
+    if len(np.unique(Y_train)) == 1:
+        if Y_train[0] == 0:
+            for b in range(0,len(Y_test)):
+                if aux_lab:
+                    if Y_test[b] == 1:
+                        aux_Y_train = copy.copy(Y_test[b])
+                        aux_X_train = copy.copy(X_test[b])
+                        Y_test[b] = copy.copy(Y_train[0])
+                        X_test[b] = copy.copy(X_train[0])
+                        Y_train[0] = copy.copy(aux_Y_train)
+                        X_train[0] = copy.copy(aux_X_train)
+                        aux_lab = False
+        else:
+            for b in range(0,len(Y_test)):
+                if aux_lab:
+                    if Y_test[b] == 0:
+                        aux_Y_train = copy.copy(Y_test[b])
+                        aux_X_train = copy.copy(X_test[b])
+                        Y_test[b] = copy.copy(Y_train[0])
+                        X_test[b] = copy.copy(X_train[0])
+                        Y_train[0] = copy.copy(aux_Y_train)
+                        X_train[0] = copy.copy(aux_X_train)
+                        aux_lab = False
     try:
         if len(clasificador_[1]) > 0:
             clasificador_[0].fit(X_train, Y_train, **clasificador_[1])
@@ -253,11 +280,11 @@ def clasif():
     aux.append(SMILaMax)
     aux.append(SMILaMin)
     aux.append(SMILaExt)
-#    aux.append(BOW_clas)
-#    aux.append(CKNN_cla)
-#    aux.append(maxDD_cl)
-#    aux.append(EMDD_cla)
-#    aux.append(MILB_cla)
+    aux.append(BOW_clas)
+    aux.append(CKNN_cla)
+    aux.append(maxDD_cl)
+    aux.append(EMDD_cla)
+    aux.append(MILB_cla)
 #    aux.append(MILES_cl)
     return aux
 
@@ -293,10 +320,10 @@ def cla_filter_cvcf():
     aux.append(SMILaMax)
     aux.append(SMILaMin)
     aux.append(SMILaExt)
-#    aux.append(BOW_clas)
-#    aux.append(CKNN_cla)
-#    aux.append(maxDD_cl)
-#    aux.append(EMDD_cla)
-#    aux.append(MILB_cla)
+    aux.append(BOW_clas)
+    aux.append(CKNN_cla)
+    aux.append(maxDD_cl)
+    aux.append(EMDD_cla)
+    aux.append(MILB_cla)
 #    aux.append(MILES_cl)
     return aux
