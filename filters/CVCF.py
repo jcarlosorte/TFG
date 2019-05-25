@@ -10,6 +10,7 @@ import warnings,copy
 from MILpy.data.load_data import load_data
 import random as rand
 import numpy as np
+import pandas as pd
 from sklearn.utils import shuffle
 from sklearn.model_selection import StratifiedKFold
 warnings.filterwarnings('ignore')
@@ -21,7 +22,6 @@ from MILpy.Algorithms.MILBoost import MILBoost
 from MILpy.Algorithms.maxDD import maxDD
 from MILpy.Algorithms.CKNN import CKNN
 from MILpy.Algorithms.EMDD import EMDD
-from MILpy.Algorithms.MILES import MILES
 from MILpy.Algorithms.BOW import BOW
 
 def CVcF(b,votacion,folds,ruido):
@@ -35,8 +35,16 @@ def CVcF(b,votacion,folds,ruido):
         
         for ny,k in enumerate(ruido):
             print('\t\t=>RUIDO : '+str(k))
+            file_data = '../dataNoisy/Ruido'+str(k)+'/'+str(votacion)+'/CVCF/tabla.csv'
+            data = {}
+            data['CVCF'] = []
+            data['Original'] = []
+            
             Clasificadores = clasif()
             Clasificadores_filtro = cla_filter_cvcf()
+            for h,cl_f0 in enumerate(Clasificadores_filtro):
+                    data[str(cl_f0[2])] = []
+            
             for s,cl in enumerate(Clasificadores):
                 fold = 1
 #                results_Fil = np.zeros((len(Clasificadores_filtro),folds))
@@ -70,11 +78,13 @@ def CVcF(b,votacion,folds,ruido):
                 results_accuracie_O = []
                 results_auc_O = []
                 print('\t\t\t\t-->Clasificador :'+str(clasificador_[2]))
+                data['CVCF'].append(str(clasificador_[2]))
                 for g in range(0,folds):
                     results_accuracie_O.append(results_Ori[g][0])
                     results_auc_O.append(results_Ori[g][1])
                 print('\t\t\t\t\t-->Original')
                 print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_O, dtype=np.float64))+'%')
+                data['Original'].append(np.mean(results_accuracie_O, dtype=np.float64))
                 print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_O, dtype=np.float64)))
                 
                 for h,cl_f0 in enumerate(Clasificadores_filtro):
@@ -85,9 +95,10 @@ def CVcF(b,votacion,folds,ruido):
                         results_accuracie_F.append(results_Fil[j][g][0])
                         results_auc_F.append(results_Fil[j][g][1])  
                     print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_F, dtype=np.float64))+'%')
+                    data[str(cl_f0[2])].append(np.mean(results_accuracie_F, dtype=np.float64))
                     print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F, dtype=np.float64)))
-#            dataAcc[DaTSe][ny][fold-1][0] = 
-#            dataAcc[DaTSe][ny][fold-1][1] =
+            df = pd.DataFrame(data)
+            df.to_csv(file_data, sep=';')
     DaTSe = DaTSe + 1
 
 def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
@@ -236,7 +247,6 @@ def clasif():
     resul6 = [[],[],[],[],[],[],[]]
     resul7 = [[],[],[],[],[],[],[]]
     resul8 = [[],[],[],[],[],[],[]]
-    resul9 = [[],[],[],[],[],[],[]]
     roc_m_1 = [[],[],[],[],[],[],[]]
     roc_m_2 = [[],[],[],[],[],[],[]]
     roc_m_3 = [[],[],[],[],[],[],[]]
@@ -245,7 +255,6 @@ def clasif():
     roc_m_6 = [[],[],[],[],[],[],[]]
     roc_m_7 = [[],[],[],[],[],[],[]]
     roc_m_8 = [[],[],[],[],[],[],[]]
-    roc_m_9 = [[],[],[],[],[],[],[]]
     SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul1,roc_m_1]
     SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2,roc_m_2]
     SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3,roc_m_3]
@@ -254,7 +263,6 @@ def clasif():
     maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',resul6,roc_m_6]
     EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
     MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
-    MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
     aux.append(SMILaMax)
     aux.append(SMILaMin)
     aux.append(SMILaExt)
@@ -263,7 +271,6 @@ def clasif():
     aux.append(maxDD_cl)
     aux.append(EMDD_cla)
     aux.append(MILB_cla)
-#    aux.append(MILES_cl)
     return aux
 
 def cla_filter_cvcf():
@@ -276,7 +283,6 @@ def cla_filter_cvcf():
     resul6 = [[],[],[],[],[],[],[]]
     resul7 = [[],[],[],[],[],[],[]]
     resul8 = [[],[],[],[],[],[],[]]
-    resul9 = [[],[],[],[],[],[],[]]
     roc_m_1 = [[],[],[],[],[],[],[]]
     roc_m_2 = [[],[],[],[],[],[],[]]
     roc_m_3 = [[],[],[],[],[],[],[]]
@@ -285,7 +291,6 @@ def cla_filter_cvcf():
     roc_m_6 = [[],[],[],[],[],[],[]]
     roc_m_7 = [[],[],[],[],[],[],[]]
     roc_m_8 = [[],[],[],[],[],[],[]]
-    roc_m_9 = [[],[],[],[],[],[],[]]
     SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul1,roc_m_1]
     SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2,roc_m_2]
     SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3,roc_m_3]
@@ -294,7 +299,6 @@ def cla_filter_cvcf():
     maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',resul6,roc_m_6]
     EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
     MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
-    MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
     aux.append(SMILaMax)
     aux.append(SMILaMin)
     aux.append(SMILaExt)
@@ -303,5 +307,5 @@ def cla_filter_cvcf():
     aux.append(maxDD_cl)
     aux.append(EMDD_cla)
     aux.append(MILB_cla)
-#    aux.append(MILES_cl)
+
     return aux

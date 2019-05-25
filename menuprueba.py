@@ -9,7 +9,7 @@ import sys,os,warnings
 
 os.chdir('C:/Users/Administrador/Documents/GitHub/TFG/MILpy')
 sys.path.append(os.path.realpath('..'))
-
+import pandas as pd
 warnings.filterwarnings('ignore')
 from funciones import fvc
 from filters import EF
@@ -18,15 +18,16 @@ from filters import IPF
 folds = 5
 votacion = 'consenso'
 DataSet = ['fox_scaled']
-#ruido = [0,5,10,15,20,25,30]
-ruido = [10]
-#print('********** Crear dataset con ruido **********')
-#fvc.fvc_part(DataSet,folds,ruido)
-#print('********** Ensemble Filter **********')
-#EF.EF(DataSet,votacion,folds,ruido)
-#print('********** CV Committees Filter por '+str(votacion)+'**********')
-votacion = 'maxVotos'
-#CVCF.CVcF(DataSet,votacion,folds,ruido)
-#print('********** Iterative Partitioning Filter **********')
-#votacion = 'consenso'
-IPF.IPF(DataSet,votacion,folds,ruido)
+##ruido = [0,5,10,15,20,25,30]
+ruido = [0]
+##print('********** Crear dataset con ruido **********')
+##fvc.fvc_part(DataSet,folds,ruido)
+##print('********** Ensemble Filter **********')
+##EF.EF(DataSet,votacion,folds,ruido)
+##print('********** CV Committees Filter por '+str(votacion)+'**********')
+#votacion = 'maxVotos'
+CVCF.CVcF(DataSet,votacion,folds,ruido)
+##print('********** Iterative Partitioning Filter **********')
+##votacion = 'consenso'
+#IPF.IPF(DataSet,votacion,folds,ruido)
+

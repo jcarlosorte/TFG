@@ -2,7 +2,7 @@
 
 #SBATCH -J filtrosArrayTFG
 
-#SBATCH -p larga
+#SBATCH -p muylarga
 
 #SBATCH -o /home/jcorte/TFG/dataNoisy/Ruido%a/slurm_output_%A_dir%a.dat
 
@@ -13,44 +13,44 @@
 DIR[0]=/home/jcorte/TFG/dataNoisy/Ruido0/consenso/CVCF/
 DIR[1]=/home/jcorte/TFG/dataNoisy/Ruido0/consenso/EF/
 DIR[2]=/home/jcorte/TFG/dataNoisy/Ruido0/consenso/IPF/
-DIR[3]=/home/jcorte/TFG/dataNoisy/Ruido0/maxvotos/CVCF/
-DIR[4]=/home/jcorte/TFG/dataNoisy/Ruido0/maxvotos/EF/
-DIR[5]=/home/jcorte/TFG/dataNoisy/Ruido0/maxvotos/IPF/
+DIR[3]=/home/jcorte/TFG/dataNoisy/Ruido0/maxVotos/CVCF/
+DIR[4]=/home/jcorte/TFG/dataNoisy/Ruido0/maxVotos/EF/
+DIR[5]=/home/jcorte/TFG/dataNoisy/Ruido0/maxVotos/IPF/
 DIR[6]=/home/jcorte/TFG/dataNoisy/Ruido5/consenso/CVCF/
 DIR[7]=/home/jcorte/TFG/dataNoisy/Ruido5/consenso/EF/
 DIR[8]=/home/jcorte/TFG/dataNoisy/Ruido5/consenso/IPF/
-DIR[9]=/home/jcorte/TFG/dataNoisy/Ruido5/maxvotos/CVCF/
-DIR[10]=/home/jcorte/TFG/dataNoisy/Ruido5/maxvotos/EF/
-DIR[11]=/home/jcorte/TFG/dataNoisy/Ruido5/maxvotos/IPF/
+DIR[9]=/home/jcorte/TFG/dataNoisy/Ruido5/maxVotos/CVCF/
+DIR[10]=/home/jcorte/TFG/dataNoisy/Ruido5/maxVotos/EF/
+DIR[11]=/home/jcorte/TFG/dataNoisy/Ruido5/maxVotos/IPF/
 DIR[12]=/home/jcorte/TFG/dataNoisy/Ruido10/consenso/CVCF/
 DIR[13]=/home/jcorte/TFG/dataNoisy/Ruido10/consenso/EF/
 DIR[14]=/home/jcorte/TFG/dataNoisy/Ruido10/consenso/IPF/
-DIR[15]=/home/jcorte/TFG/dataNoisy/Ruido10/maxvotos/CVCF/
-DIR[16]=/home/jcorte/TFG/dataNoisy/Ruido10/maxvotos/EF/
-DIR[17]=/home/jcorte/TFG/dataNoisy/Ruido10/maxvotos/IPF/
+DIR[15]=/home/jcorte/TFG/dataNoisy/Ruido10/maxVotos/CVCF/
+DIR[16]=/home/jcorte/TFG/dataNoisy/Ruido10/maxVotos/EF/
+DIR[17]=/home/jcorte/TFG/dataNoisy/Ruido10/maxVotos/IPF/
 DIR[18]=/home/jcorte/TFG/dataNoisy/Ruido15/consenso/CVCF/
 DIR[19]=/home/jcorte/TFG/dataNoisy/Ruido15/consenso/EF/
 DIR[20]=/home/jcorte/TFG/dataNoisy/Ruido15/consenso/IPF/
-DIR[21]=/home/jcorte/TFG/dataNoisy/Ruido15/maxvotos/CVCF/
-DIR[22]=/home/jcorte/TFG/dataNoisy/Ruido15/maxvotos/EF/
-DIR[23]=/home/jcorte/TFG/dataNoisy/Ruido15/maxvotos/IPF/
+DIR[21]=/home/jcorte/TFG/dataNoisy/Ruido15/maxVotos/CVCF/
+DIR[22]=/home/jcorte/TFG/dataNoisy/Ruido15/maxVotos/EF/
+DIR[23]=/home/jcorte/TFG/dataNoisy/Ruido15/maxVotos/IPF/
 DIR[24]=/home/jcorte/TFG/dataNoisy/Ruido20/consenso/CVCF/
 DIR[25]=/home/jcorte/TFG/dataNoisy/Ruido20/consenso/EF/
 DIR[26]=/home/jcorte/TFG/dataNoisy/Ruido20/consenso/IPF/
-DIR[27]=/home/jcorte/TFG/dataNoisy/Ruido20/maxvotos/CVCF/
-DIR[28]=/home/jcorte/TFG/dataNoisy/Ruido20/maxvotos/EF/
-DIR[29]=/home/jcorte/TFG/dataNoisy/Ruido20/maxvotos/IPF/
+DIR[27]=/home/jcorte/TFG/dataNoisy/Ruido20/maxVotos/CVCF/
+DIR[28]=/home/jcorte/TFG/dataNoisy/Ruido20/maxVotos/EF/
+DIR[29]=/home/jcorte/TFG/dataNoisy/Ruido20/maxVotos/IPF/
 DIR[30]=/home/jcorte/TFG/dataNoisy/Ruido25/consenso/CVCF/
 DIR[31]=/home/jcorte/TFG/dataNoisy/Ruido25/consenso/EF/
 DIR[32]=/home/jcorte/TFG/dataNoisy/Ruido25/consenso/IPF/
-DIR[33]=/home/jcorte/TFG/dataNoisy/Ruido25/maxvotos/CVCF/
-DIR[34]=/home/jcorte/TFG/dataNoisy/Ruido25/maxvotos/EF/
-DIR[35]=/home/jcorte/TFG/dataNoisy/Ruido25/maxvotos/IPF/
+DIR[33]=/home/jcorte/TFG/dataNoisy/Ruido25/maxVotos/CVCF/
+DIR[34]=/home/jcorte/TFG/dataNoisy/Ruido25/maxVotos/EF/
+DIR[35]=/home/jcorte/TFG/dataNoisy/Ruido25/maxVotos/IPF/
 DIR[36]=/home/jcorte/TFG/dataNoisy/Ruido30/consenso/CVCF/
 DIR[37]=/home/jcorte/TFG/dataNoisy/Ruido30/consenso/EF/
 DIR[38]=/home/jcorte/TFG/dataNoisy/Ruido30/consenso/IPF/
-DIR[39]=/home/jcorte/TFG/dataNoisy/Ruido30/maxvotos/CVCF/
-DIR[40]=/home/jcorte/TFG/dataNoisy/Ruido30/maxvotos/EF/
-DIR[41]=/home/jcorte/TFG/dataNoisy/Ruido30/maxvotos/IPF/
+DIR[39]=/home/jcorte/TFG/dataNoisy/Ruido30/maxVotos/CVCF/
+DIR[40]=/home/jcorte/TFG/dataNoisy/Ruido30/maxVotos/EF/
+DIR[41]=/home/jcorte/TFG/dataNoisy/Ruido30/maxVotos/IPF/
 
 cd ${DIR[$SLURM_ARRAY_TASK_ID]}; python3 menu.py

@@ -10,6 +10,7 @@ import warnings,copy
 from MILpy.data.load_data import load_data
 import random as rand
 import numpy as np
+import pandas as pd
 from sklearn.utils import shuffle
 from sklearn.model_selection import StratifiedKFold
 warnings.filterwarnings('ignore')
@@ -36,8 +37,16 @@ def IPF(b,votacion,folds,ruido):
         
         for ny,k in enumerate(ruido):
             print('\t\t=>RUIDO : '+str(k))
+            file_data = '../dataNoisy/Ruido'+str(k)+'/'+str(votacion)+'/IPF/tabla.csv'
+            data = {}
+            data['IPF'] = []
+            data['Original'] = []
+            
             Clasificadores = clasif()
             Clasificadores_filtro = cla_filter_cvcf()
+            for h,cl_f0 in enumerate(Clasificadores_filtro):
+                    data[str(cl_f0[2])] = []
+            
             for s,cl in enumerate(Clasificadores):
                 fold = 1
 #                results_Fil = np.zeros((len(Clasificadores_filtro),folds))
@@ -71,11 +80,13 @@ def IPF(b,votacion,folds,ruido):
                 results_accuracie_O = []
                 results_auc_O = []
                 print('\t\t\t\t-->Clasificador :'+str(clasificador_[2]))
+                data['IPF'].append(str(clasificador_[2]))
                 for g in range(0,folds):
                     results_accuracie_O.append(results_Ori[g][0])
                     results_auc_O.append(results_Ori[g][1])
                 print('\t\t\t\t\t-->Original')
                 print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_O, dtype=np.float64))+'%')
+                data['Original'].append(np.mean(results_accuracie_O, dtype=np.float64))
                 print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_O, dtype=np.float64)))
                 
                 for h,cl_f0 in enumerate(Clasificadores_filtro):
@@ -86,9 +97,10 @@ def IPF(b,votacion,folds,ruido):
                         results_accuracie_F.append(results_Fil[j][g][0])
                         results_auc_F.append(results_Fil[j][g][1])  
                     print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_F, dtype=np.float64))+'%')
+                    data[str(cl_f0[2])].append(np.mean(results_accuracie_F, dtype=np.float64))
                     print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F, dtype=np.float64)))
-#            dataAcc[DaTSe][ny][fold-1][0] = 
-#            dataAcc[DaTSe][ny][fold-1][1] =
+            df = pd.DataFrame(data)
+            df.to_csv(file_data, sep=';')
     DaTSe = DaTSe + 1
     
 def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
