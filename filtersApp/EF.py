@@ -24,7 +24,7 @@ from MILpy.Algorithms.CKNN import CKNN
 from MILpy.Algorithms.EMDD import EMDD
 from MILpy.Algorithms.BOW import BOW
 
-def EF(b,votacion,folds,ruido):
+def EF(b,votacion,folds,ruido,clasif_O,clasif_F):
     DaTSe = 0
     for DataSet in b:
         bags,labels,X = load_data(DataSet)
@@ -34,18 +34,23 @@ def EF(b,votacion,folds,ruido):
         print('\n\tDATASET: '+str(DataSet)+'\n')
         for ny,k in enumerate(ruido):
             print('\t\t=>RUIDO : '+str(k))
-            file_data = '../tablas/Ruido'+str(k)+'/'+str(votacion)+'/EF/tabla.csv'
+            file_data = '../filtersApp/tabla.csv'
             data = {}
             data['EF'] = []
             data['Original'] = []
             data['Filtro_1'] = []
-            data['Filtro_2'] = []
+#            data['Filtro_2'] = []
             fold = 1
             results_Fil = []
-            results_Fil2 = []
+#            results_Fil2 = []
             results_Ori = []
+            Clasificadores_fake = clasif()
+            Clasificadores = []
+            for s,cl in enumerate(Clasificadores_fake):
+                if str(cl[2]) == clasif_O:
+                    Clasificadores.append(cl)
             for train_index, test_index in skf.split(bags, labels.reshape(len(labels))):
-#                print('\t\t\t=>FOLD : '+str(fold))
+                print('\t\t\t=>FOLD : '+str(fold))
                 X_train = [bags[i] for i in train_index]        
                 Y_train = labels[train_index]
                 X_test  = [bags[i] for i in test_index]
@@ -57,23 +62,25 @@ def EF(b,votacion,folds,ruido):
                         Y_train[al] = Y_train[al]+1
                     else:
                         Y_train[al] = Y_train[al]-1
-                num = 1
+                num = int(clasif_F) + 1
                 X_train_NoNy,Y_train_NoNy = mil_cv_filter_ef(X_train,Y_train,folds,votacion,num)
-                num = 2
-                X_train_NoNy2,Y_train_NoNy2 = mil_cv_filter_ef(X_train,Y_train,folds,votacion,num)
+#                num = 2
+#                X_train_NoNy2,Y_train_NoNy2 = mil_cv_filter_ef(X_train,Y_train,folds,votacion,num)
 #                print('\t\t\t=>Original')
-                results_Ori.append(filtrado_final(X_train,Y_train,X_test,Y_test)) 
+                results_Ori.append(filtrado_final(X_train,Y_train,X_test,Y_test,Clasificadores))
 #                print('\t\t\t=>Filtrado')
-                results_Fil.append(filtrado_final(X_train_NoNy,Y_train_NoNy,X_test,Y_test))
-                results_Fil2.append(filtrado_final(X_train_NoNy2,Y_train_NoNy2,X_test,Y_test))
+                results_Fil.append(filtrado_final(X_train_NoNy,Y_train_NoNy,X_test,Y_test,Clasificadores))
+#                results_Fil2.append(filtrado_final(X_train_NoNy2,Y_train_NoNy2,X_test,Y_test))
                 fold = fold + 1
-            Clasificadores = clasif()
-            Clasificadores_filtro = cla_filter()
-            Clasificadores_filtro2 = cla_filter2()
+            Clasificadores_filtro = ""
+            if clasif_F == "0":
+                Clasificadores_filtro = cla_filter()
+            elif clasif_F == "1":
+                Clasificadores_filtro = cla_filter2()
             results_accuracie_F = []
             results_auc_F = []
-            results_accuracie_F2 = []
-            results_auc_F2 = []
+#            results_accuracie_F2 = []
+#            results_auc_F2 = []
             results_accuracie_O = []
             results_auc_O = []
             for h in range(0,len(Clasificadores)):
@@ -82,8 +89,8 @@ def EF(b,votacion,folds,ruido):
                 for g in range(0,folds):
                     results_accuracie_F.append(results_Fil[g][h][0])
                     results_auc_F.append(results_Fil[g][h][1])
-                    results_accuracie_F2.append(results_Fil2[g][h][0])
-                    results_auc_F2.append(results_Fil2[g][h][1])
+#                    results_accuracie_F2.append(results_Fil2[g][h][0])
+#                    results_auc_F2.append(results_Fil2[g][h][1])
                     results_accuracie_O.append(results_Ori[g][h][0])
                     results_auc_O.append(results_Ori[g][h][1])
                 print('\t\t\t\t\t-->Original')
@@ -98,12 +105,12 @@ def EF(b,votacion,folds,ruido):
                 data['Filtro_1'].append(np.mean(results_accuracie_F))
                 print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F)))
                 
-                for h,cl_f0 in enumerate(Clasificadores_filtro2):
-                    print('\t\t\t\t\t * '+str(cl_f0[2]))
+#                for h,cl_f0 in enumerate(Clasificadores_filtro2):
+#                    print('\t\t\t\t\t * '+str(cl_f0[2]))
 #                print('\t\t\t\t\t-->Filtrado')
-                print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_F2))+'%')
-                data['Filtro_2'].append(np.mean(results_accuracie_F2))
-                print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F2)))
+#                print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_F2))+'%')
+#                data['Filtro_2'].append(np.mean(results_accuracie_F2))
+#                print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F2)))
             df = pd.DataFrame(data)
             df.to_csv(file_data, sep=';')
     DaTSe = DaTSe + 1
@@ -141,23 +148,23 @@ def clasif():
     CKNN_cla = [CKNN(),{'references': 3, 'citers': 5},'CKNN',resul5,roc_m_5]
     maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',resul6,roc_m_6]
     EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
-    MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
+    MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]    
     aux.append(SMILaMax)
     aux.append(SMILaMin)
     aux.append(SMILaExt)
     aux.append(BOW_clas)
-    aux.append(CKNN_cla)
-    aux.append(maxDD_cl)
-    aux.append(EMDD_cla)
+    aux.append(CKNN_cla)   
+    aux.append(maxDD_cl)   
+    aux.append(EMDD_cla)   
     aux.append(MILB_cla)
     return aux
 
 def mil_cv_filter_ef(bags_f,labels_f,folds,votacion,num):
     print('\t\t\tFiltrando...')
     if num == 1:
-        Clasificadores = cla_filter2()
-    else:
         Clasificadores = cla_filter()
+    else:
+        Clasificadores = cla_filter2()
     bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, 100))
     skf = StratifiedKFold(n_splits=folds)
     isCorrectLabel = np.ones((len(Clasificadores), len(labels_f)), dtype=bool)
@@ -227,8 +234,8 @@ def mil_cv_filter_ef(bags_f,labels_f,folds,votacion,num):
     Y_train_NoNy = labels_f[nonNoisyBags]
     return X_train_NoNy,Y_train_NoNy
 
-def filtrado_final(X_train,Y_train,X_test,Y_test):  
-    Clasificadores = clasif()
+def filtrado_final(X_train,Y_train,X_test,Y_test,cl_fil):  
+    Clasificadores = cl_fil
     results = np.zeros((len(Clasificadores),2))
     aux_lab = True
     if len(np.unique(Y_train)) == 1:

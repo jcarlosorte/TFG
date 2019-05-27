@@ -35,7 +35,7 @@ def CVcF(b,votacion,folds,ruido):
         
         for ny,k in enumerate(ruido):
             print('\t\t=>RUIDO : '+str(k))
-            file_data = '../dataNoisy/Ruido'+str(k)+'/'+str(votacion)+'/CVCF/tabla.csv'
+            file_data = '../tablas/Ruido'+str(k)+'/'+str(votacion)+'/CVCF/tabla.csv'
             data = {}
             data['CVCF'] = []
             data['Original'] = []
@@ -307,5 +307,4 @@ def cla_filter_cvcf():
     aux.append(maxDD_cl)
     aux.append(EMDD_cla)
     aux.append(MILB_cla)
-
     return aux

@@ -4,9 +4,9 @@
 
 #SBATCH -p muylarga
 
-#SBATCH -o /home/jcorte/TFG/dataNoisy/Ruido%a/slurm_output_%A_dir%a.dat
+#SBATCH -o /home/jcorte/TFG/dataNoisy/slurm_output_%A_Ruido%a.dat
 
-#SBATCH -e /home/jcorte/TFG/dataNoisy/Ruido%a/slurm_err_%A_dir%a.dat
+#SBATCH -e /home/jcorte/TFG/dataNoisy/slurm_err_%A_Ruido%a.dat
 
 #SBATCH --array=0-41
 

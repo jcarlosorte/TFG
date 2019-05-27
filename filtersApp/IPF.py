@@ -25,7 +25,7 @@ from MILpy.Algorithms.EMDD import EMDD
 from MILpy.Algorithms.MILES import MILES
 from MILpy.Algorithms.BOW import BOW
 
-def IPF(b,votacion,folds,ruido):
+def IPF(b,votacion,folds,ruido,clasif_O,clasif_F):
     
     DaTSe = 0
     for DataSet in b:
@@ -37,13 +37,22 @@ def IPF(b,votacion,folds,ruido):
         
         for ny,k in enumerate(ruido):
             print('\t\t=>RUIDO : '+str(k))
-            file_data = '../tablas/Ruido'+str(k)+'/'+str(votacion)+'/IPF/tabla.csv'
+            file_data = '../filtersApp/tabla.csv'
             data = {}
             data['IPF'] = []
             data['Original'] = []
             
-            Clasificadores = clasif()
-            Clasificadores_filtro = cla_filter_cvcf()
+            Clasificadores_fake = clasif()
+            Clasificadores = []
+            for s,cl in enumerate(Clasificadores_fake):
+                if str(cl[2]) == clasif_O:
+                    Clasificadores.append(cl)
+            
+            Clasificadores_fake2 = cla_filter_ipf()
+            Clasificadores_filtro = []
+            for s,cl in enumerate(Clasificadores_fake2):
+                if str(cl[2]) == clasif_F:
+                    Clasificadores_filtro.append(cl)
             for h,cl_f0 in enumerate(Clasificadores_filtro):
                     data[str(cl_f0[2])] = []
             
@@ -300,7 +309,7 @@ def clasif():
 #    aux.append(MILES_cl)
     return aux
 
-def cla_filter_cvcf():
+def cla_filter_ipf():
     aux = []
     resul1 = [[],[],[],[],[],[],[]]
     resul2 = [[],[],[],[],[],[],[]]
