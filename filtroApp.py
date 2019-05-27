@@ -13,7 +13,7 @@ QPushButton, QComboBox, QStyleFactory, QTableWidget, \
 QTableWidgetItem, QGroupBox, QRadioButton, \
 QSlider, QLCDNumber, QMessageBox
 warnings.filterwarnings('ignore')
-os.chdir('C:/Users/Administrador/Documents/GitHub/TFG/MILpy')
+os.chdir('MILpy')
 sys.path.append(os.path.realpath('..'))
 import pandas as pd
 from filtersApp import EF
