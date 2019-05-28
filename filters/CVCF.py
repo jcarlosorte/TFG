@@ -111,7 +111,7 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
             if len(clasificador_[1]) > 0:
                 clasificador_[0].fit(X_train, Y_train, **clasificador_[1])
             else:
-                clasificador_[0].fit(X_train, Y_train)
+                clasificador_[0].fit(bags_f, labels_f)
             predictions = clasificador_[0].predict(X_train)
             if (isinstance(predictions, tuple)):
                 predictions = predictions[0]
@@ -121,13 +121,24 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
                 if len(clasificador_[1]) > 0:
                     clasificador_[0].fit(X_train, Y_train, **clasificador_[1])
                 else:
-                    clasificador_[0].fit(X_train, Y_train)
+                    clasificador_[0].fit(bags_f, labels_f)
                 predictions = clasificador_[0].predict(X_train)
                 if (isinstance(predictions, tuple)):
                     predictions = predictions[0]
                 print('OK')
             except:
-                print('Fallo en calculo')
+                print('Posible fallo en bolsa...')
+                try:
+                    if len(clasificador_[1]) > 0:
+                        clasificador_[0].fit(X_train, Y_train, **clasificador_[1])
+                    else:
+                        clasificador_[0].fit(X_train, Y_train)
+                    predictions = clasificador_[0].predict(X_train)
+                    if (isinstance(predictions, tuple)):
+                        predictions = predictions[0]
+                    print('OK')
+                except:
+                    print('Fallo')
         for l,p in enumerate(train_index): 
             isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
         fold = fold + 1

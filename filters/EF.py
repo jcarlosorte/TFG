@@ -169,7 +169,7 @@ def mil_cv_filter_ef(bags_f,labels_f,folds,votacion,num):
                 if len(Clasificadores[s][1]) > 0:
                     Clasificadores[s][0].fit(X_train, Y_train, **Clasificadores[s][1])
                 else:
-                    Clasificadores[s][0].fit(X_train, Y_train)
+                    Clasificadores[s][0].fit(bags_f, labels_f)
                 predictions = Clasificadores[s][0].predict(X_test)
                 if (isinstance(predictions, tuple)):
                     predictions = predictions[0]
@@ -179,13 +179,24 @@ def mil_cv_filter_ef(bags_f,labels_f,folds,votacion,num):
                     if len(Clasificadores[s][1]) > 0:
                         Clasificadores[s][0].fit(X_train, Y_train, **Clasificadores[s][1])
                     else:
-                        Clasificadores[s][0].fit(X_train, Y_train)
+                        Clasificadores[s][0].fit(bags_f, labels_f)
                     predictions = Clasificadores[s][0].predict(X_test)
                     if (isinstance(predictions, tuple)):
                         predictions = predictions[0]
                     print('OK')
                 except:
-                    print('Fallo en calculo')
+                    print('Posible fallo en bolsa...')
+                    try:
+                        if len(Clasificadores[s][1]) > 0:
+                            Clasificadores[s][0].fit(X_train, Y_train, **Clasificadores[s][1])
+                        else:
+                            Clasificadores[s][0].fit(X_train, Y_train)
+                        predictions = Clasificadores[s][0].predict(X_test)
+                        if (isinstance(predictions, tuple)):
+                            predictions = predictions[0]
+                        print('OK')
+                    except:
+                        print('Fallo')
             for l,p in enumerate(test_index): 
                 isCorrectLabel[s][p] = (Y_test.T[0][l] == np.sign(predictions[l]))
 
