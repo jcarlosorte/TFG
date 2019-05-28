@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#SBATCH -J filtros25_6ArrayTFG
+
+#SBATCH -p larga
+
+#SBATCH -o /home/jcorte/TFG/tablas/Ruido25/slurm_output_%A_dir%a.dat
+
+#SBATCH -e /home/jcorte/TFG/tablas/Ruido25/slurm_err_%A_dir%a.dat
+
+#SBATCH --array=0-5
+
+DIR[0]=/home/jcorte/TFG/tablas/Ruido25/consenso/CVCF/
+DIR[1]=/home/jcorte/TFG/tablas/Ruido25/consenso/EF/
+DIR[2]=/home/jcorte/TFG/tablas/Ruido25/consenso/IPF/
+DIR[3]=/home/jcorte/TFG/tablas/Ruido25/maxVotos/CVCF/
+DIR[4]=/home/jcorte/TFG/tablas/Ruido25/maxVotos/EF/
+DIR[5]=/home/jcorte/TFG/tablas/Ruido25/maxVotos/IPF/
+
+cd ${DIR[$SLURM_ARRAY_TASK_ID]}; python3 menu_6.py

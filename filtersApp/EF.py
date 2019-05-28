@@ -205,9 +205,11 @@ def mil_cv_filter_ef(bags_f,labels_f,folds,votacion,num):
                         print('OK')
                     except:
                         print('Fallo')
-            for l,p in enumerate(test_index): 
-                isCorrectLabel[s][p] = (Y_test.T[0][l] == np.sign(predictions[l]))
-
+            for l,p in enumerate(test_index):
+                try:
+                    isCorrectLabel[s][p] = (Y_test.T[0][l] == np.sign(predictions[l]))
+                except IndexError:
+                    print("Fallo en ultimo indice!")
     if votacion == 'maxVotos':
         noisyBags = []
         for n in range(0,len(labels_f)):

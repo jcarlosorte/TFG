@@ -139,8 +139,11 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
                     print('OK')
                 except:
                     print('Fallo')
-        for l,p in enumerate(train_index): 
-            isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
+        for l,p in enumerate(train_index):
+            try:
+                isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
+            except IndexError:
+                print("Fallo en ultimo indice!")
         fold = fold + 1
     if votacion == 'maxVotos':
         noisyBags = []
