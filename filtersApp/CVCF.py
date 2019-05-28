@@ -25,7 +25,6 @@ from MILpy.Algorithms.EMDD import EMDD
 from MILpy.Algorithms.BOW import BOW
 
 def CVcF(b,votacion,folds,ruido,clasif_O,clasif_F):
-    DaTSe = 0
     for DataSet in b:
         bags,labels,X = load_data(DataSet)
         bags,labels = shuffle(bags, labels, random_state=rand.randint(0, len(labels)-1))
@@ -94,25 +93,24 @@ def CVcF(b,votacion,folds,ruido,clasif_O,clasif_F):
                     results_auc_O.append(results_Ori[g][1])
                 print('\t\t\t\t\t-->Original')
                 print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_O, dtype=np.float64))+'%')
-                data['Original'].append(np.mean(results_accuracie_O, dtype=np.float64))
+                data['Original'].append(np.mean(results_accuracie_O))
                 print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_O, dtype=np.float64)))
                 
                 for h,cl_f0 in enumerate(Clasificadores_filtro):
                     results_accuracie_F = []
                     results_auc_F = []
                     print('\t\t\t\t\t-->Filtrado por '+str(cl_f0[2]))
-                    for g in range(0,folds):
-                        results_accuracie_F.append(results_Fil[j][g][0])
-                        results_auc_F.append(results_Fil[j][g][1])  
+                    for f in range(0,folds):
+                        results_accuracie_F.append(results_Fil[h][f][0])
+                        results_auc_F.append(results_Fil[h][f][1])  
                     print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_F, dtype=np.float64))+'%')
-                    data[str(cl_f0[2])].append(np.mean(results_accuracie_F, dtype=np.float64))
+                    data[str(cl_f0[2])].append(np.mean(results_accuracie_F))
                     print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F, dtype=np.float64)))
             df = pd.DataFrame(data)
             df.to_csv(file_data, sep=';')
-    DaTSe = DaTSe + 1
 
 def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
-    print('\t\t\tFiltrando...')
+#    print('\t\t\tFiltrando...')
     bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0,len(labels_f)-1))
     skf = StratifiedKFold(n_splits=folds)
     isCorrectLabel = np.ones((folds, len(labels_f)), dtype=bool)
@@ -175,7 +173,7 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
                 cont = cont + 1
             else:
                 nonNoisyBags.append(z)
-    print('\t\t\t=>Elementos eliminados : '+str(len(noisyBags)))
+    print('\t\t\t=>Elementos eliminados por '+clasificador_[2]+': '+str(len(noisyBags)))
     X_train_NoNy = [bags_f[i] for i in nonNoisyBags]
     Y_train_NoNy = labels_f[nonNoisyBags]
     return X_train_NoNy,Y_train_NoNy

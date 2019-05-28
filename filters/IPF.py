@@ -15,19 +15,15 @@ from sklearn.utils import shuffle
 from sklearn.model_selection import StratifiedKFold
 warnings.filterwarnings('ignore')
 from sklearn.metrics import roc_auc_score, accuracy_score
-#from funciones import fun_aux
 #Import Algorithms 
 from MILpy.Algorithms.simpleMIL import simpleMIL
 from MILpy.Algorithms.MILBoost import MILBoost
 from MILpy.Algorithms.maxDD import maxDD
 from MILpy.Algorithms.CKNN import CKNN
 from MILpy.Algorithms.EMDD import EMDD
-from MILpy.Algorithms.MILES import MILES
 from MILpy.Algorithms.BOW import BOW
 
 def IPF(b,votacion,folds,ruido):
-    
-    DaTSe = 0
     for DataSet in b:
         bags,labels,X = load_data(DataSet)
         bags,labels = shuffle(bags, labels, random_state=rand.randint(0, len(labels)-1))
@@ -37,7 +33,7 @@ def IPF(b,votacion,folds,ruido):
         
         for ny,k in enumerate(ruido):
             print('\t\t=>RUIDO : '+str(k))
-            file_data = '../tablas/Ruido'+str(k)+'/'+str(votacion)+'/IPF/tabla.csv'
+            file_data = '../tablas/Ruido'+str(k)+'/'+str(votacion)+'/IPF/tabla_'+str(DataSet)+'.csv'
             data = {}
             data['IPF'] = []
             data['Original'] = []
@@ -86,25 +82,24 @@ def IPF(b,votacion,folds,ruido):
                     results_auc_O.append(results_Ori[g][1])
                 print('\t\t\t\t\t-->Original')
                 print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_O, dtype=np.float64))+'%')
-                data['Original'].append(np.mean(results_accuracie_O, dtype=np.float64))
+                data['Original'].append(np.mean(results_accuracie_O))
                 print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_O, dtype=np.float64)))
                 
                 for h,cl_f0 in enumerate(Clasificadores_filtro):
                     results_accuracie_F = []
                     results_auc_F = []
                     print('\t\t\t\t\t-->Filtrado por '+str(cl_f0[2]))
-                    for g in range(0,folds):
-                        results_accuracie_F.append(results_Fil[j][g][0])
-                        results_auc_F.append(results_Fil[j][g][1])  
+                    for f in range(0,folds):
+                        results_accuracie_F.append(results_Fil[h][f][0])
+                        results_auc_F.append(results_Fil[h][f][1])  
                     print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_F, dtype=np.float64))+'%')
-                    data[str(cl_f0[2])].append(np.mean(results_accuracie_F, dtype=np.float64))
+                    data[str(cl_f0[2])].append(np.mean(results_accuracie_F))
                     print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F, dtype=np.float64)))
             df = pd.DataFrame(data)
             df.to_csv(file_data, sep=';')
-    DaTSe = DaTSe + 1
     
 def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
-    print('\t\t\tFiltrando...')
+#    print('\t\t\tFiltrando...')
     error = 0.01
     toStop = 3
     stop = True
@@ -188,7 +183,7 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
             labels_f = labels_f[nonNoisyBags]
 
         vuelta = vuelta + 1
-    print('\t\t\t=>Elementos eliminados : '+str(len(noisyBags)))
+    print('\t\t\t=>Elementos eliminados por '+clasificador_[2]+': '+str(len(noisyBags)))
     X_train_NoNy = bags_f
     Y_train_NoNy = labels_f
     return X_train_NoNy,Y_train_NoNy
@@ -270,7 +265,6 @@ def clasif():
     resul6 = [[],[],[],[],[],[],[]]
     resul7 = [[],[],[],[],[],[],[]]
     resul8 = [[],[],[],[],[],[],[]]
-    resul9 = [[],[],[],[],[],[],[]]
     roc_m_1 = [[],[],[],[],[],[],[]]
     roc_m_2 = [[],[],[],[],[],[],[]]
     roc_m_3 = [[],[],[],[],[],[],[]]
@@ -279,7 +273,6 @@ def clasif():
     roc_m_6 = [[],[],[],[],[],[],[]]
     roc_m_7 = [[],[],[],[],[],[],[]]
     roc_m_8 = [[],[],[],[],[],[],[]]
-    roc_m_9 = [[],[],[],[],[],[],[]]
     SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul1,roc_m_1]
     SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2,roc_m_2]
     SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3,roc_m_3]
@@ -288,7 +281,6 @@ def clasif():
     maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',resul6,roc_m_6]
     EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
     MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
-    MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
     aux.append(SMILaMax)
     aux.append(SMILaMin)
     aux.append(SMILaExt)
@@ -297,7 +289,6 @@ def clasif():
     aux.append(maxDD_cl)
     aux.append(EMDD_cla)
     aux.append(MILB_cla)
-#    aux.append(MILES_cl)
     return aux
 
 def cla_filter_cvcf():
@@ -310,7 +301,6 @@ def cla_filter_cvcf():
     resul6 = [[],[],[],[],[],[],[]]
     resul7 = [[],[],[],[],[],[],[]]
     resul8 = [[],[],[],[],[],[],[]]
-    resul9 = [[],[],[],[],[],[],[]]
     roc_m_1 = [[],[],[],[],[],[],[]]
     roc_m_2 = [[],[],[],[],[],[],[]]
     roc_m_3 = [[],[],[],[],[],[],[]]
@@ -319,7 +309,6 @@ def cla_filter_cvcf():
     roc_m_6 = [[],[],[],[],[],[],[]]
     roc_m_7 = [[],[],[],[],[],[],[]]
     roc_m_8 = [[],[],[],[],[],[],[]]
-    roc_m_9 = [[],[],[],[],[],[],[]]
     SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul1,roc_m_1]
     SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2,roc_m_2]
     SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3,roc_m_3]
@@ -328,7 +317,6 @@ def cla_filter_cvcf():
     maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',resul6,roc_m_6]
     EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
     MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
-    MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
     aux.append(SMILaMax)
     aux.append(SMILaMin)
     aux.append(SMILaExt)
@@ -337,5 +325,4 @@ def cla_filter_cvcf():
     aux.append(maxDD_cl)
     aux.append(EMDD_cla)
     aux.append(MILB_cla)
-#    aux.append(MILES_cl)
     return aux

@@ -25,7 +25,6 @@ from MILpy.Algorithms.EMDD import EMDD
 from MILpy.Algorithms.BOW import BOW
 
 def EF(b,votacion,folds,ruido,clasif_O,clasif_F):
-    DaTSe = 0
     for DataSet in b:
         bags,labels,X = load_data(DataSet)
         bags,labels = shuffle(bags, labels, random_state=rand.randint(0, len(labels)-1))
@@ -113,7 +112,6 @@ def EF(b,votacion,folds,ruido,clasif_O,clasif_F):
 #                print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_F2)))
             df = pd.DataFrame(data)
             df.to_csv(file_data, sep=';')
-    DaTSe = DaTSe + 1
 
 def roc_auc_score_FIXED(y_true, y_pred):
     if len(np.unique(y_true)) == 1 or len(np.unique(y_true)) == 0: # bug in roc_auc_score
@@ -160,7 +158,7 @@ def clasif():
     return aux
 
 def mil_cv_filter_ef(bags_f,labels_f,folds,votacion,num):
-    print('\t\t\tFiltrando...')
+#    print('\t\t\tFiltrando...')
     if num == 1:
         Clasificadores = cla_filter()
     else:
@@ -229,7 +227,7 @@ def mil_cv_filter_ef(bags_f,labels_f,folds,votacion,num):
                 cont = cont + 1
             else:
                 nonNoisyBags.append(z)
-    print('\t\t\t=>Elementos eliminados : '+str(len(noisyBags)))
+    print('\t\t\t=>Elementos eliminados con Filter '+str(num + 1)+': '+str(len(noisyBags)))
     X_train_NoNy = [bags_f[i] for i in nonNoisyBags]
     Y_train_NoNy = labels_f[nonNoisyBags]
     return X_train_NoNy,Y_train_NoNy
