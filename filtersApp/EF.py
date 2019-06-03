@@ -164,6 +164,8 @@ def mil_cv_filter_ef(bags_f,labels_f,folds,votacion,num):
     else:
         Clasificadores = cla_filter2()
     bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, 100))
+    if len(labels_f) < folds:
+        folds = len(labels_f)
     skf = StratifiedKFold(n_splits=folds)
     isCorrectLabel = np.ones((len(Clasificadores), len(labels_f)), dtype=bool)
     for train_index, test_index in skf.split(bags_f, labels_f.reshape(len(labels_f))):
@@ -204,7 +206,20 @@ def mil_cv_filter_ef(bags_f,labels_f,folds,votacion,num):
                             predictions = predictions[0]
                         print('OK')
                     except:
-                        print('Fallo')
+                        try:
+                            print('Cambiando clasificador..')
+                            Cla_error = simpleMIL()
+                            par_error = {'type': 'max'}
+                            if len(par_error) > 0:
+                                Cla_error.fit(X_train, Y_train, **par_error)
+                            else:
+                                Cla_error.fit(X_train, Y_train)
+                            predictions = Cla_error.predict(X_train)
+                            if (isinstance(predictions, tuple)):
+                                predictions = predictions[0]
+                            print('OK')
+                        except:
+                            print('Fallo')
             for l,p in enumerate(test_index):
                 try:
                     isCorrectLabel[s][p] = (Y_test.T[0][l] == np.sign(predictions[l]))

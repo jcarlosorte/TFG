@@ -151,11 +151,14 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
                 except:
                     print('Posible fallo en bolsa...')
                     try:
-                        if len(clasificador_[1]) > 0:
-                            clasificador_[0].fit(X_train, Y_train, **clasificador_[1])
+                        print('Cambiando clasificador..')
+                        Cla_error = simpleMIL()
+                        par_error = {'type': 'max'}
+                        if len(par_error) > 0:
+                            Cla_error.fit(X_train, Y_train, **par_error)
                         else:
-                            clasificador_[0].fit(X_train, Y_train)
-                        predictions = clasificador_[0].predict(X_train)
+                            Cla_error.fit(X_train, Y_train)
+                        predictions = Cla_error.predict(X_train)
                         if (isinstance(predictions, tuple)):
                             predictions = predictions[0]
                         print('OK')

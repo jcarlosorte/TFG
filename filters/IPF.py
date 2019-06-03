@@ -149,7 +149,21 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
                             predictions = predictions[0]
                         print('OK')
                     except:
-                        print('Fallo')
+                        try:
+                            print('Cambiando clasificador..')
+                            Cla_error = simpleMIL()
+                            par_error = {'type': 'max'}
+                            if len(par_error) > 0:
+                                Cla_error.fit(X_train, Y_train, **par_error)
+                            else:
+                                Cla_error.fit(X_train, Y_train)
+                            predictions = Cla_error.predict(X_train)
+                            if (isinstance(predictions, tuple)):
+                                predictions = predictions[0]
+                            print('OK')
+                        except:
+                            print('Fallo')
+            
             for l,p in enumerate(train_index): 
                 try:
                     isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))

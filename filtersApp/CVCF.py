@@ -112,6 +112,8 @@ def CVcF(b,votacion,folds,ruido,clasif_O,clasif_F):
 def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
 #    print('\t\t\tFiltrando...')
     bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0,len(labels_f)-1))
+    if len(labels_f) < folds:
+        folds = len(labels_f)
     skf = StratifiedKFold(n_splits=folds)
     isCorrectLabel = np.ones((folds, len(labels_f)), dtype=bool)
     fold = 0
@@ -150,7 +152,20 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
                         predictions = predictions[0]
                     print('OK')
                 except:
-                    print('Fallo')               
+                    try:
+                        print('Cambiando clasificador..')
+                        Cla_error = simpleMIL()
+                        par_error = {'type': 'max'}
+                        if len(par_error) > 0:
+                            Cla_error.fit(X_train, Y_train, **par_error)
+                        else:
+                            Cla_error.fit(X_train, Y_train)
+                        predictions = Cla_error.predict(X_train)
+                        if (isinstance(predictions, tuple)):
+                            predictions = predictions[0]
+                        print('OK')
+                    except:
+                        print('Fallo')              
         for l,p in enumerate(train_index):
             try:
                 isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
