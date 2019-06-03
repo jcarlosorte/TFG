@@ -2,7 +2,7 @@
 
 #SBATCH -J filtros20_2ArrayTFG
 
-#SBATCH -p larga
+#SBATCH -p muylarga
 
 #SBATCH -o /home/jcorte/TFG/tablas/Ruido20/slurm_output_%A_dir%a.dat
 
