@@ -8,13 +8,9 @@
 
 #SBATCH -e /home/jcorte/TFG/tablas/Ruido15/slurm_err_%A_dir%a.dat
 
-#SBATCH --array=0-5
+#SBATCH --array=0-1
 
-DIR[0]=/home/jcorte/TFG/tablas/Ruido15/consenso/CVCF/
-DIR[1]=/home/jcorte/TFG/tablas/Ruido15/consenso/EF/
-DIR[2]=/home/jcorte/TFG/tablas/Ruido15/consenso/IPF/
-DIR[3]=/home/jcorte/TFG/tablas/Ruido15/maxVotos/CVCF/
-DIR[4]=/home/jcorte/TFG/tablas/Ruido15/maxVotos/EF/
-DIR[5]=/home/jcorte/TFG/tablas/Ruido15/maxVotos/IPF/
+DIR[0]=/home/jcorte/TFG/tablas/Ruido15/consenso/IPF/
+DIR[1]=/home/jcorte/TFG/tablas/Ruido15/maxVotos/IPF/
 
 cd ${DIR[$SLURM_ARRAY_TASK_ID]}; python3 menu_7.py

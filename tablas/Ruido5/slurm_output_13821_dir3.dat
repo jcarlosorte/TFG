@@ -1,0 +1,555 @@
+********** CV Committees Filter por maxVotos**********
+
+	DATASET: musk1_scaled
+
+		=>RUIDO : 5
+			=>Elementos eliminados por MIL max: 6
+			=>Elementos eliminados por MIL min: 7
+			=>Elementos eliminados por MIL Extreme: 3
+			=>Elementos eliminados por BOW: 3
+			=>Elementos eliminados por CKNN: 3
+			=>Elementos eliminados por DIVERSE DENSITY: 24
+			=>Elementos eliminados por EM-DD: 11
+			=>Elementos eliminados por MILBOOST: 36
+			=>Elementos eliminados por MIL max: 6
+			=>Elementos eliminados por MIL min: 9
+			=>Elementos eliminados por MIL Extreme: 1
+			=>Elementos eliminados por BOW: 1
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 23
+			=>Elementos eliminados por EM-DD: 14
+			=>Elementos eliminados por MILBOOST: 34
+			=>Elementos eliminados por MIL max: 5
+			=>Elementos eliminados por MIL min: 10
+			=>Elementos eliminados por MIL Extreme: 4
+			=>Elementos eliminados por BOW: 2
+			=>Elementos eliminados por CKNN: 1
+			=>Elementos eliminados por DIVERSE DENSITY: 21
+			=>Elementos eliminados por EM-DD: 12
+			=>Elementos eliminados por MILBOOST: 36
+			=>Elementos eliminados por MIL max: 5
+			=>Elementos eliminados por MIL min: 4
+			=>Elementos eliminados por MIL Extreme: 1
+			=>Elementos eliminados por BOW: 5
+			=>Elementos eliminados por CKNN: 3
+			=>Elementos eliminados por DIVERSE DENSITY: 23
+			=>Elementos eliminados por EM-DD: 10
+			=>Elementos eliminados por MILBOOST: 36
+			=>Elementos eliminados por MIL max: 5
+			=>Elementos eliminados por MIL min: 7
+			=>Elementos eliminados por MIL Extreme: 1
+			=>Elementos eliminados por BOW: 2
+			=>Elementos eliminados por CKNN: 1
+			=>Elementos eliminados por DIVERSE DENSITY: 11
+			=>Elementos eliminados por EM-DD: 8
+			=>Elementos eliminados por MILBOOST: 34
+				-->Clasificador :MIL max
+					-->Original
+					 Precision: 70.64327485380116%
+					 Roc Score: 70.59848484848484
+					-->Filtrado por MIL max
+					 Precision: 70.7017543859649%
+					 Roc Score: 70.44444444444444
+					-->Filtrado por MIL min
+					 Precision: 64.21052631578945%
+					 Roc Score: 64.0
+					-->Filtrado por MIL Extreme
+					 Precision: 69.64912280701755%
+					 Roc Score: 69.44444444444444
+					-->Filtrado por BOW
+					 Precision: 71.81286549707603%
+					 Roc Score: 71.66666666666666
+					-->Filtrado por CKNN
+					 Precision: 73.91812865497076%
+					 Roc Score: 73.88888888888889
+					-->Filtrado por DIVERSE DENSITY
+					 Precision: 69.76608187134504%
+					 Roc Score: 69.44444444444444
+					-->Filtrado por EM-DD
+					 Precision: 70.64327485380116%
+					 Roc Score: 70.33333333333334
+					-->Filtrado por MILBOOST
+					 Precision: 52.10526315789474%
+					 Roc Score: 50.0
+			=>Elementos eliminados por MIL max: 6
+			=>Elementos eliminados por MIL min: 9
+			=>Elementos eliminados por MIL Extreme: 5
+			=>Elementos eliminados por BOW: 6
+			=>Elementos eliminados por CKNN: 4
+			=>Elementos eliminados por DIVERSE DENSITY: 23
+			=>Elementos eliminados por EM-DD: 9
+			=>Elementos eliminados por MILBOOST: 38
+			=>Elementos eliminados por MIL max: 4
+			=>Elementos eliminados por MIL min: 8
+			=>Elementos eliminados por MIL Extreme: 2
+			=>Elementos eliminados por BOW: 4
+			=>Elementos eliminados por CKNN: 4
+			=>Elementos eliminados por DIVERSE DENSITY: 13
+			=>Elementos eliminados por EM-DD: 11
+			=>Elementos eliminados por MILBOOST: 32
+			=>Elementos eliminados por MIL max: 4
+			=>Elementos eliminados por MIL min: 9
+			=>Elementos eliminados por MIL Extreme: 3
+			=>Elementos eliminados por BOW: 3
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 14
+			=>Elementos eliminados por EM-DD: 8
+			=>Elementos eliminados por MILBOOST: 36
+			=>Elementos eliminados por MIL max: 7
+			=>Elementos eliminados por MIL min: 5
+			=>Elementos eliminados por MIL Extreme: 3
+			=>Elementos eliminados por BOW: 4
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 14
+			=>Elementos eliminados por EM-DD: 10
+			=>Elementos eliminados por MILBOOST: 36
+			=>Elementos eliminados por MIL max: 6
+			=>Elementos eliminados por MIL min: 11
+			=>Elementos eliminados por MIL Extreme: 3
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 3
+			=>Elementos eliminados por DIVERSE DENSITY: 18
+			=>Elementos eliminados por EM-DD: 9
+			=>Elementos eliminados por MILBOOST: 34
+				-->Clasificador :MIL min
+					-->Original
+					 Precision: 80.7017543859649%
+					 Roc Score: 80.32323232323232
+					-->Filtrado por MIL max
+					 Precision: 73.09941520467837%
+					 Roc Score: 73.11111111111111
+					-->Filtrado por MIL min
+					 Precision: 78.47953216374268%
+					 Roc Score: 78.55555555555556
+					-->Filtrado por MIL Extreme
+					 Precision: 74.21052631578947%
+					 Roc Score: 74.22222222222223
+					-->Filtrado por BOW
+					 Precision: 75.2046783625731%
+					 Roc Score: 75.33333333333334
+					-->Filtrado por CKNN
+					 Precision: 79.5906432748538%
+					 Roc Score: 79.77777777777777
+					-->Filtrado por DIVERSE DENSITY
+					 Precision: 79.47368421052632%
+					 Roc Score: 79.33333333333334
+					-->Filtrado por EM-DD
+					 Precision: 81.57894736842105%
+					 Roc Score: 81.44444444444444
+					-->Filtrado por MILBOOST
+					 Precision: 55.43859649122807%
+					 Roc Score: 50.0
+			=>Elementos eliminados por MIL max: 4
+			=>Elementos eliminados por MIL min: 9
+			=>Elementos eliminados por MIL Extreme: 3
+			=>Elementos eliminados por BOW: 6
+			=>Elementos eliminados por CKNN: 1
+			=>Elementos eliminados por DIVERSE DENSITY: 22
+			=>Elementos eliminados por EM-DD: 12
+			=>Elementos eliminados por MILBOOST: 38
+			=>Elementos eliminados por MIL max: 2
+			=>Elementos eliminados por MIL min: 9
+			=>Elementos eliminados por MIL Extreme: 2
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 17
+			=>Elementos eliminados por EM-DD: 8
+			=>Elementos eliminados por MILBOOST: 34
+			=>Elementos eliminados por MIL max: 6
+			=>Elementos eliminados por MIL min: 10
+			=>Elementos eliminados por MIL Extreme: 2
+			=>Elementos eliminados por BOW: 3
+			=>Elementos eliminados por CKNN: 0
+			=>Elementos eliminados por DIVERSE DENSITY: 22
+			=>Elementos eliminados por EM-DD: 11
+			=>Elementos eliminados por MILBOOST: 36
+			=>Elementos eliminados por MIL max: 8
+			=>Elementos eliminados por MIL min: 10
+			=>Elementos eliminados por MIL Extreme: 4
+			=>Elementos eliminados por BOW: 4
+			=>Elementos eliminados por CKNN: 4
+			=>Elementos eliminados por DIVERSE DENSITY: 30
+			=>Elementos eliminados por EM-DD: 11
+			=>Elementos eliminados por MILBOOST: 36
+			=>Elementos eliminados por MIL max: 3
+			=>Elementos eliminados por MIL min: 8
+			=>Elementos eliminados por MIL Extreme: 4
+			=>Elementos eliminados por BOW: 2
+			=>Elementos eliminados por CKNN: 4
+			=>Elementos eliminados por DIVERSE DENSITY: 18
+			=>Elementos eliminados por EM-DD: 12
+			=>Elementos eliminados por MILBOOST: 38
+				-->Clasificador :MIL Extreme
+					-->Original
+					 Precision: 83.91812865497074%
+					 Roc Score: 83.45959595959596
+					-->Filtrado por MIL max
+					 Precision: 77.36842105263159%
+					 Roc Score: 77.11111111111111
+					-->Filtrado por MIL min
+					 Precision: 79.53216374269007%
+					 Roc Score: 79.11111111111111
+					-->Filtrado por MIL Extreme
+					 Precision: 80.7017543859649%
+					 Roc Score: 80.44444444444444
+					-->Filtrado por BOW
+					 Precision: 83.91812865497077%
+					 Roc Score: 83.77777777777779
+					-->Filtrado por CKNN
+					 Precision: 88.18713450292398%
+					 Roc Score: 88.22222222222221
+					-->Filtrado por DIVERSE DENSITY
+					 Precision: 75.08771929824562%
+					 Roc Score: 74.77777777777777
+					-->Filtrado por EM-DD
+					 Precision: 78.47953216374269%
+					 Roc Score: 78.11111111111111
+					-->Filtrado por MILBOOST
+					 Precision: 55.43859649122807%
+					 Roc Score: 50.0
+			=>Elementos eliminados por MIL max: 6
+			=>Elementos eliminados por MIL min: 9
+			=>Elementos eliminados por MIL Extreme: 1
+			=>Elementos eliminados por BOW: 7
+			=>Elementos eliminados por CKNN: 4
+			=>Elementos eliminados por DIVERSE DENSITY: 22
+			=>Elementos eliminados por EM-DD: 12
+			=>Elementos eliminados por MILBOOST: 36
+			=>Elementos eliminados por MIL max: 4
+			=>Elementos eliminados por MIL min: 13
+			=>Elementos eliminados por MIL Extreme: 4
+			=>Elementos eliminados por BOW: 1
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 22
+			=>Elementos eliminados por EM-DD: 8
+			=>Elementos eliminados por MILBOOST: 36
+			=>Elementos eliminados por MIL max: 3
+			=>Elementos eliminados por MIL min: 9
+			=>Elementos eliminados por MIL Extreme: 2
+			=>Elementos eliminados por BOW: 2
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 13
+			=>Elementos eliminados por EM-DD: 13
+			=>Elementos eliminados por MILBOOST: 34
+			=>Elementos eliminados por MIL max: 6
+			=>Elementos eliminados por MIL min: 7
+			=>Elementos eliminados por MIL Extreme: 4
+			=>Elementos eliminados por BOW: 9
+			=>Elementos eliminados por CKNN: 4
+			=>Elementos eliminados por DIVERSE DENSITY: 23
+			=>Elementos eliminados por EM-DD: 13
+			=>Elementos eliminados por MILBOOST: 34
+			=>Elementos eliminados por MIL max: 5
+			=>Elementos eliminados por MIL min: 11
+			=>Elementos eliminados por MIL Extreme: 4
+			=>Elementos eliminados por BOW: 2
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 17
+			=>Elementos eliminados por EM-DD: 8
+			=>Elementos eliminados por MILBOOST: 36
+				-->Clasificador :BOW
+					-->Original
+					 Precision: 54.3859649122807%
+					 Roc Score: 52.80050505050506
+					-->Filtrado por MIL max
+					 Precision: 66.08187134502923%
+					 Roc Score: 65.88888888888889
+					-->Filtrado por MIL min
+					 Precision: 53.1578947368421%
+					 Roc Score: 52.222222222222214
+					-->Filtrado por MIL Extreme
+					 Precision: 64.32748538011694%
+					 Roc Score: 63.88888888888889
+					-->Filtrado por BOW
+					 Precision: 64.15204678362572%
+					 Roc Score: 64.11111111111111
+					-->Filtrado por CKNN
+					 Precision: 52.456140350877185%
+					 Roc Score: 52.44444444444444
+					-->Filtrado por DIVERSE DENSITY
+					 Precision: 45.49707602339181%
+					 Roc Score: 44.55555555555556
+					-->Filtrado por EM-DD
+					 Precision: 58.71345029239766%
+					 Roc Score: 57.777777777777786
+					-->Filtrado por MILBOOST
+					 Precision: 53.21637426900585%
+					 Roc Score: 50.0
+			=>Elementos eliminados por MIL max: 6
+			=>Elementos eliminados por MIL min: 7
+			=>Elementos eliminados por MIL Extreme: 4
+			=>Elementos eliminados por BOW: 8
+			=>Elementos eliminados por CKNN: 5
+			=>Elementos eliminados por DIVERSE DENSITY: 24
+			=>Elementos eliminados por EM-DD: 10
+			=>Elementos eliminados por MILBOOST: 40
+			=>Elementos eliminados por MIL max: 4
+			=>Elementos eliminados por MIL min: 11
+			=>Elementos eliminados por MIL Extreme: 1
+			=>Elementos eliminados por BOW: 2
+			=>Elementos eliminados por CKNN: 1
+			=>Elementos eliminados por DIVERSE DENSITY: 12
+			=>Elementos eliminados por EM-DD: 14
+			=>Elementos eliminados por MILBOOST: 34
+			=>Elementos eliminados por MIL max: 3
+			=>Elementos eliminados por MIL min: 7
+			=>Elementos eliminados por MIL Extreme: 2
+			=>Elementos eliminados por BOW: 4
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 17
+			=>Elementos eliminados por EM-DD: 8
+			=>Elementos eliminados por MILBOOST: 40
+			=>Elementos eliminados por MIL max: 7
+			=>Elementos eliminados por MIL min: 9
+			=>Elementos eliminados por MIL Extreme: 2
+			=>Elementos eliminados por BOW: 3
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 14
+			=>Elementos eliminados por EM-DD: 10
+			=>Elementos eliminados por MILBOOST: 34
+			=>Elementos eliminados por MIL max: 4
+			=>Elementos eliminados por MIL min: 7
+			=>Elementos eliminados por MIL Extreme: 2
+			=>Elementos eliminados por BOW: 1
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 24
+			=>Elementos eliminados por EM-DD: 9
+			=>Elementos eliminados por MILBOOST: 36
+				-->Clasificador :CKNN
+					-->Original
+					 Precision: 84.85380116959065%
+					 Roc Score: 85.41919191919192
+					-->Filtrado por MIL max
+					 Precision: 81.57894736842105%
+					 Roc Score: 81.44444444444444
+					-->Filtrado por MIL min
+					 Precision: 84.79532163742691%
+					 Roc Score: 84.88888888888889
+					-->Filtrado por MIL Extreme
+					 Precision: 83.80116959064327%
+					 Roc Score: 83.77777777777777
+					-->Filtrado por BOW
+					 Precision: 82.57309941520468%
+					 Roc Score: 82.66666666666666
+					-->Filtrado por CKNN
+					 Precision: 84.79532163742691%
+					 Roc Score: 84.88888888888889
+					-->Filtrado por DIVERSE DENSITY
+					 Precision: 76.08187134502924%
+					 Roc Score: 76.44444444444443
+					-->Filtrado por EM-DD
+					 Precision: 86.90058479532163%
+					 Roc Score: 86.88888888888889
+					-->Filtrado por MILBOOST
+					 Precision: 59.76608187134502%
+					 Roc Score: 56.222222222222214
+			=>Elementos eliminados por MIL max: 4
+			=>Elementos eliminados por MIL min: 7
+			=>Elementos eliminados por MIL Extreme: 5
+			=>Elementos eliminados por BOW: 4
+			=>Elementos eliminados por CKNN: 5
+			=>Elementos eliminados por DIVERSE DENSITY: 17
+			=>Elementos eliminados por EM-DD: 11
+			=>Elementos eliminados por MILBOOST: 38
+			=>Elementos eliminados por MIL max: 3
+			=>Elementos eliminados por MIL min: 10
+			=>Elementos eliminados por MIL Extreme: 3
+			=>Elementos eliminados por BOW: 3
+			=>Elementos eliminados por CKNN: 1
+			=>Elementos eliminados por DIVERSE DENSITY: 20
+			=>Elementos eliminados por EM-DD: 8
+			=>Elementos eliminados por MILBOOST: 38
+			=>Elementos eliminados por MIL max: 2
+			=>Elementos eliminados por MIL min: 8
+			=>Elementos eliminados por MIL Extreme: 2
+			=>Elementos eliminados por BOW: 2
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 14
+			=>Elementos eliminados por EM-DD: 11
+			=>Elementos eliminados por MILBOOST: 36
+			=>Elementos eliminados por MIL max: 5
+			=>Elementos eliminados por MIL min: 6
+			=>Elementos eliminados por MIL Extreme: 1
+			=>Elementos eliminados por BOW: 2
+			=>Elementos eliminados por CKNN: 4
+			=>Elementos eliminados por DIVERSE DENSITY: 12
+			=>Elementos eliminados por EM-DD: 9
+			=>Elementos eliminados por MILBOOST: 36
+			=>Elementos eliminados por MIL max: 2
+			=>Elementos eliminados por MIL min: 6
+			=>Elementos eliminados por MIL Extreme: 0
+			=>Elementos eliminados por BOW: 2
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 11
+			=>Elementos eliminados por EM-DD: 7
+			=>Elementos eliminados por MILBOOST: 36
+				-->Clasificador :DIVERSE DENSITY
+					-->Original
+					 Precision: 73.09941520467837%
+					 Roc Score: 73.3560606060606
+					-->Filtrado por MIL max
+					 Precision: 70.64327485380117%
+					 Roc Score: 71.0
+					-->Filtrado por MIL min
+					 Precision: 77.07602339181287%
+					 Roc Score: 76.88888888888889
+					-->Filtrado por MIL Extreme
+					 Precision: 77.13450292397661%
+					 Roc Score: 77.22222222222221
+					-->Filtrado por BOW
+					 Precision: 64.61988304093568%
+					 Roc Score: 65.11111111111111
+					-->Filtrado por CKNN
+					 Precision: 71.98830409356725%
+					 Roc Score: 72.55555555555556
+					-->Filtrado por DIVERSE DENSITY
+					 Precision: 69.70760233918129%
+					 Roc Score: 70.0
+					-->Filtrado por EM-DD
+					 Precision: 76.0233918128655%
+					 Roc Score: 75.55555555555556
+					-->Filtrado por MILBOOST
+					 Precision: 54.327485380116954%
+					 Roc Score: 50.0
+			=>Elementos eliminados por MIL max: 3
+			=>Elementos eliminados por MIL min: 9
+			=>Elementos eliminados por MIL Extreme: 2
+			=>Elementos eliminados por BOW: 3
+			=>Elementos eliminados por CKNN: 3
+			=>Elementos eliminados por DIVERSE DENSITY: 22
+			=>Elementos eliminados por EM-DD: 10
+			=>Elementos eliminados por MILBOOST: 38
+			=>Elementos eliminados por MIL max: 3
+			=>Elementos eliminados por MIL min: 8
+			=>Elementos eliminados por MIL Extreme: 2
+			=>Elementos eliminados por BOW: 2
+			=>Elementos eliminados por CKNN: 1
+			=>Elementos eliminados por DIVERSE DENSITY: 15
+			=>Elementos eliminados por EM-DD: 6
+			=>Elementos eliminados por MILBOOST: 36
+			=>Elementos eliminados por MIL max: 4
+			=>Elementos eliminados por MIL min: 8
+			=>Elementos eliminados por MIL Extreme: 3
+			=>Elementos eliminados por BOW: 4
+			=>Elementos eliminados por CKNN: 0
+			=>Elementos eliminados por DIVERSE DENSITY: 26
+			=>Elementos eliminados por EM-DD: 8
+			=>Elementos eliminados por MILBOOST: 40
+			=>Elementos eliminados por MIL max: 6
+			=>Elementos eliminados por MIL min: 6
+			=>Elementos eliminados por MIL Extreme: 3
+			=>Elementos eliminados por BOW: 7
+			=>Elementos eliminados por CKNN: 4
+			=>Elementos eliminados por DIVERSE DENSITY: 20
+			=>Elementos eliminados por EM-DD: 13
+			=>Elementos eliminados por MILBOOST: 34
+			=>Elementos eliminados por MIL max: 3
+			=>Elementos eliminados por MIL min: 7
+			=>Elementos eliminados por MIL Extreme: 1
+			=>Elementos eliminados por BOW: 1
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 17
+			=>Elementos eliminados por EM-DD: 8
+			=>Elementos eliminados por MILBOOST: 34
+				-->Clasificador :EM-DD
+					-->Original
+					 Precision: 82.63157894736841%
+					 Roc Score: 82.72979797979798
+					-->Filtrado por MIL max
+					 Precision: 79.41520467836258%
+					 Roc Score: 79.33333333333333
+					-->Filtrado por MIL min
+					 Precision: 77.19298245614036%
+					 Roc Score: 77.11111111111111
+					-->Filtrado por MIL Extreme
+					 Precision: 77.19298245614036%
+					 Roc Score: 77.11111111111111
+					-->Filtrado por BOW
+					 Precision: 75.14619883040936%
+					 Roc Score: 75.00000000000001
+					-->Filtrado por CKNN
+					 Precision: 85.90643274853801%
+					 Roc Score: 86.0
+					-->Filtrado por DIVERSE DENSITY
+					 Precision: 72.7485380116959%
+					 Roc Score: 72.66666666666667
+					-->Filtrado por EM-DD
+					 Precision: 77.2514619883041%
+					 Roc Score: 77.00000000000001
+					-->Filtrado por MILBOOST
+					 Precision: 53.21637426900585%
+					 Roc Score: 50.0
+			=>Elementos eliminados por MIL max: 6
+			=>Elementos eliminados por MIL min: 7
+			=>Elementos eliminados por MIL Extreme: 2
+			=>Elementos eliminados por BOW: 3
+			=>Elementos eliminados por CKNN: 1
+			=>Elementos eliminados por DIVERSE DENSITY: 19
+			=>Elementos eliminados por EM-DD: 11
+			=>Elementos eliminados por MILBOOST: 38
+Fallo, segundo intento
+Fallo en calculo
+			=>Elementos eliminados por MIL max: 4
+			=>Elementos eliminados por MIL min: 10
+			=>Elementos eliminados por MIL Extreme: 1
+			=>Elementos eliminados por BOW: 1
+			=>Elementos eliminados por CKNN: 2
+			=>Elementos eliminados por DIVERSE DENSITY: 15
+			=>Elementos eliminados por EM-DD: 12
+			=>Elementos eliminados por MILBOOST: 34
+Fallo, segundo intento
+Fallo en calculo
+			=>Elementos eliminados por MIL max: 5
+			=>Elementos eliminados por MIL min: 10
+			=>Elementos eliminados por MIL Extreme: 3
+			=>Elementos eliminados por BOW: 3
+			=>Elementos eliminados por CKNN: 4
+			=>Elementos eliminados por DIVERSE DENSITY: 19
+			=>Elementos eliminados por EM-DD: 12
+			=>Elementos eliminados por MILBOOST: 38
+			=>Elementos eliminados por MIL max: 6
+			=>Elementos eliminados por MIL min: 3
+			=>Elementos eliminados por MIL Extreme: 1
+			=>Elementos eliminados por BOW: 4
+			=>Elementos eliminados por CKNN: 1
+			=>Elementos eliminados por DIVERSE DENSITY: 12
+			=>Elementos eliminados por EM-DD: 10
+			=>Elementos eliminados por MILBOOST: 34
+Fallo, segundo intento
+Fallo en calculo
+			=>Elementos eliminados por MIL max: 6
+			=>Elementos eliminados por MIL min: 9
+			=>Elementos eliminados por MIL Extreme: 4
+			=>Elementos eliminados por BOW: 4
+			=>Elementos eliminados por CKNN: 3
+			=>Elementos eliminados por DIVERSE DENSITY: 18
+			=>Elementos eliminados por EM-DD: 10
+			=>Elementos eliminados por MILBOOST: 36
+				-->Clasificador :MILBOOST
+					-->Original
+					 Precision: 53.8589651516706%
+					 Roc Score: 65.5712682379349
+					-->Filtrado por MIL max
+					 Precision: 50.94182825484764%
+					 Roc Score: 63.11111111111111
+					-->Filtrado por MIL min
+					 Precision: 50.94182825484764%
+					 Roc Score: 62.246913580246904
+					-->Filtrado por MIL Extreme
+					 Precision: 50.94182825484764%
+					 Roc Score: 63.76543209876543
+					-->Filtrado por BOW
+					 Precision: 50.94182825484764%
+					 Roc Score: 64.62962962962963
+					-->Filtrado por CKNN
+					 Precision: 50.94182825484764%
+					 Roc Score: 63.925925925925924
+					-->Filtrado por DIVERSE DENSITY
+					 Precision: 50.94182825484764%
+					 Roc Score: 62.345679012345684
+					-->Filtrado por EM-DD
+					 Precision: 50.94182825484764%
+					 Roc Score: 63.666666666666664
+					-->Filtrado por MILBOOST
+					 Precision: 21.97530864197531%
+					 Roc Score: 19.75
