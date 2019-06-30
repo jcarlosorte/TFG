@@ -1,7 +1,7 @@
-TFG: Multiple-Instance Learning Python Proyect 
+pyMIL-BNF: Multiple Instance Learning Bag Noise Filters library in Python
 =====================================================
 
-by Juan Carlos Orte (<jcarlosorte@ugr.es>)
+TFG Multiple-Instance Learning Python Proyect by Juan Carlos Orte (<jcarlosorte@ugr.es>)
 
 
 Overview
