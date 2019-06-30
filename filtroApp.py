@@ -31,15 +31,14 @@ class CargaAlgoritmo(QThread):
         self._clasif = clasif
         self._clasif_F = clasif_F
     def run(self):
-        # Abrir la dirección de URL.
         if self._ck_clasif == 1:
-            print("Ensemble Filter")
+            print("MIL-Ensemble Filter")
             EF.EF(self._DataSet,self._votacion,self._folds,self._ruido,self._clasif,self._clasif_F)
         elif self._ck_clasif == 2:
-            print("Cross-Validation Committees Filter")
+            print("MIL-Cross-Validation Committees Filter")
             CVCF.CVcF(self._DataSet,self._votacion,self._folds,self._ruido,self._clasif,self._clasif_F)
         elif self._ck_clasif == 3:
-            print("Iterative Partitioning Filter")
+            print("MIL-Iterative Partitioning Filter")
             IPF.IPF(self._DataSet,self._votacion,self._folds,self._ruido,self._clasif,self._clasif_F)
 
 
@@ -100,7 +99,7 @@ class FilterTFG(QWidget):
         for i, radio in enumerate(self.RbFilter):
             if radio.isChecked():
                 btn_txt = btn_txt + "\nFiltro : " + radio.text()
-                if radio.text() == "Ensemble Filter":
+                if radio.text() == "MIL-Ensemble Filter":
                     ck_clasif = 1
                     for j, radio2 in enumerate(self.RbClasif_ef):
                         if radio2.isChecked():
@@ -110,7 +109,7 @@ class FilterTFG(QWidget):
                         if radio4.isChecked():
                             btn_txt = btn_txt + "\nClasificador Filtro : " + radio4.text()
                             clasif_F = str(p)
-                elif radio.text() == "Cross-Validation Committees Filter":
+                elif radio.text() == "MIL-Cross-Validation Committees Filter":
                     ck_clasif = 2
                     for j, radio2 in enumerate(self.RbClasif_cvcf):
                         if radio2.isChecked():
@@ -120,7 +119,7 @@ class FilterTFG(QWidget):
                         if radio4.isChecked():
                             btn_txt = btn_txt + "\nClasificador Filtro : " + radio4.text()
                             clasif_F = radio4.text()
-                elif radio.text() == "Iterative Partitioning Filter":
+                elif radio.text() == "MIL-Iterative Partitioning Filter":
                     ck_clasif = 3
                     for j, radio2 in enumerate(self.RbClasif_ipf):
                         if radio2.isChecked():
@@ -175,9 +174,9 @@ class FilterTFG(QWidget):
         gbx.setGeometry(10, 95, 235, 100)
         # crear tres QRadioButton
         self.RbFilter = []
-        self.radio1 = QRadioButton("Ensemble Filter")
-        self.radio2 = QRadioButton("Cross-Validation Committees Filter")
-        self.radio3 = QRadioButton("Iterative Partitioning Filter")
+        self.radio1 = QRadioButton("MIL-Ensemble Filter")
+        self.radio2 = QRadioButton("MIL-Cross-Validation Committees Filter")
+        self.radio3 = QRadioButton("MIL-Iterative Partitioning Filter")
         self.radio1.toggled.connect(lambda:self.btnstate(self.radio1))
         self.radio2.toggled.connect(lambda:self.btnstate(self.radio2))
         self.radio3.toggled.connect(lambda:self.btnstate(self.radio3))
@@ -354,7 +353,7 @@ class FilterTFG(QWidget):
         self.gbx9.hide()
     def btnstate(self,b):
         
-        if b.text() == "Ensemble Filter":
+        if b.text() == "MIL-Ensemble Filter":
             if b.isChecked() == True:
                 self.gbx2.show()
                 self.gbx5.show()
@@ -366,7 +365,7 @@ class FilterTFG(QWidget):
 #                print (b.text()+" is deselected")
                 self.gbx2.hide()
                 self.gbx7.hide()		
-        if b.text() == "Cross-Validation Committees Filter":
+        if b.text() == "MIL-Cross-Validation Committees Filter":
             if b.isChecked() == True:
                 self.gbx3.show()
                 self.gbx5.show()
@@ -378,7 +377,7 @@ class FilterTFG(QWidget):
 #                print (b.text()+" is deselected")
                 self.gbx3.hide()
                 self.gbx8.hide()
-        if b.text() == "Iterative Partitioning Filter":
+        if b.text() == "MIL-Iterative Partitioning Filter":
             if b.isChecked() == True:
                 self.gbx4.show()
                 self.gbx5.show()

@@ -12,9 +12,9 @@ votacion = 'consenso'
 DataSet = ['tiger_scaled']
 ruido = [0]
 
-print('********** MIL-Ensemble Filter **********')
-EF.EF(DataSet,votacion,folds,ruido)
-print('********** MIL-CV Committees Filter **********')
-CVCF.CVcF(DataSet,votacion,folds,ruido)
+#print('********** MIL-Ensemble Filter **********')
+#EF.EF(DataSet,votacion,folds,ruido)
+#print('********** MIL-CV Committees Filter **********')
+#CVCF.CVcF(DataSet,votacion,folds,ruido)
 print('********** MIL-Iterative Partitioning Filter **********')
 IPF.IPF(DataSet,votacion,folds,ruido)
