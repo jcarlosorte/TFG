@@ -32,7 +32,7 @@ by running the app
 
 `py -3 filterApp.py`
 
-![Interfaz pyMIL-BNF](https://github.com/jcarlosorte/TFG/blob/master/filtersApp/app5.png "pyMIL-BNF menu")
+![Interfaz pyMIL-BNF](https://i.ibb.co/dm5QFTN/app5.png "pyMIL-BNF menu")
 
 by running use in menu file manually, ex:
 
