@@ -30,11 +30,11 @@ This package can be used in two ways:
 
 by running the app
 
-py -3 filterApp.py
+`py -3 filterApp.py`
 
 by running use in menu file manually, ex:
 
-import sys,os
+`import sys,os
 os.chdir('MILpy')
 sys.path.append(os.path.realpath('..'))
 from filters import IPF
@@ -43,7 +43,7 @@ votacion = 'consenso'
 DataSet = ['tiger_scaled']
 ruido = [0,5]
 print('********** MIL-Iterative Partitioning Filter **********')
-IPF.IPF(DataSet,votacion,folds,ruido)
+IPF.IPF(DataSet,votacion,folds,ruido)`
 
 Disclaimer
 --------
