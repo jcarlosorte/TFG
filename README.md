@@ -36,25 +36,25 @@ by running the app
 
 by running use in menu file manually, ex:
 
-`import sys,os`
+`import sys,os
 
-`os.chdir('MILpy')`
+os.chdir('MILpy')
 
-`sys.path.append(os.path.realpath('..'))`
+sys.path.append(os.path.realpath('..'))
 
-`from filters import IPF`
+from filters import IPF
 
-`folds = 5`
+folds = 5
 
-`votacion = 'consenso'`
+votacion = 'consenso'
 
-`DataSet = ['tiger_scaled']`
+DataSet = ['tiger_scaled']
 
-`ruido = [0,5]`
+ruido = [0,5]
 
-`print('********** MIL-Iterative Partitioning Filter **********')`
+print('********** MIL-Iterative Partitioning Filter **********')
 
-`IPF.IPF(DataSet,votacion,folds,ruido)`
+IPF.IPF(DataSet,votacion,folds,ruido)`
 
 
 Disclaimer
