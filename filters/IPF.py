@@ -104,7 +104,6 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
     toStop = 3
     stop = True
     countToStop = 0
-    vuelta = 0
     if len(labels_f) < folds:
         folds = len(labels_f)
     skf = StratifiedKFold(n_splits=folds)
@@ -113,7 +112,6 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
         bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, len(labels_f)-1))
         isCorrectLabel = np.ones((folds, len(labels_f)), dtype=bool)
         fold = 0
-        
         for train_index, test_index in skf.split(bags_f, labels_f.reshape(len(labels_f))):
             X_train = [bags_f[i] for i in train_index]        
             Y_train = labels_f[train_index]
@@ -209,8 +207,9 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
         else:
             bags_f = [bags_f[d] for d in nonNoisyBags] 
             labels_f = labels_f[nonNoisyBags]
-
-        vuelta = vuelta + 1
+        if len(bags_f) < len(labels_f.reshape(len(labels_f))):
+            print('Número de bolsas, menor al número de etiquetas, no se puede continuar')
+            stop = False
     print('\t\t\t=>Elementos eliminados por '+clasificador_[2]+': '+str(len(noisyBags)))
     X_train_NoNy = bags_f
     Y_train_NoNy = labels_f
