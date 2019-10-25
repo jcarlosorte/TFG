@@ -153,9 +153,14 @@ def mil_cv_filter_cvcf(bags_f,labels_f,folds,votacion,clasificador_):
                             predictions = predictions[0]
                         print('OK')
                     except:
+                        predictions = np.ones((1, len(Y_train)), dtype=int)
+                        predictions = predictions[0]
                         print('Fallo')
         for l,p in enumerate(train_index):
             try:
+#               print(Y_train.T[0][l])
+#               print(np.sign(predictions[l]))
+#               print(isCorrectLabel[fold][p])
                 isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
             except IndexError:
                 print("Fallo en ultimo indice!")
@@ -248,6 +253,8 @@ def filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_):
             auc_score = (100 * roc_auc_score_FIXED(Y_test,predictions))
             print('OK')     
         except:
+            accuracie = 0.0
+            auc_score = 0.0
             print('Fallo en calculo')      
     results[0] = accuracie
     results[1] = auc_score

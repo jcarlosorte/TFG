@@ -219,6 +219,7 @@ def mil_cv_filter_ef(bags_f,labels_f,folds,votacion,num):
                                 predictions = predictions[0]
                             print('OK')
                         except:
+                            predictions = np.ones((1, len(Y_train)), dtype=int)
                             print('Fallo')
             for l,p in enumerate(test_index):
                 try:
@@ -314,6 +315,8 @@ def filtrado_final(X_train,Y_train,X_test,Y_test,cl_fil):
                 auc_score = (100 * roc_auc_score_FIXED(Y_test,predictions))
                 print('OK')     
             except:
+                accuracie = 0.0
+                auc_score = 0.0
                 print('Fallo en calculo')      
         results[s][0] = accuracie
         results[s][1] = auc_score

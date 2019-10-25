@@ -1,0 +1,17 @@
+********** Iterative Partitioning Filter por consenso**********
+
+	DATASET: mutagenesis1_scaled
+
+		=>RUIDO : 10
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL max: 0
+				-->Clasificador :MIL max
+					-->Original
+					 Precision: 67.02702702702702%
+					 Roc Score: 52.246153846153845
+					-->Filtrado por MIL max
+					 Precision: 67.02702702702702%
+					 Roc Score: 52.246153846153845

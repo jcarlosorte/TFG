@@ -160,13 +160,17 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
                                 predictions = predictions[0]
                             print('OK')
                         except:
+                            predictions = np.ones((1, len(Y_train)), dtype=int)
+                            predictions = predictions[0]
                             print('Fallo')
-            
-            for l,p in enumerate(train_index): 
-                try:
-                    isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
-                except IndexError:
-                    print("Fallo en ultimo indice!")
+                for l,p in enumerate(train_index):
+                    try:
+    #                    print(Y_train.T[0][l])
+    #                    print(np.sign(predictions[l]))
+    #                    print(isCorrectLabel[fold][p])
+                        isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
+                    except IndexError:
+                        print("Fallo en ultimo indice!")
             fold = fold + 1
         if votacion == 'maxVotos':
             noisyBags = []
@@ -268,6 +272,8 @@ def filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_):
             auc_score = (100 * roc_auc_score_FIXED(Y_test,predictions))
             print('OK')     
         except:
+            accuracie = 0.0
+            auc_score = 0.0
             print('Fallo en calculo')      
     results[0] = accuracie
     results[1] = auc_score
@@ -309,13 +315,13 @@ def clasif():
     EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
     MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
     aux.append(SMILaMax)
-#    aux.append(SMILaMin)
-#    aux.append(SMILaExt)
-#    aux.append(BOW_clas)
-#    aux.append(CKNN_cla)
-#    aux.append(maxDD_cl)
-#    aux.append(EMDD_cla)
-#    aux.append(MILB_cla)
+    aux.append(SMILaMin)
+    aux.append(SMILaExt)
+    aux.append(BOW_clas)
+    aux.append(CKNN_cla)
+    aux.append(maxDD_cl)
+    aux.append(EMDD_cla)
+    aux.append(MILB_cla)
     return aux
 
 def cla_filter_cvcf():
@@ -345,11 +351,11 @@ def cla_filter_cvcf():
     EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
     MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
     aux.append(SMILaMax)
-#    aux.append(SMILaMin)
-#    aux.append(SMILaExt)
-#    aux.append(BOW_clas)
-#    aux.append(CKNN_cla)
-#    aux.append(maxDD_cl)
-#    aux.append(EMDD_cla)
-#    aux.append(MILB_cla)
+    aux.append(SMILaMin)
+    aux.append(SMILaExt)
+    aux.append(BOW_clas)
+    aux.append(CKNN_cla)
+    aux.append(maxDD_cl)
+    aux.append(EMDD_cla)
+    aux.append(MILB_cla)
     return aux

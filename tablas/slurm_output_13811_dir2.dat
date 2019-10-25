@@ -1,0 +1,13 @@
+********** Iterative Partitioning Filter por consenso**********
+
+	DATASET: birds_WIWR_scaled
+
+		=>RUIDO : 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Fallo

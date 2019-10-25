@@ -10,7 +10,6 @@
 
 #SBATCH --array=0-1
 
-DIR[0]=/home/jcorte/TFG/tablas/Ruido0/consenso/IPF/
 DIR[1]=/home/jcorte/TFG/tablas/Ruido0/maxVotos/IPF/
 
 cd ${DIR[$SLURM_ARRAY_TASK_ID]}; python3 menu_7.py
