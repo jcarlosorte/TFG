@@ -3,6 +3,15 @@ pyMIL-BNF: Multiple Instance Learning Bag Noise Filters library in Python
 
 TFG Multiple-Instance Learning Python Proyect by Juan Carlos Orte (<jcarlosorte@ugr.es>)
 
+Abstract
+--------
+
+The rise of artificial vision techniques in our days is enhancing the techniques of Data Science related to the classification of objects. One of the most influential paradigms in the objects classification is the Multiple Instance Learning (MIL), where different representations are available for the same object.
+
+However, the classification of MIL objects presents challenges today, since the identification of objects is not exact and erroneous representations (noisy) or even incorrect labels can be collected. In critical systems such as autonomous driving, biometric surveys and others, these errors can be catastrophic.
+
+In this project (TFG) the development of a library of noise cleaning techniques for MIL written in Python is proposed. There are no proposals of this nature even in the specialized literature, so this project (TFG) includes a research aspect.
+
 
 Overview
 --------
