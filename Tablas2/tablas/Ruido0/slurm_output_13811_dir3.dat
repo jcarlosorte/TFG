@@ -1,0 +1,13 @@
+********** CV Committees Filter por maxVotos**********
+
+	DATASET: birds_WIWR_scaled
+
+		=>RUIDO : 0
+			=>Elementos eliminados por MIL max: 10
+			=>Elementos eliminados por MIL min: 21
+			=>Elementos eliminados por MIL Extreme: 10
+			=>Elementos eliminados por BOW: 73
+			=>Elementos eliminados por CKNN: 15
+Fallo, segundo intento
+Posible fallo en bolsa...
+Fallo

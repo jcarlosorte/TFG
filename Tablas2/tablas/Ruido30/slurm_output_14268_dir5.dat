@@ -1,0 +1,5565 @@
+********** Iterative Partitioning Filter por maxVotos**********
+
+	DATASET: tiger_scaled
+
+		=>RUIDO : 30
+			=>Elementos eliminados por MIL max: 1
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+			=>Elementos eliminados por BOW: 1
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+Fallo, segundo intento
+OK
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 1
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+Fallo, segundo intento
+OK
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+OK
+Fallo, segundo intento
+OK
+Fallo, segundo intento
+OK
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+				-->Clasificador :MIL max
+					-->Original
+					 Precision: 64.0%
+					 Roc Score: 62.56915053657549
+					-->Filtrado por MIL max
+					 Precision: 59.5%
+					 Roc Score: 59.5
+					-->Filtrado por MIL min
+					 Precision: 51.5%
+					 Roc Score: 50.0
+					-->Filtrado por MIL Extreme
+					 Precision: 58.5%
+					 Roc Score: 57.55889724310778
+					-->Filtrado por BOW
+					 Precision: 60.5%
+					 Roc Score: 57.77944862155389
+					-->Filtrado por CKNN
+					 Precision: 66.0%
+					 Roc Score: 64.59709880762512
+					-->Filtrado por DIVERSE DENSITY
+					 Precision: 55.5%
+					 Roc Score: 50.0
+					-->Filtrado por EM-DD
+					 Precision: 46.0%
+					 Roc Score: 47.94815159265288
+					-->Filtrado por MILBOOST
+					 Precision: 50.0%
+					 Roc Score: 50.0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 1
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+Fallo, segundo intento
+OK
+Fallo, segundo intento
+OK
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 1
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+Fallo, segundo intento
+OK
+Fallo, segundo intento
+OK
+Fallo, segundo intento
+OK
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 1
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+Fallo, segundo intento
+OK
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 1
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+				-->Clasificador :MIL min
+					-->Original
+					 Precision: 57.5%
+					 Roc Score: 53.020809599756966
+					-->Filtrado por MIL max
+					 Precision: 54.5%
+					 Roc Score: 54.5
+					-->Filtrado por MIL min
+					 Precision: 50.5%
+					 Roc Score: 50.0
+					-->Filtrado por MIL Extreme
+					 Precision: 54.5%
+					 Roc Score: 54.02380952380952
+					-->Filtrado por BOW
+					 Precision: 55.0%
+					 Roc Score: 53.0
+					-->Filtrado por CKNN
+					 Precision: 64.0%
+					 Roc Score: 63.03710032657401
+					-->Filtrado por DIVERSE DENSITY
+					 Precision: 54.5%
+					 Roc Score: 50.0
+					-->Filtrado por EM-DD
+					 Precision: 52.5%
+					 Roc Score: 51.515151515151516
+					-->Filtrado por MILBOOST
+					 Precision: 52.0%
+					 Roc Score: 50.0
+			=>Elementos eliminados por MIL max: 1
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 1
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 1
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 1
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 1
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+Fallo, segundo intento
+OK
+Fallo, segundo intento
+OK
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+				-->Clasificador :MIL Extreme
+					-->Original
+					 Precision: 63.0%
+					 Roc Score: 60.93433615038138
+					-->Filtrado por MIL max
+					 Precision: 52.5%
+					 Roc Score: 52.5
+					-->Filtrado por MIL min
+					 Precision: 50.5%
+					 Roc Score: 50.0
+					-->Filtrado por MIL Extreme
+					 Precision: 47.0%
+					 Roc Score: 46.62406015037594
+					-->Filtrado por BOW
+					 Precision: 51.5%
+					 Roc Score: 49.5
+					-->Filtrado por CKNN
+					 Precision: 62.0%
+					 Roc Score: 60.845712766765395
+					-->Filtrado por DIVERSE DENSITY
+					 Precision: 54.5%
+					 Roc Score: 50.0
+					-->Filtrado por EM-DD
+					 Precision: 50.0%
+					 Roc Score: 50.45454545454545
+					-->Filtrado por MILBOOST
+					 Precision: 52.0%
+					 Roc Score: 50.0
+			=>Elementos eliminados por MIL max: 1
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 1
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 1
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+Fallo, segundo intento
+OK
+Fallo, segundo intento
+OK
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+Fallo, segundo intento
+OK
+Fallo, segundo intento
+OK
+Fallo, segundo intento
+OK
+Fallo, segundo intento
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+OK
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+			=>Elementos eliminados por BOW: 1
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+				-->Clasificador :BOW
+					-->Original
+					 Precision: 65.0%
+					 Roc Score: 63.273030868265764
+					-->Filtrado por MIL max
+					 Precision: 64.0%
+					 Roc Score: 64.0
+					-->Filtrado por MIL min
+					 Precision: 50.5%
+					 Roc Score: 50.0
+					-->Filtrado por MIL Extreme
+					 Precision: 55.5%
+					 Roc Score: 55.026315789473685
+					-->Filtrado por BOW
+					 Precision: 55.0%
+					 Roc Score: 53.0
+					-->Filtrado por CKNN
+					 Precision: 63.5%
+					 Roc Score: 62.61069340016709
+					-->Filtrado por DIVERSE DENSITY
+					 Precision: 54.5%
+					 Roc Score: 50.0
+					-->Filtrado por EM-DD
+					 Precision: 48.5%
+					 Roc Score: 50.0
+					-->Filtrado por MILBOOST
+					 Precision: 50.5%
+					 Roc Score: 50.0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+Fallo, segundo intento
+OK
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+			=>Elementos eliminados por BOW: 0
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por DIVERSE DENSITY: 0
+			=>Elementos eliminados por EM-DD: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+			=>Elementos eliminados por MILBOOST: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL min: 0
+			=>Elementos eliminados por MIL Extreme: 0
+			=>Elementos eliminados por BOW: 1
+			=>Elementos eliminados por CKNN: 0
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+Fallo

@@ -22,7 +22,7 @@ from MILpy.Algorithms.MILBoost import MILBoost
 from MILpy.Algorithms.maxDD import maxDD
 from MILpy.Algorithms.CKNN import CKNN
 from MILpy.Algorithms.EMDD import EMDD
-from MILpy.Algorithms.MILES import MILES
+#from MILpy.Algorithms.MILES import MILES
 from MILpy.Algorithms.BOW import BOW
 
 def IPF(b,votacion,folds,ruido,clasif_O,clasif_F):
@@ -30,7 +30,6 @@ def IPF(b,votacion,folds,ruido,clasif_O,clasif_F):
         bags,labels,X = load_data(DataSet)
         bags,labels = shuffle(bags, labels, random_state=rand.randint(0, len(labels)-1))
         skf = StratifiedKFold(n_splits=folds)
-#        dataAcc = np.zeros((len(b),len(ruido),folds,2))
         print('\n\tDATASET: '+str(DataSet)+'\n')
         
         for ny,k in enumerate(ruido):
@@ -56,7 +55,6 @@ def IPF(b,votacion,folds,ruido,clasif_O,clasif_F):
             
             for s,cl in enumerate(Clasificadores):
                 fold = 1
-#                results_Fil = np.zeros((len(Clasificadores_filtro),folds))
                 results_Fil = [[] for x in range(len(Clasificadores_filtro))] 
                 results_Ori = []
                 clasificador_ = Clasificadores[s]
@@ -79,8 +77,7 @@ def IPF(b,votacion,folds,ruido,clasif_O,clasif_F):
 #                        print('\t\t\t=>Filtrado con '+str(cl_f[2]))
                         X_train_NoNy,Y_train_NoNy = mil_cv_filter_ipf(X_train,Y_train,folds,votacion,clasificador_f) 
                         results_Fil[j].append(filtrado_final(X_train_NoNy,Y_train_NoNy,X_test,Y_test,clasificador_))
-#                    print(len(X_train_NoNy))
-#                    print(len(X_train))
+
 #                    print('\t\t\t=>Original')
                     results_Ori.append(filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_))
                     fold = fold + 1
@@ -118,7 +115,7 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
     if len(labels_f) < folds:
         folds = len(labels_f)
     skf = StratifiedKFold(n_splits=folds)
-    
+    totalNoisyLabel = 0
     while stop:
         bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, len(labels_f)-1))
         isCorrectLabel = np.ones((folds, len(labels_f)), dtype=bool)
@@ -135,7 +132,6 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
                 predictions = clasificador_[0].predict(X_train)
                 if (isinstance(predictions, tuple)):
                     predictions = predictions[0]
-                print(predictions)
             except:
                 print('Fallo, segundo intento')
                 try:
@@ -168,9 +164,6 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
                         print('Fallo')
             for l,p in enumerate(train_index):
                 try:
-#                    print(Y_train.T[0][l])
-#                    print(np.sign(predictions[l]))
-#                    print(isCorrectLabel[fold][p])
                     isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
                 except IndexError:
                     print("Fallo en ultimo indice!")
@@ -217,7 +210,11 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
         if len(bags_f) < len(labels_f.reshape(len(labels_f))):
             print('Número de bolsas, menor al número de etiquetas, no se puede continuar')
             stop = False
-    print('\t\t\t=>Elementos eliminados por '+clasificador_[2]+': '+str(len(noisyBags)))
+        #Comprobacion nueva 28/10/19
+        if len(labels_f) < 1:
+            stop = False
+        totalNoisyLabel+=len(noisyBags)
+    print('\t\t\t=>Elementos eliminados por '+clasificador_[2]+': '+str(totalNoisyLabel))
     X_train_NoNy = bags_f
     Y_train_NoNy = labels_f
     return X_train_NoNy,Y_train_NoNy
@@ -294,32 +291,16 @@ def Porcentaje(X,Y):
 def clasif():
     aux = []
     resul1 = [[],[],[],[],[],[],[]]
-    resul2 = [[],[],[],[],[],[],[]]
-    resul3 = [[],[],[],[],[],[],[]]
-    resul4 = [[],[],[],[],[],[],[]]
-    resul5 = [[],[],[],[],[],[],[]]
-    resul6 = [[],[],[],[],[],[],[]]
-    resul7 = [[],[],[],[],[],[],[]]
-    resul8 = [[],[],[],[],[],[],[]]
-    resul9 = [[],[],[],[],[],[],[]]
     roc_m_1 = [[],[],[],[],[],[],[]]
-    roc_m_2 = [[],[],[],[],[],[],[]]
-    roc_m_3 = [[],[],[],[],[],[],[]]
-    roc_m_4 = [[],[],[],[],[],[],[]]
-    roc_m_5 = [[],[],[],[],[],[],[]]
-    roc_m_6 = [[],[],[],[],[],[],[]]
-    roc_m_7 = [[],[],[],[],[],[],[]]
-    roc_m_8 = [[],[],[],[],[],[],[]]
-    roc_m_9 = [[],[],[],[],[],[],[]]
-    SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul1,roc_m_1]
-    SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2,roc_m_2]
-    SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3,roc_m_3]
-    BOW_clas = [BOW(),{'k':90,'covar_type':'diag','n_iter':20},'BOW',resul4,roc_m_4]
-    CKNN_cla = [CKNN(),{'references': 3, 'citers': 5},'CKNN',resul5,roc_m_5]
-    maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',resul6,roc_m_6]
-    EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
-    MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
-    MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
+    SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    BOW_clas = [BOW(),{'k':90,'covar_type':'diag','n_iter':20},'BOW',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    CKNN_cla = [CKNN(),{'references': 3, 'citers': 5},'CKNN',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    EMDD_cla = [EMDD(),{},'EM-DD',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    MILB_cla = [MILBoost(),{},'MILBOOST',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+#    MILES_cl = [MILES(),{},'MILES',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
     aux.append(SMILaMax)
     aux.append(SMILaMin)
     aux.append(SMILaExt)
@@ -334,32 +315,16 @@ def clasif():
 def cla_filter_ipf():
     aux = []
     resul1 = [[],[],[],[],[],[],[]]
-    resul2 = [[],[],[],[],[],[],[]]
-    resul3 = [[],[],[],[],[],[],[]]
-    resul4 = [[],[],[],[],[],[],[]]
-    resul5 = [[],[],[],[],[],[],[]]
-    resul6 = [[],[],[],[],[],[],[]]
-    resul7 = [[],[],[],[],[],[],[]]
-    resul8 = [[],[],[],[],[],[],[]]
-    resul9 = [[],[],[],[],[],[],[]]
     roc_m_1 = [[],[],[],[],[],[],[]]
-    roc_m_2 = [[],[],[],[],[],[],[]]
-    roc_m_3 = [[],[],[],[],[],[],[]]
-    roc_m_4 = [[],[],[],[],[],[],[]]
-    roc_m_5 = [[],[],[],[],[],[],[]]
-    roc_m_6 = [[],[],[],[],[],[],[]]
-    roc_m_7 = [[],[],[],[],[],[],[]]
-    roc_m_8 = [[],[],[],[],[],[],[]]
-    roc_m_9 = [[],[],[],[],[],[],[]]
-    SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',resul1,roc_m_1]
-    SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',resul2,roc_m_2]
-    SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',resul3,roc_m_3]
-    BOW_clas = [BOW(),{'k':90,'covar_type':'diag','n_iter':20},'BOW',resul4,roc_m_4]
-    CKNN_cla = [CKNN(),{'references': 3, 'citers': 5},'CKNN',resul5,roc_m_5]
-    maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',resul6,roc_m_6]
-    EMDD_cla = [EMDD(),{},'EM-DD',resul7,roc_m_7]
-    MILB_cla = [MILBoost(),{},'MILBOOST',resul8,roc_m_8]
-    MILES_cl = [MILES(),{},'MILES',resul9,roc_m_9]
+    SMILaMax = [simpleMIL(),{'type': 'max'},'MIL max',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    SMILaMin = [simpleMIL(),{'type': 'min'},'MIL min',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    SMILaExt = [simpleMIL(),{'type': 'extreme'},'MIL Extreme',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    BOW_clas = [BOW(),{'k':90,'covar_type':'diag','n_iter':20},'BOW',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    CKNN_cla = [CKNN(),{'references': 3, 'citers': 5},'CKNN',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    maxDD_cl = [maxDD(),{},'DIVERSE DENSITY',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    EMDD_cla = [EMDD(),{},'EM-DD',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+    MILB_cla = [MILBoost(),{},'MILBOOST',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
+#    MILES_cl = [MILES(),{},'MILES',copy.deepcopy(resul1),copy.deepcopy(roc_m_1)]
     aux.append(SMILaMax)
     aux.append(SMILaMin)
     aux.append(SMILaExt)

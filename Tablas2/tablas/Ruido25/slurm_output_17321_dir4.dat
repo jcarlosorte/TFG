@@ -1,0 +1,216 @@
+********** Ensemble Filter por maxVotos**********
+
+	DATASET: birds_WIWR_scaled
+
+		=>RUIDO : 25
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+OK
+			=>Elementos eliminados con Filter 2: 122
+			=>Elementos eliminados con Filter 1: 156
+Fallo, segundo intento
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+OK
+			=>Elementos eliminados con Filter 2: 126
+Fallo, segundo intento
+OK
+			=>Elementos eliminados con Filter 1: 148
+Fallo, segundo intento
+Fallo en calculo
+Fallo, segundo intento
+OK
+			=>Elementos eliminados con Filter 2: 125
+Fallo, segundo intento
+OK
+			=>Elementos eliminados con Filter 1: 148
+Fallo, segundo intento
+Fallo en calculo
+Fallo, segundo intento
+Posible fallo en bolsa...
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+			=>Elementos eliminados con Filter 2: 122
+			=>Elementos eliminados con Filter 1: 145
+Fallo, segundo intento
+Fallo en calculo
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+Fallo, segundo intento
+Posible fallo en bolsa...
+Cambiando clasificador..
+OK
+			=>Elementos eliminados con Filter 2: 128
+Fallo, segundo intento
+OK
+			=>Elementos eliminados con Filter 1: 147
+Fallo, segundo intento
+Fallo en calculo
+Fallo, segundo intento
+Fallo en calculo
+Fallo, segundo intento
+Fallo en calculo
+				-->Clasificador :MIL max
+					-->Original
+					 Precision: 93.97306397306399%
+					 Roc Score: 88.93808777429467
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 95.25589225589226%
+					 Roc Score: 90.11904761904762
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 81.92929292929293%
+					 Roc Score: 55.22727272727273
+				-->Clasificador :MIL min
+					-->Original
+					 Precision: 90.58922558922559%
+					 Roc Score: 81.26156889087925
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 93.24579124579124%
+					 Roc Score: 84.89382743693088
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 81.02020202020202%
+					 Roc Score: 52.61363636363636
+				-->Clasificador :MIL Extreme
+					-->Original
+					 Precision: 91.96296296296298%
+					 Roc Score: 83.76629596457182
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 94.03815937149271%
+					 Roc Score: 86.83217644424539
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 81.32323232323233%
+					 Roc Score: 53.484848484848484
+				-->Clasificador :BOW
+					-->Original
+					 Precision: 90.1818181818182%
+					 Roc Score: 78.27926742797432
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 90.73821548821549%
+					 Roc Score: 78.0786777877295
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 81.02020202020203%
+					 Roc Score: 52.61363636363636
+				-->Clasificador :CKNN
+					-->Original
+					 Precision: 86.96565656565657%
+					 Roc Score: 74.83699059561128
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 89.23367003367002%
+					 Roc Score: 75.53791610688162
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 81.09360269360269%
+					 Roc Score: 53.072510822510814
+				-->Clasificador :DIVERSE DENSITY
+					-->Original
+					 Precision: 85.4882154882155%
+					 Roc Score: 73.52698785888443
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 88.35185185185183%
+					 Roc Score: 73.18119619843758
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 80.92985409652077%
+					 Roc Score: 52.56042568542568
+				-->Clasificador :EM-DD
+					-->Original
+					 Precision: 84.64069264069265%
+					 Roc Score: 70.5295833066769
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 88.89562289562289%
+					 Roc Score: 74.93202610197686
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 80.9167869167869%
+					 Roc Score: 52.649196042053184
+				-->Clasificador :MILBOOST
+					-->Original
+					 Precision: 76.6154087167976%
+					 Roc Score: 68.11191184403371
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 80.33847268986158%
+					 Roc Score: 73.7272237460815
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 73.3569912083801%
+					 Roc Score: 52.98297574943342

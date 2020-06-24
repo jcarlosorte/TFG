@@ -1,0 +1,145 @@
+********** Ensemble Filter por maxVotos**********
+
+	DATASET: mutagenesis2_scaled
+
+		=>RUIDO : 15
+			=>Elementos eliminados con Filter 2: 12
+			=>Elementos eliminados con Filter 1: 9
+Fallo, segundo intento
+Fallo en calculo
+			=>Elementos eliminados con Filter 2: 10
+			=>Elementos eliminados con Filter 1: 10
+Fallo, segundo intento
+Fallo en calculo
+			=>Elementos eliminados con Filter 2: 8
+			=>Elementos eliminados con Filter 1: 7
+Fallo, segundo intento
+Fallo en calculo
+			=>Elementos eliminados con Filter 2: 19
+			=>Elementos eliminados con Filter 1: 16
+Fallo, segundo intento
+Fallo en calculo
+			=>Elementos eliminados con Filter 2: 8
+			=>Elementos eliminados con Filter 1: 6
+Fallo, segundo intento
+Fallo en calculo
+				-->Clasificador :MIL max
+					-->Original
+					 Precision: 69.28571428571429%
+					 Roc Score: 50.0
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 81.30952380952382%
+					 Roc Score: 50.0
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 83.53174603174604%
+					 Roc Score: 50.0
+				-->Clasificador :MIL min
+					-->Original
+					 Precision: 68.17460317460316%
+					 Roc Score: 50.0
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 81.30952380952381%
+					 Roc Score: 50.0
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 83.53174603174604%
+					 Roc Score: 50.0
+				-->Clasificador :MIL Extreme
+					-->Original
+					 Precision: 68.54497354497353%
+					 Roc Score: 50.0
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 81.30952380952382%
+					 Roc Score: 50.0
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 83.53174603174604%
+					 Roc Score: 50.0
+				-->Clasificador :BOW
+					-->Original
+					 Precision: 69.77182539682539%
+					 Roc Score: 53.75
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 81.30952380952382%
+					 Roc Score: 50.0
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 83.53174603174604%
+					 Roc Score: 50.0
+				-->Clasificador :CKNN
+					-->Original
+					 Precision: 72.07936507936508%
+					 Roc Score: 57.33333333333333
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 81.30952380952381%
+					 Roc Score: 50.0
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 84.86507936507937%
+					 Roc Score: 53.0
+				-->Clasificador :DIVERSE DENSITY
+					-->Original
+					 Precision: 71.61375661375662%
+					 Roc Score: 56.11111111111111
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 81.30952380952382%
+					 Roc Score: 50.0
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 84.64285714285714%
+					 Roc Score: 52.5
+				-->Clasificador :EM-DD
+					-->Original
+					 Precision: 71.0034013605442%
+					 Roc Score: 55.714285714285715
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 81.30952380952381%
+					 Roc Score: 50.0
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 84.8015873015873%
+					 Roc Score: 52.857142857142854
+				-->Clasificador :MILBOOST
+					-->Original
+					 Precision: 66.55435090702947%
+					 Roc Score: 54.819444444444436
+					-->Filtrado por 
+					 * BOW
+					 * CKNN
+					 * EM-DD
+					 Precision: 81.30952380952381%
+					 Roc Score: 50.0
+					 * MIL max
+					 * MIL Extreme
+					 * DIVERSE DENSITY
+					 Precision: 77.27408903376165%
+					 Roc Score: 49.58333333333333

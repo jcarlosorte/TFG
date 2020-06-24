@@ -28,7 +28,6 @@ def IPF(b,votacion,folds,ruido):
         bags,labels,X = load_data(DataSet)
         bags,labels = shuffle(bags, labels, random_state=rand.randint(0, len(labels)-1))
         skf = StratifiedKFold(n_splits=folds)
-#        dataAcc = np.zeros((len(b),len(ruido),folds,2))
         print('\n\tDATASET: '+str(DataSet)+'\n')
         
         for ny,k in enumerate(ruido):
@@ -45,7 +44,6 @@ def IPF(b,votacion,folds,ruido):
             
             for s,cl in enumerate(Clasificadores):
                 fold = 1
-#                results_Fil = np.zeros((len(Clasificadores_filtro),folds))
                 results_Fil = [[] for x in range(len(Clasificadores_filtro))] 
                 results_Ori = []
                 clasificador_ = Clasificadores[s]
@@ -68,8 +66,7 @@ def IPF(b,votacion,folds,ruido):
 #                        print('\t\t\t=>Filtrado con '+str(cl_f[2]))
                         X_train_NoNy,Y_train_NoNy = mil_cv_filter_ipf(X_train,Y_train,folds,votacion,clasificador_f) 
                         results_Fil[j].append(filtrado_final(X_train_NoNy,Y_train_NoNy,X_test,Y_test,clasificador_))
-#                    print(len(X_train_NoNy))
-#                    print(len(X_train))
+
 #                    print('\t\t\t=>Original')
                     results_Ori.append(filtrado_final(X_train,Y_train,X_test,Y_test,clasificador_))
                     fold = fold + 1
@@ -80,11 +77,11 @@ def IPF(b,votacion,folds,ruido):
                 for g in range(0,folds):
                     results_accuracie_O.append(results_Ori[g][0])
                     results_auc_O.append(results_Ori[g][1])
+               
                 print('\t\t\t\t\t-->Original')
                 print('\t\t\t\t\t Precision: '+ str(np.mean(results_accuracie_O, dtype=np.float64))+'%')
                 data['Original'].append(np.mean(results_accuracie_O))
-                print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_O, dtype=np.float64)))
-                
+                print('\t\t\t\t\t Roc Score: '+ str(np.mean(results_auc_O, dtype=np.float64)))   
                 for h,cl_f0 in enumerate(Clasificadores_filtro):
                     results_accuracie_F = []
                     results_auc_F = []
@@ -107,7 +104,7 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
     if len(labels_f) < folds:
         folds = len(labels_f)
     skf = StratifiedKFold(n_splits=folds)
-    
+    totalNoisyLabel = 0
     while stop:
         bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, len(labels_f)-1))
         isCorrectLabel = np.ones((folds, len(labels_f)), dtype=bool)
@@ -165,9 +162,6 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
                             print('Fallo')
                 for l,p in enumerate(train_index):
                     try:
-    #                    print(Y_train.T[0][l])
-    #                    print(np.sign(predictions[l]))
-    #                    print(isCorrectLabel[fold][p])
                         isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
                     except IndexError:
                         print("Fallo en ultimo indice!")
@@ -214,7 +208,11 @@ def mil_cv_filter_ipf(bags_f,labels_f,folds,votacion,clasificador_):
         if len(bags_f) < len(labels_f.reshape(len(labels_f))):
             print('Número de bolsas, menor al número de etiquetas, no se puede continuar')
             stop = False
-    print('\t\t\t=>Elementos eliminados por '+clasificador_[2]+': '+str(len(noisyBags)))
+        #Comprobacion nueva 28/10/19
+        if len(labels_f) < 1:
+            stop = False
+        totalNoisyLabel+=len(noisyBags)
+    print('\t\t\t=>Elementos eliminados por '+clasificador_[2]+': '+str(totalNoisyLabel))
     X_train_NoNy = bags_f
     Y_train_NoNy = labels_f
     return X_train_NoNy,Y_train_NoNy

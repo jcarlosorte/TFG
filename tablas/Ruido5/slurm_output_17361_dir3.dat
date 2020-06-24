@@ -1,0 +1,17 @@
+********** Iterative Partitioning Filter por maxVotos**********
+
+	DATASET: musk2_scaled
+
+		=>RUIDO : 5
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL max: 0
+			=>Elementos eliminados por MIL max: 0
+				-->Clasificador :MIL max
+					-->Original
+					 Precision: 73.64661654135338%
+					 Roc Score: 73.14102564102566
+					-->Filtrado por MIL max
+					 Precision: 69.68922305764411%
+					 Roc Score: 67.89835164835164

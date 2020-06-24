@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "menu_9.py", line 30, in <module>
+    IPF.IPF(DataSet,votacion,folds,ruido)
+  File "/home/jcorte/TFG/filters/IPF.py", line 69, in IPF
+    X_train_NoNy,Y_train_NoNy = mil_cv_filter_ipf(X_train,Y_train,folds,votacion,clasificador_f) 
+  File "/home/jcorte/TFG/filters/IPF.py", line 112, in mil_cv_filter_ipf
+    bags_f,labels_f = shuffle(bags_f, labels_f, random_state=rand.randint(0, len(labels_f)-1))
+  File "/usr/lib/python3.6/random.py", line 221, in randint
+    return self.randrange(a, b+1)
+  File "/usr/lib/python3.6/random.py", line 199, in randrange
+    raise ValueError("empty range for randrange() (%d,%d, %d)" % (istart, istop, width))
+ValueError: empty range for randrange() (0,0, 0)
