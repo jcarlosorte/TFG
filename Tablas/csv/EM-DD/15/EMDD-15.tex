@@ -1,0 +1,71 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{lscape}
+\title{Output tables for 1xN statistical comparisons.}
+\author{}
+\date{\today}
+\begin{document}
+\begin{landscape}
+\pagestyle{empty}
+\maketitle
+\thispagestyle{empty}
+
+\section{Average rankings of Friedman test}
+
+
+Average ranks obtained by each method in the Friedman test.
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|}\hline
+Algorithm&Ranking\\\hline
+MIL-EF-CON&3\\MIL-CVCF-CON&2.9444\\MIL-IPF-CON&3.2778\\MIL-EF-MAX&3.2222\\MIL-CVCF-MAX&4.2222\\MIL-IPF-MAX&4.3333\\\hline\end{tabular}
+\caption{Average Rankings of the algorithms (Friedman)}
+\end{table}
+
+Friedman statistic (distributed according to chi-square with 5 degrees of freedom): 4.888889. \newline P-value computed by Friedman Test: 0.42959.\newline
+
+
+\newpage
+
+\section{Post hoc comparison (Friedman)}
+
+
+P-values obtained in by applying post hoc methods over the results of Friedman procedure.
+
+\begin{table}[!htp]
+\centering\footnotesize
+\begin{tabular}{ccccc}
+$i$&algorithm&$z=(R_0 - R_i)/SE$&$p$&Holland\\
+\hline5&MIL-IPF-MAX&1.574852&0.115291&0.010206\\4&MIL-CVCF-MAX&1.448864&0.147376&0.012741\\3&MIL-IPF-CON&0.377964&0.705457&0.016952\\2&MIL-EF-MAX&0.31497&0.752784&0.025321\\1&MIL-EF-CON&0.062994&0.949771&0.05\\\hline
+\end{tabular}
+\caption{Post Hoc comparison Table for $\alpha=0.05$ (FRIEDMAN)}
+\end{table}Holland's procedure rejects those hypotheses that have an unadjusted p-value $\le0.010206$.
+
+
+\newpage
+
+\section{Adjusted P-Values (Friedman)}
+
+
+Adjusted P-values obtained through the application of the post hoc methods (Friedman).
+
+\begin{table}[!htp]
+\centering\small
+\begin{tabular}{ccc}
+i&algorithm&unadjusted $p$\\
+\hline1&MIL-IPF-MAX&0.115291\\2&MIL-CVCF-MAX&0.147376\\3&MIL-IPF-CON&0.705457\\4&MIL-EF-MAX&0.752784\\5&MIL-EF-CON&0.949771\\\hline
+\end{tabular}
+\caption{Adjusted $p$-values (FRIEDMAN) (I)}
+\end{table}
+\begin{table}[!htp]
+\centering\small
+\begin{tabular}{cccc}
+i&algorithm&unadjusted $p$&$p_{Holland}$\\
+\hline1&MIL-IPF-MAX&0.115291&0.457995\\2&MIL-CVCF-MAX&0.147376&0.471517\\3&MIL-IPF-CON&0.705457&0.974447\\4&MIL-EF-MAX&0.752784&0.974447\\5&MIL-EF-CON&0.949771&0.974447\\\hline
+\end{tabular}
+\caption{Adjusted $p$-values (FRIEDMAN) (II)}
+\end{table}
+
+\newpage
+\end{landscape}\end{document}

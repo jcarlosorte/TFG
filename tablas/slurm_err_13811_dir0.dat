@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "menu_8.py", line 28, in <module>
-    CVCF.CVcF(DataSet,votacion,folds,ruido)
-  File "/home/jcorte/TFG/filters/CVCF.py", line 68, in CVcF
-    X_train_NoNy,Y_train_NoNy = mil_cv_filter_cvcf(X_train,Y_train,folds,votacion,clasificador_f) 
-  File "/home/jcorte/TFG/filters/CVCF.py", line 144, in mil_cv_filter_cvcf
-    isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
-UnboundLocalError: local variable 'predictions' referenced before assignment

@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "menu_8.py", line 30, in <module>
-    IPF.IPF(DataSet,votacion,folds,ruido)
-  File "/home/jcorte/TFG/filters/IPF.py", line 69, in IPF
-    X_train_NoNy,Y_train_NoNy = mil_cv_filter_ipf(X_train,Y_train,folds,votacion,clasificador_f) 
-  File "/home/jcorte/TFG/filters/IPF.py", line 155, in mil_cv_filter_ipf
-    isCorrectLabel[fold][p] = (Y_train.T[0][l] == np.sign(predictions[l]))
-UnboundLocalError: local variable 'predictions' referenced before assignment
