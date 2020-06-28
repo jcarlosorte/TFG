@@ -1,4 +1,4 @@
-pyMIL-BNF: Multiple Instance Learning Bag Noise Filters library in Python
+BNF-pyMIL: Bag Noise Filters Python Library to Multiple Instance Learning
 =====================================================
 
 Multiple-Instance Learning Python Proyect by Juan Carlos Orte (<jcarlosorte@correo.ugr.es>)
@@ -15,7 +15,7 @@ In this project, the development of a library of noise cleaning techniques for M
 
 Overview
 --------
-PyMIL-BNF contains a Python implementation of multiple-instance learning (MIL) framework and
+BNF-pyMIL contains a Python implementation of multiple-instance learning (MIL) framework and
 uses the toolbox MILpy, the toolbox contains algorithms to train and evaluate MIL classifiers.
 
 Stage of Development:
