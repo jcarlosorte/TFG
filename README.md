@@ -1,7 +1,7 @@
 pyMIL-BNF: Multiple Instance Learning Bag Noise Filters library in Python
 =====================================================
 
-TFG Multiple-Instance Learning Python Proyect by Juan Carlos Orte (<jcarlosorte@ugr.es>)
+Multiple-Instance Learning Python Proyect by Juan Carlos Orte (<jcarlosorte@ugr.es>)
 
 Abstract
 --------
@@ -10,7 +10,7 @@ The rise of artificial vision techniques in our days is enhancing the techniques
 
 However, the classification of MIL objects presents challenges today, since the identification of objects is not exact and erroneous representations (noisy) or even incorrect labels can be collected. In critical systems such as autonomous driving, biometric surveys and others, these errors can be catastrophic.
 
-In this project (TFG) the development of a library of noise cleaning techniques for MIL written in Python is proposed. There are no proposals of this nature even in the specialized literature, so this project (TFG) includes a research aspect.
+In this project, the development of a library of noise cleaning techniques for MIL written in Python is proposed. There are no proposals of this nature even in the specialized literature, so this project includes a research aspect.
 
 
 Overview
@@ -67,7 +67,7 @@ Cannot guarantee any support for this software.
 
 License
 --------
-Copyright 2018-2019 by UGR - Universidad de Granada (Ceuta)
+Copyright 2018 by UGR - Universidad de Granada
 Permission to use, copy, or modify these programs and their documentation for educational and research purposes only and without fee is hereby granted, provided that this copyright notice appears on all copies and supporting documentation.  For any other uses of this software, in original or modified form, including but not limited to distribution in whole or in part, specific prior permission must be obtained from Universidad de Granada. These programs shall not be used, rewritten, or adapted as the basis of a commercial software or hardware product without first obtaining appropriate licenses from the Universidad de Granada.  Universidad de Granada makes no representations about the suitability of this software for any purpose.  It is provided "as is" without express or implied warranty.
 
 Questions and Issues
