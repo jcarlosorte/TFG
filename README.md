@@ -41,7 +41,7 @@ by running the app
 
 `py -3 filterApp.py`
 
-![Interfaz pyMIL-BNF](https://i.ibb.co/dm5QFTN/app5.png)
+![Interfaz BNF-pyMIL](https://i.ibb.co/dm5QFTN/app5.png)
 
 by running use in menu file manually, ex:
 
