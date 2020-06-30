@@ -54,7 +54,7 @@ class FilterTFG(QWidget):
         self.addTable()
         self.addEnviar()
         self.resize(430, 450)
-        self.setWindowTitle('TFG Filtros MIL')
+        self.setWindowTitle('Filtros BNF-pyMIL')
 
     def addTable(self):
         self.gbx_t = QGroupBox('Precisión:',self)
