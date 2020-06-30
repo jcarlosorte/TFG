@@ -1,7 +1,7 @@
-pyMIL-BNF: Multiple Instance Learning Bag Noise Filters library in Python
+BNF-pyMIL: Bag Noise Filters Python Library to Multiple Instance Learning
 =====================================================
 
-Multiple-Instance Learning Python Proyect by Juan Carlos Orte (<jcarlosorte@ugr.es>)
+Multiple-Instance Learning Python Proyect by Juan Carlos Orte (<jcarlosorte@correo.ugr.es>)
 
 Abstract
 --------
@@ -15,7 +15,7 @@ In this project, the development of a library of noise cleaning techniques for M
 
 Overview
 --------
-PyMIL-BNF contains a Python implementation of multiple-instance learning (MIL) framework and
+BNF-pyMIL contains a Python implementation of multiple-instance learning (MIL) framework and
 uses the toolbox MILpy, the toolbox contains algorithms to train and evaluate MIL classifiers.
 
 Stage of Development:
@@ -41,7 +41,7 @@ by running the app
 
 `py -3 filterApp.py`
 
-![Interfaz pyMIL-BNF](https://i.ibb.co/dm5QFTN/app5.png)
+![Interfaz BNF-pyMIL](https://i.ibb.co/NVGn8pZ/interfaz-A.png)
 
 by running use in menu file manually, ex:
 
@@ -67,14 +67,14 @@ Cannot guarantee any support for this software.
 
 License
 --------
-Copyright 2018 by UGR - Universidad de Granada
+Copyright 2020 by UGR - Universidad de Granada
 Permission to use, copy, or modify these programs and their documentation for educational and research purposes only and without fee is hereby granted, provided that this copyright notice appears on all copies and supporting documentation.  For any other uses of this software, in original or modified form, including but not limited to distribution in whole or in part, specific prior permission must be obtained from Universidad de Granada. These programs shall not be used, rewritten, or adapted as the basis of a commercial software or hardware product without first obtaining appropriate licenses from the Universidad de Granada.  Universidad de Granada makes no representations about the suitability of this software for any purpose.  It is provided "as is" without express or implied warranty.
 
 Questions and Issues
 --------------------
 
 If you find any bugs or have any questions about this code, please create an
-issue on [GitHub](https://github.com/jcarlosorte/TFG/issues), or contact Gary
-Doran at <jcarlosorte@correo.ugr.es>. Of course, I cannot guarantee any support for
+issue on [GitHub](https://github.com/jcarlosorte/pyMIL-BNF/issues), or contact Juan Carlos
+Orte at <jcarlosorte@correo.ugr.es>. Of course, I cannot guarantee any support for
 this software.
 
